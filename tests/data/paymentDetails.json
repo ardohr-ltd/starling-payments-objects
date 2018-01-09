@@ -1,0 +1,3819 @@
+[
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"fb0e591d-c903-4298-a18d-d3a066855a40",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"issueRedirection",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:58:24.808Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"13124d5e-f847-4cd6-bf46-6511c9c850d5",
+      "fpsSettlementCycleId":"CYCLE_003",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"0a71af41-0bc0-4202-9cc3-9c565f12a6f0",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode:1160",
+      "status":"REJECTED",
+      "rejectedReason":{
+         "code":"1160",
+         "description":"Beneficiary Account closed"
+      },
+      "requestedAt":"2018-01-05T16:58:24.413Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"13124d5e-f847-4cd6-bf46-6511c9c850d5",
+      "fpsSettlementCycleId":"CYCLE_003",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"61ea82c1-cb90-4c1e-8713-3125dab8c38e",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"28453083",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:58:23.866Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"13124d5e-f847-4cd6-bf46-6511c9c850d5",
+      "fpsSettlementCycleId":"CYCLE_003",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"7201273e-9ccb-478d-88cd-23e04edd78d6",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS011",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:58:23.820Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"13124d5e-f847-4cd6-bf46-6511c9c850d5",
+      "fpsSettlementCycleId":"CYCLE_003",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"de0515dc-e4bc-4afb-9740-d684733b50bf",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"28453083",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS010",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:58:23.529Z",
+      "returnDetails":[
+
+      ],
+      "type":"FDP",
+      "settlementCycleUid":"13124d5e-f847-4cd6-bf46-6511c9c850d5",
+      "fpsSettlementCycleId":"CYCLE_003",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"430f569e-1795-4967-8332-d0892e6953e8",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"28453083",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:58:23.370Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"13124d5e-f847-4cd6-bf46-6511c9c850d5",
+      "fpsSettlementCycleId":"CYCLE_003",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"6c767cf3-335e-4fc4-b49c-2673053896c5",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode:1160",
+      "status":"REJECTED",
+      "rejectedReason":{
+         "code":"1160",
+         "description":"Beneficiary Account closed"
+      },
+      "requestedAt":"2018-01-05T16:53:49.260Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"7ef88f2b-104b-4f5d-af23-53a15b755a22",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"12991958",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:53:48.357Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"b0f07798-cf48-4b44-93f3-77844e658aaf",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS011",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:53:48.228Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"357f1d6a-fdf9-4ecd-b9fa-50d76b0e7a19",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"12991958",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS010",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:53:48.093Z",
+      "returnDetails":[
+
+      ],
+      "type":"FDP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"1739373e-c341-43ea-a922-23c1558ef04e",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"12991958",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:53:47.774Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"1d9fa3c9-b650-42cc-b5ba-d837b5b108c3",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"07838246",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:52:35.779Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"e5b1d32e-d544-48ac-8486-5ddf33f406e6",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode:1160",
+      "status":"REJECTED",
+      "rejectedReason":{
+         "code":"1160",
+         "description":"Beneficiary Account closed"
+      },
+      "requestedAt":"2018-01-05T16:50:31.416Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"edad51bb-94f3-44a1-8fe4-ce556b217f39",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"02684533",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:31.247Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"ba2fd8c5-c879-4f0a-8c66-ce009321593b",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS011",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:31.095Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"0f95278b-2424-4aea-9026-7e16d74bead5",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"02684533",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS010",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:31.056Z",
+      "returnDetails":[
+
+      ],
+      "type":"FDP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"f9eca425-40e2-49cc-be7e-fd453e3d1a45",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"02684533",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:30.971Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"5fb30bbc-c936-429a-b985-57e37f413ca7",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"97530825",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":99900
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":99900
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:28.980Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"11540ca8-619e-4b5b-8328-2f973a283c05",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode:1160",
+      "status":"REJECTED",
+      "rejectedReason":{
+         "code":"1160",
+         "description":"Beneficiary Account closed"
+      },
+      "requestedAt":"2018-01-05T16:50:28.879Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"43fcc157-161e-45b7-ae18-bbd03b053f28",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"97530825",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:28.713Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"2b804c45-1aaa-449e-9a61-70e68a4fb2b6",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS011",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:28.669Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"aa3c040a-1b5d-4228-9f44-76299033bc97",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"97530825",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS010",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:28.550Z",
+      "returnDetails":[
+
+      ],
+      "type":"FDP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"cb394313-0f74-41dd-8740-803d9f94a30e",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"97530825",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:28.455Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"dfef9aa5-d764-4ecb-a76e-7ac106072f12",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"92377110",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":99900
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":99900
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:19.943Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"e5b8d51d-aece-4523-86e6-ad5b4ad13d1e",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode:1160",
+      "status":"REJECTED",
+      "rejectedReason":{
+         "code":"1160",
+         "description":"Beneficiary Account closed"
+      },
+      "requestedAt":"2018-01-05T16:50:19.899Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"4c9a1125-ab8e-4ade-9503-2df2952db958",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"92377110",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:19.716Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"a9a57630-4a9d-4f8b-9bdc-124289b53d2b",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS011",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:19.604Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"bd37fc89-21ff-4640-aa73-ce97d2a0e9e1",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"92377110",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS010",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:19.513Z",
+      "returnDetails":[
+
+      ],
+      "type":"FDP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"233b35a0-370f-47e1-b731-dcfeb1d4de74",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"92377110",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:19.479Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"b5bd8e1f-38fc-4207-b867-429552650293",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"87223400",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":99900
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":99900
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:14.596Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"f8add565-c331-43f1-8158-1e76b6d75829",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode:1160",
+      "status":"REJECTED",
+      "rejectedReason":{
+         "code":"1160",
+         "description":"Beneficiary Account closed"
+      },
+      "requestedAt":"2018-01-05T16:50:14.509Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"5f7ab54d-c994-4362-bc4a-2931d2afa89c",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"87223400",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:14.380Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"96526e9c-894c-4c2d-ba24-a2ef27ac7b55",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS011",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:14.283Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"ef7e60d2-8aed-405b-bc3f-a3432b14b194",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"87223400",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS010",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:14.244Z",
+      "returnDetails":[
+
+      ],
+      "type":"FDP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"9d39152d-5cbc-4a99-a2e7-0f00a5d300e5",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"87223400",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:14.156Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"c8e348c7-ccae-421e-ad90-4bbf2a48e40b",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"82069697",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":99900
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":99900
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:12.439Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"ae5b516e-95a3-416b-a1aa-a372f4026836",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode:1160",
+      "status":"REJECTED",
+      "rejectedReason":{
+         "code":"1160",
+         "description":"Beneficiary Account closed"
+      },
+      "requestedAt":"2018-01-05T16:50:12.342Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"8a1d5d5b-2d15-4c2c-887e-5acd6cd9f429",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"82069697",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:12.262Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"0bb9ef11-aea7-4033-b94e-870b0acdbef4",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS011",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:12.205Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"f9a19afc-916d-4ab3-a2dd-f6464e34896e",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"82069697",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS010",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:12.115Z",
+      "returnDetails":[
+
+      ],
+      "type":"FDP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"3726db98-d693-4795-af6a-b57443e88e6b",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"82069697",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:12.069Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"d1f07dbf-cd35-4c35-90cd-a678f6b44edb",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"76915988",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":99900
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":99900
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:07.567Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"76bf2d02-bbcc-4394-8f7a-6efeefa7bc9f",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode:1160",
+      "status":"REJECTED",
+      "rejectedReason":{
+         "code":"1160",
+         "description":"Beneficiary Account closed"
+      },
+      "requestedAt":"2018-01-05T16:50:07.467Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"166beb47-add4-4783-8577-52337c39c9f4",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"76915988",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:07.341Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"54a9eb5c-2234-4cfa-8d94-aed03900afd2",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS011",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:07.306Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"58e8d88f-eccc-493c-bc48-f48db542ec29",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"76915988",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS010",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:07.187Z",
+      "returnDetails":[
+
+      ],
+      "type":"FDP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"4d54df3f-91aa-4bd6-9934-da33422d4e4e",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"76915988",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:07.063Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"1ed6c63b-4dc0-4f7a-a2b7-7d0e351848bf",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"71762274",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":99900
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":99900
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:05.358Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"25ae61c6-c675-40ea-af18-a77e56419eda",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode:1160",
+      "status":"REJECTED",
+      "rejectedReason":{
+         "code":"1160",
+         "description":"Beneficiary Account closed"
+      },
+      "requestedAt":"2018-01-05T16:50:05.260Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"0e4d8201-5a92-4fd5-be9c-937d0584c9a0",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"71762274",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:05.106Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"1ea94ce2-4832-4888-be81-7af0f261e2aa",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS011",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:04.976Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"56cecfde-85d8-4948-b9e2-b9b90b68cd12",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"71762274",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS010",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:04.927Z",
+      "returnDetails":[
+
+      ],
+      "type":"FDP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"26e79820-87db-4e70-85c1-3c6f85b7ddcc",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"71762274",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:04.812Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"f2030afe-dd78-4d22-bebd-f1739c0499f6",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"66608563",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":99900
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":99900
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:02.663Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"754f7537-0227-42bf-888f-11ee2ff240d8",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode:1160",
+      "status":"REJECTED",
+      "rejectedReason":{
+         "code":"1160",
+         "description":"Beneficiary Account closed"
+      },
+      "requestedAt":"2018-01-05T16:50:02.570Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"d23926cc-edf9-43b4-94b2-67fe1e707497",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"66608563",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:02.326Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"5c3484e8-d40e-410f-bad4-e2fc454f22e4",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS011",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:02.235Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"611762bf-f38d-4cc7-ba20-a97df274ecc3",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"66608563",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS010",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:02.142Z",
+      "returnDetails":[
+
+      ],
+      "type":"FDP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"5bf62a3a-f3aa-490c-8cbd-6b3b5d1c33ea",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"66608563",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:50:01.985Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"67d20a9b-be83-4818-a739-82382d42caed",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"61454850",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":99900
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":99900
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:49:59.945Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"13d6600c-0e7e-4f0c-9bb9-5693c520460f",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode:1160",
+      "status":"REJECTED",
+      "rejectedReason":{
+         "code":"1160",
+         "description":"Beneficiary Account closed"
+      },
+      "requestedAt":"2018-01-05T16:49:59.883Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"f8d76c5d-da0e-4fac-bc8f-3f4326c1d3e6",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"61454850",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:49:59.692Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"1f216cdb-5f56-4962-8905-f730660e7c5c",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS011",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:49:59.554Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"4bafa29c-0f6f-4bba-8e72-1c94a56a8384",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"61454850",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS010",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:49:59.458Z",
+      "returnDetails":[
+
+      ],
+      "type":"FDP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"59562ee6-0cc7-4b3e-810d-198e69bd5e4b",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"61454850",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:49:59.372Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"30edae3c-1cbc-44a7-8338-5fd6155e6617",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"51147436",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":99900
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":99900
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:49:49.246Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"c05d0f9c-3279-47a2-990b-bda1cd6dd4f0",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode:1160",
+      "status":"REJECTED",
+      "rejectedReason":{
+         "code":"1160",
+         "description":"Beneficiary Account closed"
+      },
+      "requestedAt":"2018-01-05T16:49:49.163Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"a38dcaef-f091-49ec-95ba-ddffb9b6049e",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"51147436",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:49:48.804Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"4bb540e5-f1e0-4829-81c8-05a1074f0c51",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS011",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:49:48.717Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"36fde7e2-a5cf-412d-872a-061f7a9776ac",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"51147436",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS010",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:49:48.582Z",
+      "returnDetails":[
+
+      ],
+      "type":"FDP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"0e7c1c93-ff46-4fad-98fb-6cee62c53a08",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"51147436",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:49:48.488Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"2c2bcdfd-abd7-4aef-8b71-e226affa5b99",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode:1160",
+      "status":"REJECTED",
+      "rejectedReason":{
+         "code":"1160",
+         "description":"Beneficiary Account closed"
+      },
+      "requestedAt":"2018-01-05T16:47:05.913Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"235d0ff7-7a00-420d-bbc0-6fe1f3cdcd2b",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"45993723",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:47:05.731Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"660448f8-46eb-4d2f-b0e6-a15e9f4d6a94",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS011",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:47:05.625Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"c77cd3d0-4bcb-4995-afdf-f12dba0230d0",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"45993723",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS010",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:47:05.440Z",
+      "returnDetails":[
+
+      ],
+      "type":"FDP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"8ba759fa-288b-432c-96db-7144612d2aa6",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"45993723",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:47:04.923Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"7c3d0142-68a9-4029-ac4b-51181cc0374a",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode:1160",
+      "status":"REJECTED",
+      "rejectedReason":{
+         "code":"1160",
+         "description":"Beneficiary Account closed"
+      },
+      "requestedAt":"2018-01-05T16:45:02.517Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"ee7cea15-7f9c-47ad-9c33-093a61766924",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"40840013",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:45:02.297Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"f671f9e6-9982-4a38-8520-e76666660db0",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS011",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:45:02.150Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"fb30da15-8322-4541-a0f4-b9962b5847ea",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"40840013",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS010",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:45:01.768Z",
+      "returnDetails":[
+
+      ],
+      "type":"FDP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"83d2a907-5c4b-4693-adf1-90af9d20fbc0",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"40840013",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:45:01.419Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"bbd4bd9c-aec2-452f-a0c7-f8b67f241361",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode:1160",
+      "status":"REJECTED",
+      "rejectedReason":{
+         "code":"1160",
+         "description":"Beneficiary Account closed"
+      },
+      "requestedAt":"2018-01-05T16:44:25.902Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"2694d8de-1904-498b-bc80-73b7f13df8d2",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"35686309",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:44:25.627Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"fa8dfc7c-b6d8-413d-bfe6-8e795781f179",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS011",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:44:25.573Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"0d0d746c-9ea1-4477-ac73-125f9712b32c",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"35686309",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS010",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:44:25.435Z",
+      "returnDetails":[
+
+      ],
+      "type":"FDP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"f90d0598-860b-44c3-a856-9ca3b0cb71bc",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"35686309",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:44:25.338Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"e1c506f7-37d0-4ad3-befe-bdc8db0cb0e4",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode:1160",
+      "status":"REJECTED",
+      "rejectedReason":{
+         "code":"1160",
+         "description":"Beneficiary Account closed"
+      },
+      "requestedAt":"2018-01-05T16:36:48.555Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"d216f73a-e086-479d-ac4b-b154b9517f08",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"25378885",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:36:48.317Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"688e544a-7e02-4bf8-8cc5-fe70e4e277ce",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS011",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:36:48.218Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"4ec8f1f3-3f89-412b-8cb5-d3401f72876e",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"25378885",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS010",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:36:48.112Z",
+      "returnDetails":[
+
+      ],
+      "type":"FDP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"150df662-f043-4f8e-a11f-95dd969f1857",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"25378885",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:36:47.964Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"cf47836e-be6e-441e-b659-2e7ea5fd5a7c",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode:1160",
+      "status":"REJECTED",
+      "rejectedReason":{
+         "code":"1160",
+         "description":"Beneficiary Account closed"
+      },
+      "requestedAt":"2018-01-05T16:34:00.903Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"03313c30-eff5-493a-bcc8-fd40243746f5",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"20225175",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:34:00.597Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"312ac6bb-f2a7-4fdd-b70e-182aca5cd28f",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS011",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:34:00.431Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"46dacfa6-119d-4e66-9a2d-8e95b1fdc308",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"20225175",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS010",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:33:59.877Z",
+      "returnDetails":[
+
+      ],
+      "type":"FDP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"2e74b464-9055-42b6-bebb-8f6a05557f2e",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"20225175",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:33:59.631Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"2261932c-62a5-449c-9395-51de44e1c703",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"15071461",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"rejectCode",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:22:21.888Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"4c917e11-e463-4751-a8a3-ce451b465431",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"203002",
+         "accountNumber":"00004588",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS011",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:22:21.299Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"9d5ffcf7-f38e-455c-ad1e-ef24087731a4",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"15071461",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS010",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:22:21.177Z",
+      "returnDetails":[
+
+      ],
+      "type":"FDP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   },
+   {
+      "paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+      "paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+      "addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+      "paymentUid":"9a6ba546-77d4-460c-ac25-4d37419c060e",
+      "sourceAccount":{
+         "sortCode":"010150",
+         "accountNumber":"37765814",
+         "accountName":"Payment Account"
+      },
+      "destinationAccount":{
+         "sortCode":"010150",
+         "accountNumber":"15071461",
+         "accountName":"Recipient Account"
+      },
+      "direction":"OUTBOUND",
+      "settlementAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "instructedAmount":{
+         "currency":"GBP",
+         "minorUnits":999
+      },
+      "reference":"SPS009",
+      "status":"ACCEPTED",
+      "rejectedReason":[
+
+      ],
+      "requestedAt":"2018-01-05T16:22:21.021Z",
+      "returnDetails":[
+
+      ],
+      "type":"SIP",
+      "settlementCycleUid":"37240b88-7ef4-4dc4-8865-847e309e6c55",
+      "fpsSettlementCycleId":"CYCLE_002",
+      "fpsSettlementDate":"2018-01-05"
+   }
+]
