@@ -115,3 +115,28 @@ The nested data will in turn be instiated as value objects:
 $instructedCurrency = $paymentDetails->instructedAmount->currency;
 ```
 
+The `instructedAmount` will be a `CurrencyAndAmount` value object.
+That object contains a converter to `Money\Money`:
+
+```php
+$money = $paymentDetails->instructedAmount->toMoney();
+var_dump($money);
+
+/*
+object(Money\Money)#28 (2) {
+  ["amount":"Money\Money":private]=>
+  string(3) "999"
+  ["currency":"Money\Money":private]=>
+  object(Money\Currency)#29 (1) {
+    ["code":"Money\Currency":private]=>
+    string(3) "GBP"
+  }
+}
+*/
+```
+
+Other objects will have similar conversions.
+
+That's kind of the wqay it's going, and progress will be documented
+here as it happens.
+
