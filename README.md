@@ -167,3 +167,10 @@ Date objects (without a time) will be returned in the UTC timezone.
 That's kind of the wqay it's going, and progress will be documented
 here as it happens.
 
+## Supported Messages
+
+The following response messages and all lower-level models, are supported:
+
+* Response\PaymentAccount
+* Response\PaymentDetails
+
