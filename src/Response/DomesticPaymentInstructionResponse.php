@@ -10,15 +10,15 @@ use Consilience\Starling\Payments\HydratableTrait;
 use Consilience\Starling\Payments\Response\Models\ErrorDetail;
 use Consilience\Starling\Payments\Response\Collections\ErrorDetailCollection;
 
-class CreatePaymentAccountResponse
+class DomesticPaymentInstructionResponse
 {
     use HydratableTrait;
 
     /**
      * @var string UUID
-     * Unique identifier of the payment account.
+     * Unique identifier of the instructed payment.
      */
-    protected $paymentAccountUid;
+    protected $paymentUid;
 
     /**
      * @var bool

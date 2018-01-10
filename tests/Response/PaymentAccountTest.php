@@ -48,6 +48,5 @@ class PaymentAccountTest extends TestCase
         $this->assertSame('2017-06-05T11:47:58+00:00', $paymentAccount->createdAtCarbon->toRfc3339String());
 
         $this->assertTrue($paymentAccount->balance->isInCredit());
-        $this->assertFalse($paymentAccount->balance->isOverdrawn());
-    }
+        $this->assertFalse($paymentAccount->balance->isOverdrawn());    }
 }
