@@ -92,7 +92,7 @@ Given that data structure as `$data`, the value object can be instantiated like 
 ```php
 use Consilience\Starling\Payments\Response\PaymentDetails;
 
-$paymentDetails = PaymentDetails::fromData($data);
+$paymentDetails = PaymentDetails::fromArray($data);
 
 // or
 

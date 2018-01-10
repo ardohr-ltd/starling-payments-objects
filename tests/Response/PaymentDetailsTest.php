@@ -29,9 +29,9 @@ class PaymentDetailsTest extends TestCase
      *
      * Can instantiate from a single data record.
      */
-    public function testFromData(array $paymentDetailsData)
+    public function testFromArray(array $paymentDetailsData)
     {
-        $paymentDetails = PaymentDetails::fromData($paymentDetailsData);
+        $paymentDetails = PaymentDetails::fromArray($paymentDetailsData);
 
         $this->assertTrue($paymentDetails instanceof PaymentDetails);
     }
@@ -63,7 +63,7 @@ class PaymentDetailsTest extends TestCase
 
         $data = $allRecords[0][0];
 
-        $paymentDetails = PaymentDetails::fromData($data);
+        $paymentDetails = PaymentDetails::fromArray($data);
 
         $money = $paymentDetails->instructedAmount->toMoney();
 

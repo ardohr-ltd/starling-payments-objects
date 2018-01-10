@@ -153,7 +153,7 @@ class PaymentDetails
      */
     protected function setSourceAccount(array $data)
     {
-        $this->sourceAccount = PaymentDetailsAccount::fromData($data);
+        $this->sourceAccount = PaymentDetailsAccount::fromArray($data);
     }
 
     /**
@@ -163,7 +163,7 @@ class PaymentDetails
      */
     protected function setDestinationAccount(array $data)
     {
-        $this->destinationAccount = PaymentDetailsAccount::fromData($data);
+        $this->destinationAccount = PaymentDetailsAccount::fromArray($data);
     }
 
     /**
@@ -173,7 +173,7 @@ class PaymentDetails
      */
     protected function setSettlementAmount(array $data)
     {
-        $this->settlementAmount = CurrencyAndAmount::fromData($data);
+        $this->settlementAmount = CurrencyAndAmount::fromArray($data);
     }
 
     /**
@@ -183,7 +183,7 @@ class PaymentDetails
      */
     protected function setInstructedAmount(array $data)
     {
-        $this->instructedAmount = CurrencyAndAmount::fromData($data);
+        $this->instructedAmount = CurrencyAndAmount::fromArray($data);
     }
 
     /**
@@ -193,7 +193,7 @@ class PaymentDetails
      */
     protected function setRejectedReason(array $data)
     {
-        $this->rejectedReason = PaymentRejectionReason::fromData($data);
+        $this->rejectedReason = PaymentRejectionReason::fromArray($data);
     }
 
     /**
@@ -203,7 +203,7 @@ class PaymentDetails
      */
     protected function setReturnDetails(array $data)
     {
-        $this->returnDetails = PaymentReturnDetails::fromData($data);
+        $this->returnDetails = PaymentReturnDetails::fromArray($data);
     }
 
     /**

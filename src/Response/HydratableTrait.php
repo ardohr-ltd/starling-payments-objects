@@ -63,7 +63,7 @@ trait HydratableTrait
      * @param array $data
      * @return static
      */
-    public static function fromData(array $data)
+    public static function fromArray(array $data)
     {
         return new static($data);
     }
