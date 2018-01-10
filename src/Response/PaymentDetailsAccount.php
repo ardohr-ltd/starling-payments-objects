@@ -29,12 +29,20 @@ class PaymentDetailsAccount
     protected $accountNumber;
 
     /**
-     * @var string length 4 to 34 e.g. SRLGGB2L
+     * @var string length 8 to 12 e.g. SRLGGB2L
      * Pattern: [A-Z0-9]{8,12}
      * Business identifier code for the account.
      * This may be present for payments originating overseas.
      */
     protected $bic;
+
+    /**
+     * @var string length 4 to 34 e.g. GB29NWBK60161331926819
+     * Pattern: [A-Z0-9]{4,34}
+     * International bank account number for the account.
+     * This may be present for payments originating overseas.
+     */
+    protected $iban;
 
     /**
      * @var string length 0 to 40 e.g. Bobby Tables

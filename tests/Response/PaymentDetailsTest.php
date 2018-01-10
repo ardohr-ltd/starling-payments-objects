@@ -10,6 +10,7 @@ use PHPUnit\Framework\TestCase;
 use Money\Formatter\DecimalMoneyFormatter;
 use Money\Currencies\ISOCurrencies;
 use Money\Money;
+use Carbon\Carbon;
 
 class PaymentDetailsTest extends TestCase
 {
@@ -85,7 +86,20 @@ class PaymentDetailsTest extends TestCase
         $this->assertSame(true, $paymentDetails->rejectedReason->isEmpty());
         $this->assertSame(false, $paymentDetails->settlementAmount->isEmpty());
 
-        // TODO: requestedAt timestamp with microseconds
-        // TODO: fpsSettlementDate simple date
+        $this->assertTrue($paymentDetails->requestedAtCarbon instanceof Carbon);
+        $this->assertSame(808000, $paymentDetails->requestedAtCarbon->micro);
+        $this->assertSame(
+            '2018-01-05T16:58:24+00:00',
+            $paymentDetails->requestedAtCarbon->timezone('UTC')->toRfc3339String()
+        );
+
+        $this->assertSame(
+            '2018-01-05T00:00:00+00:00',
+            $paymentDetails->fpsSettlementDateCarbon->toRfc3339String()
+        );
+        $this->assertSame(
+            '2018-01-05',
+            $paymentDetails->fpsSettlementDateCarbon->toDateString()
+        );
     }
 }

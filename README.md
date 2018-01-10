@@ -109,14 +109,14 @@ $status = $paymentDetails->status;
 $status = $paymentDetails->getProperty('status');
 ```
 
-The nested data will in turn be instiated as value objects:
+The nested data will in turn be instantiated as value objects:
 
 ```php
 $instructedCurrency = $paymentDetails->instructedAmount->currency;
 ```
 
 The `instructedAmount` will be a `CurrencyAndAmount` value object.
-That object contains a converter to `Money\Money`:
+That object supports conversion to `Money\Money`:
 
 ```php
 $money = $paymentDetails->instructedAmount->toMoney();

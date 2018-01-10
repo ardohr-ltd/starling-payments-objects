@@ -6,6 +6,8 @@ namespace Consilience\Starling\Payments\Response;
  * Details of a single payment that has been sent or received
  */
 
+use Carbon\Carbon;
+
 class PaymentDetails
 {
     use HydratableTrait;
@@ -13,16 +15,16 @@ class PaymentDetails
     /**
      * @var string
      */
-    const DIRECTION_INBOUND = 'INBOUND';
-    const DIRECTION_OUTBOUND = 'OUTBOUND';
+    const DIRECTION_INBOUND     = 'INBOUND';
+    const DIRECTION_OUTBOUND    = 'OUTBOUND';
 
     /**
      * @var string
      */
-    const STATUS_PENDING = 'PENDING';
-    const STATUS_ACCEPTED = 'ACCEPTED';
-    const STATUS_REJECTED = 'REJECTED';
-    const STATUS_REVERSED = 'REVERSED';
+    const STATUS_PENDING    = 'PENDING';
+    const STATUS_ACCEPTED   = 'ACCEPTED';
+    const STATUS_REJECTED   = 'REJECTED';
+    const STATUS_REVERSED   = 'REVERSED';
 
     /**
      * @var string
@@ -202,5 +204,22 @@ class PaymentDetails
     protected function setReturnDetails(array $data)
     {
         $this->returnDetails = PaymentReturnDetails::fromData($data);
+    }
+
+    /**
+     * @return Carbon the requestedAt as a Carbon object, with timezone preserved.
+     */
+    public function getRequestedAtCarbon()
+    {
+        return Carbon::parse($this->requestedAt);
+    }
+
+    /**
+     * @return Carbon the fpsSettlementDate as a Carbon object, UTC with 00:00 time.
+     */
+    public function getFpsSettlementDateCarbon()
+    {
+        // The ! prefix forces the time to zero.
+        return Carbon::createFromFormat('!Y-m-d', $this->fpsSettlementDate, 'UTC');
     }
 }
