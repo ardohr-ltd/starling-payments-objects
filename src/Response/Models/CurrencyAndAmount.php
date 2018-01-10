@@ -10,7 +10,7 @@ use Consilience\Starling\Payments\HydratableTrait;
 use Money\Money;
 use Money\Currency;
 
-class CurrencyAndAmount
+class CurrencyAndAmount implements \JsonSerializable
 {
     use HydratableTrait;
 

@@ -34,6 +34,17 @@ class PaymentDetailsTest extends TestCase
         $paymentDetails = PaymentDetails::fromArray($paymentDetailsData);
 
         $this->assertTrue($paymentDetails instanceof PaymentDetails);
+
+        // Now make sure each object can be JSON serialized, then
+        // reconstructed, and be unchanged.
+
+        $reconstructed = PaymentDetails::fromArray(
+            json_decode(json_encode($paymentDetails), true)
+        );
+
+        $this->assertEquals($paymentDetails, $reconstructed);
+
+        $this->assertTrue($reconstructed instanceof PaymentDetails);
     }
 
     /**
@@ -125,7 +136,5 @@ class PaymentDetailsTest extends TestCase
         $this->assertFalse($paymentDetails->isOutbound());
         $this->assertTrue($paymentDetails->isAccepted());
         $this->assertFalse($paymentDetails->isRejected());
-
-        //var_dump($paymentDetails);
     }
 }

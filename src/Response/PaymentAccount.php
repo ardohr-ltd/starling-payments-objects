@@ -10,7 +10,7 @@ use Consilience\Starling\Payments\HydratableTrait;
 use Carbon\Carbon;
 use Consilience\Starling\Payments\Response\Models\Balance;
 
-class PaymentAccount
+class PaymentAccount implements \JsonSerializable
 {
     use HydratableTrait;
 

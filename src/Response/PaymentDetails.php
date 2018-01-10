@@ -13,7 +13,7 @@ use Consilience\Starling\Payments\Response\Models\CurrencyAndAmount;
 use Consilience\Starling\Payments\Response\Models\PaymentDetailsAccount;
 use Consilience\Starling\Payments\Response\Models\PaymentRejectionReason;
 
-class PaymentDetails
+class PaymentDetails implements \JsonSerializable
 {
     use HydratableTrait;
 

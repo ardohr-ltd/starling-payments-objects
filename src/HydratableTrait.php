@@ -8,6 +8,9 @@ namespace Consilience\Starling\Payments;
 
 trait HydratableTrait
 {
+    /**
+     * @var bool true if any properties have been set.
+     */
     protected $_hydratableIsSet = false;
 
     /**
@@ -52,7 +55,7 @@ trait HydratableTrait
             ));
         }
 
-        if (! $this->_hydratableIsSet) {
+        if (! $this->_hydratableIsSet && $value !== null) {
             $this->_hydratableIsSet = true;
         }
     }
@@ -103,5 +106,35 @@ trait HydratableTrait
     public function __get($name)
     {
         return $this->getProperty($name);
+    }
+
+    /**
+     * For JSON serialization (for storing and logging), the properties
+     * are returned here in order. Any properties starting with an underscoe
+     * are considered internal to the functioning of the class and not
+     * serializable data.
+     *
+     * All response messages and models must implement \JsonSerializable for
+     * this to work.
+     *
+     * @return mixed
+     */
+    public function jsonSerialize()
+    {
+        // Start with all properties.
+
+        $properties = get_object_vars($this);
+
+        // Exclude any properties with a name that starts with an undersore.
+
+        $properties = array_filter(
+            $properties,
+            function ($key) {
+                return strpos($key, '_') !== 0;
+            },
+            ARRAY_FILTER_USE_KEY
+        );
+
+        return $properties;
     }
 }

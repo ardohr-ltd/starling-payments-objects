@@ -10,7 +10,7 @@ use Consilience\Starling\Payments\HydratableTrait;
 use Consilience\Starling\Payments\Response\Models\ErrorDetail;
 use Consilience\Starling\Payments\Response\Collections\ErrorDetailCollection;
 
-class CreatePaymentAccountResponse
+class CreatePaymentAccountResponse implements \JsonSerializable
 {
     use HydratableTrait;
 

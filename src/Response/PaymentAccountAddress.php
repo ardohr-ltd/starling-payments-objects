@@ -10,7 +10,7 @@ namespace Consilience\Starling\Payments\Response;
 use Consilience\Starling\Payments\HydratableTrait;
 use Carbon\Carbon;
 
-class PaymentAccountAddress
+class PaymentAccountAddress implements \JsonSerializable
 {
     use HydratableTrait;
 

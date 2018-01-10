@@ -11,7 +11,7 @@ namespace Consilience\Starling\Payments\Response\Models;
 
 use Consilience\Starling\Payments\HydratableTrait;
 
-class PaymentDetailsAccount
+class PaymentDetailsAccount implements \JsonSerializable
 {
     use HydratableTrait;
 
