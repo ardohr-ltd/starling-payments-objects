@@ -3,7 +3,7 @@
 namespace Consilience\Starling\Payments\Response;
 
 /**
- * Details of a single payment that has been sent or received
+ * Details of a single payment that has been sent or received.
  */
 
 use Consilience\Starling\Payments\HydratableTrait;

@@ -1,0 +1,14 @@
+{
+  "paymentBusinessUid": "e43d3060-2c83-4bb9-ac8c-c627b9c45f8b",
+  "accountUid": "5347699b-d205-4272-aac6-ee9d7f2dddcf",
+  "accountHolder": "AGENCY",
+  "createdAt": "2017-06-05T11:47:58.801Z",
+  "description": "This is our main account",
+  "balance": {
+    "currencyAndAmount": {
+      "currency": "GBP",
+      "minorUnits": 11223344
+    },
+    "balanceState": "IN_CREDIT"
+  }
+}
