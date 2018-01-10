@@ -1,0 +1,8 @@
+{
+  "paymentBusinessUid": "e2afe359-e73f-4fe1-858a-089e6811d13c",
+  "name": "Starling Bank",
+  "netSenderCap": {
+    "currency": "GBP",
+    "minorUnits": 11223344
+  }
+}

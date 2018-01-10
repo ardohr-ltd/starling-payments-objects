@@ -180,9 +180,9 @@ The following response messages and all lower-level models, are supported:
 * Response\PaymentDetails
 * Response\CreatePaymentAccountAddressResponse
 * Response\ChangeStatusPaymentAccountAddressResponse
+* Response\BusinessInformation
 
 TODO:
 
-* Response\BusinessInformation
 * and the webhook server requests
 
