@@ -1,0 +1,11 @@
+{
+  "addressUid": "b185dec8-43c1-4db1-a590-e50d2ca3779f",
+  "accountNumber": "11223344",
+  "sortCode": "608371",
+  "success": true,
+  "errors": [
+    {
+      "message": "Something about the validation error"
+    }
+  ]
+}
