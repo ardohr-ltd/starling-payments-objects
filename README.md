@@ -174,5 +174,15 @@ The following response messages and all lower-level models, are supported:
 * Response\PaymentAccount
 * Response\CreatePaymentAccountResponse
 * Response\DomesticPaymentInstructionResponse
+* Response\PaymentAccountAddress
+* Response\PaymentOriginatingOverseasInstructionResponse
+* Response\PaymentReturnResponse
 * Response\PaymentDetails
+
+TODO:
+
+* Response\CreatePaymentAccountAddressResponse
+* Response\ChangeStatusPaymentAccountAddressResponse
+* Response\BusinessInformation
+* and the webhook server requests
 
