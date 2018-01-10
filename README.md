@@ -179,10 +179,10 @@ The following response messages and all lower-level models, are supported:
 * Response\PaymentReturnResponse
 * Response\PaymentDetails
 * Response\CreatePaymentAccountAddressResponse
+* Response\ChangeStatusPaymentAccountAddressResponse
 
 TODO:
 
-* Response\ChangeStatusPaymentAccountAddressResponse
 * Response\BusinessInformation
 * and the webhook server requests
 

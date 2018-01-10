@@ -47,6 +47,9 @@ class CreatePaymentAccountAddressResponseTest extends TestCase
         $this->assertTrue($createPaymentAccountAddressResponse instanceof CreatePaymentAccountAddressResponse);
         $this->assertTrue($createPaymentAccountAddressResponse->isSuccess());
 
+        $this->assertSame('11223344', $createPaymentAccountAddressResponse->accountNumber);
+        $this->assertSame('608371', $createPaymentAccountAddressResponse->sortCode);
+
         $this->assertSame(1, $createPaymentAccountAddressResponse->errors->count());
         $this->assertSame(
             'Something about the validation error',

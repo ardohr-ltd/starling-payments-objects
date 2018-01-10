@@ -1,0 +1,9 @@
+{
+  "addressUid": "b185dec8-43c1-4db1-a590-e50d2ca3779f",
+  "success": true,
+  "errors": [
+    {
+      "message": "Something about the validation error"
+    }
+  ]
+}
