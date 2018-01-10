@@ -136,6 +136,33 @@ object(Money\Money)#28 (2) {
 ```
 
 Other objects will have similar conversions.
+For example, the date and datetime properties can be fetched by appending
+the name with `Carbon` to return a `Carbon` object for the date.
+For example:
+
+```php
+var_dump($paymentDetails->fpsSettlementDate);
+
+/*
+string(10) "2018-01-05"
+*/
+
+var_dump($paymentDetails->fpsSettlementDateCarbon);
+
+/*
+object(Carbon\Carbon)#32 (3) {
+  ["date"]=>
+  string(26) "2018-01-05 00:00:00.000000"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+*/
+```
+
+Datetime objects (i.e. timestamps) will be in the timezone they were supplied in.
+Date objects (without a time) will be returned in the UTC timezone.
 
 That's kind of the wqay it's going, and progress will be documented
 here as it happens.
