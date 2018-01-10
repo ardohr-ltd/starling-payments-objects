@@ -172,5 +172,6 @@ here as it happens.
 The following response messages and all lower-level models, are supported:
 
 * Response\PaymentAccount
+* Response\CreatePaymentAccountResponse
 * Response\PaymentDetails
 
