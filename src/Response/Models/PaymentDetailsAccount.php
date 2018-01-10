@@ -1,6 +1,6 @@
 <?php
 
-namespace Consilience\Starling\Payments\Response;
+namespace Consilience\Starling\Payments\Response\Models;
 
 /**
  * Details of the account sending or receiving the payment.
@@ -8,6 +8,8 @@ namespace Consilience\Starling\Payments\Response;
  * but typically will be a pair of either sortCode & accountNumber, bic &
  * iban or bic & accountNumber.
  */
+
+use Consilience\Starling\Payments\HydratableTrait;
 
 class PaymentDetailsAccount
 {

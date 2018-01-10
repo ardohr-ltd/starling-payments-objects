@@ -36,13 +36,18 @@ class PaymentDetailsTest extends TestCase
         $this->assertTrue($paymentDetails instanceof PaymentDetails);
     }
 
+    /**
+     * Supply a page of 100 payments from a sandbox account.
+     * All UUIDs have been replaced with new ones, but otherwise
+     * this is data direct from the API.
+     */
     public function paymentDetailsDataProvider()
     {
-        $dataJson = file_get_contents(__DIR__ . '/../data/paymentDetails.json');
-        $dataItems = json_decode($dataJson, true);
+        $dataItems = $this->readDataFile('paymentDetails.json');
 
         // Each paymentDetail needs to be wrapped in an additional array, so it
         // is treated as a single array parameter for the caller.
+        // This is just the way PHPUnit works.
 
         $data = [];
 
@@ -53,15 +58,18 @@ class PaymentDetailsTest extends TestCase
         return $data;
     }
 
+    /**
+     * Read and return the contents of a test JSON file.
+     */
+    protected function readDataFile($filename)
+    {
+        $dataJson = file_get_contents(__DIR__ . '/../data/' . $filename);
+        return json_decode($dataJson, true);
+    }
+
     public function testAccepted()
     {
-        // Get all 100 recards.
-
-        $allRecords = $this->paymentDetailsDataProvider();
-
-        // Take just the first.
-
-        $data = $allRecords[0][0];
+        $data = $this->readDataFile('paymentDetailsAccepted.json');
 
         $paymentDetails = PaymentDetails::fromArray($data);
 
@@ -87,12 +95,16 @@ class PaymentDetailsTest extends TestCase
         $this->assertSame(false, $paymentDetails->settlementAmount->isEmpty());
 
         $this->assertTrue($paymentDetails->requestedAtCarbon instanceof Carbon);
+
+        // Make sure we get the micro seconds.
         $this->assertSame(808000, $paymentDetails->requestedAtCarbon->micro);
+
         $this->assertSame(
             '2018-01-05T16:58:24+00:00',
             $paymentDetails->requestedAtCarbon->timezone('UTC')->toRfc3339String()
         );
 
+        // Dates will be put into the UTC timezone.
         $this->assertSame(
             '2018-01-05T00:00:00+00:00',
             $paymentDetails->fpsSettlementDateCarbon->toRfc3339String()
@@ -101,5 +113,19 @@ class PaymentDetailsTest extends TestCase
             '2018-01-05',
             $paymentDetails->fpsSettlementDateCarbon->toDateString()
         );
+    }
+
+    public function testReturned()
+    {
+        $data = $this->readDataFile('paymentDetailsReturned.json');
+
+        $paymentDetails = PaymentDetails::fromArray($data);
+
+        $this->assertTrue($paymentDetails->isInbound());
+        $this->assertFalse($paymentDetails->isOutbound());
+        $this->assertTrue($paymentDetails->isAccepted());
+        $this->assertFalse($paymentDetails->isRejected());
+
+        //var_dump($paymentDetails);
     }
 }

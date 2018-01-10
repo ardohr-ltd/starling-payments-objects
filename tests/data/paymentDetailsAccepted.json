@@ -1,0 +1,38 @@
+{
+"paymentBusinessUid":"2cac516f-ab31-4727-8256-a6f735248115",
+"paymentAccountUid":"885a253b-b302-42cd-94e0-3a50d67d76bb",
+"addressUid":"ecc10f46-edef-4bcc-a340-a5808ebd1fa5",
+"paymentUid":"fb0e591d-c903-4298-a18d-d3a066855a40",
+"sourceAccount":{
+ "sortCode":"010150",
+ "accountNumber":"37765814",
+ "accountName":"Payment Account"
+},
+"destinationAccount":{
+ "sortCode":"203002",
+ "accountNumber":"00004588",
+ "accountName":"Recipient Account"
+},
+"direction":"OUTBOUND",
+"settlementAmount":{
+ "currency":"GBP",
+ "minorUnits":999
+},
+"instructedAmount":{
+ "currency":"GBP",
+ "minorUnits":999
+},
+"reference":"issueRedirection",
+"status":"ACCEPTED",
+"rejectedReason":[
+
+],
+"requestedAt":"2018-01-05T16:58:24.808Z",
+"returnDetails":[
+
+],
+"type":"SIP",
+"settlementCycleUid":"13124d5e-f847-4cd6-bf46-6511c9c850d5",
+"fpsSettlementCycleId":"CYCLE_003",
+"fpsSettlementDate":"2018-01-05"
+}

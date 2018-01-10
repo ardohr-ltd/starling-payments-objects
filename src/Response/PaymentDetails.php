@@ -6,7 +6,12 @@ namespace Consilience\Starling\Payments\Response;
  * Details of a single payment that has been sent or received
  */
 
+use Consilience\Starling\Payments\HydratableTrait;
 use Carbon\Carbon;
+use Consilience\Starling\Payments\Response\Models\PaymentReturnDetails;
+use Consilience\Starling\Payments\Response\Models\CurrencyAndAmount;
+use Consilience\Starling\Payments\Response\Models\PaymentDetailsAccount;
+use Consilience\Starling\Payments\Response\Models\PaymentRejectionReason;
 
 class PaymentDetails
 {
@@ -145,6 +150,38 @@ class PaymentDetails
      * Faster payment scheme settlement date.
      */
     protected $fpsSettlementDate;
+
+    /**
+     * @return bool true if this is an inbound payment.
+     */
+    public function isInbound()
+    {
+        return $this->direction === static::DIRECTION_INBOUND;
+    }
+
+    /**
+     * @return bool true if this is an outbound payment.
+     */
+    public function isOutbound()
+    {
+        return $this->direction === static::DIRECTION_OUTBOUND;
+    }
+
+    /**
+     * @return bool true if the payment was rejected.
+     */
+    public function isRejected()
+    {
+        return $this->status === static::STATUS_REJECTED;
+    }
+
+    /**
+     * @return bool true if the payment was accepted.
+     */
+    public function isAccepted()
+    {
+        return $this->status === static::STATUS_ACCEPTED;
+    }
 
     /**
      * Create a model and set the property.

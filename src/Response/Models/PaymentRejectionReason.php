@@ -1,10 +1,12 @@
 <?php
 
-namespace Consilience\Starling\Payments\Response;
+namespace Consilience\Starling\Payments\Response\Models;
 
 /**
  * Reason the payment was rejected, only present when the status is ‘REJECTED’.
  */
+
+use Consilience\Starling\Payments\HydratableTrait;
 
 class PaymentRejectionReason
 {
