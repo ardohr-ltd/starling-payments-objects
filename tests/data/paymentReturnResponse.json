@@ -1,0 +1,9 @@
+{
+  "paymentUid": "d8770f9d-4ee9-4cc1-86e1-83c26bcfcc4f",
+  "success": true,
+  "errors": [
+    {
+      "message": "Something about the validation error"
+    }
+  ]
+}
