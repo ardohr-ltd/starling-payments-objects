@@ -184,10 +184,10 @@ The following response messages and all lower-level models, are supported:
 * Response\SettlementCycle
 * ServerRequest\FpsSchemeNotification
 * ServerRequest\FpsInboundNotification
+* ServerRequest\FpsRedirectionNotification
+* ServerRequest\FpsReversalNotification (no tests yet)
 
 TODO:
 
-* ServerRequest\FpsReversalNotification
-* ServerRequest\FpsRedirectionNotification
 * ServerRequest\AccountTransactionNotification
 
