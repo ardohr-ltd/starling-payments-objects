@@ -10,10 +10,7 @@ use Consilience\Starling\Payments\HydratableTrait;
 use Consilience\Starling\Payments\ModelInterface;
 
 use Carbon\Carbon;
-use Consilience\Starling\Payments\Response\Models\PaymentReturnDetails;
 use Consilience\Starling\Payments\Response\Models\CurrencyAndAmount;
-use Consilience\Starling\Payments\Response\Models\PaymentDetailsAccount;
-use Consilience\Starling\Payments\Response\Models\PaymentRejectionReason;
 
 class FpsReversalNotification implements ModelInterface
 {
@@ -22,7 +19,7 @@ class FpsReversalNotification implements ModelInterface
     /**
      * @var string the endpoint path the webhook will be delivered on.
      */
-    protected $_endpoint = 'fps-inbound';
+    protected $_endpoint = 'fps-reversal';
 
     /**
      * @var string UUID
