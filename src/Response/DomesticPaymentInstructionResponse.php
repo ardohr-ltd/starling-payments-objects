@@ -7,10 +7,12 @@ namespace Consilience\Starling\Payments\Response;
  */
 
 use Consilience\Starling\Payments\HydratableTrait;
+use Consilience\Starling\Payments\ModelInterface;
+
 use Consilience\Starling\Payments\Response\Models\ErrorDetail;
 use Consilience\Starling\Payments\Response\Collections\ErrorDetailCollection;
 
-class DomesticPaymentInstructionResponse implements \JsonSerializable
+class DomesticPaymentInstructionResponse implements ModelInterface
 {
     use HydratableTrait;
 

@@ -7,18 +7,14 @@ namespace Consilience\Starling\Payments\Response;
  */
 
 use Consilience\Starling\Payments\HydratableTrait;
+use Consilience\Starling\Payments\ModelInterface;
+
 use Consilience\Starling\Payments\Response\Models\CurrencyAndAmount;
 use Carbon\Carbon;
 
-class SettlementCycle implements \JsonSerializable
+class SettlementCycle implements ModelInterface
 {
     use HydratableTrait;
-
-    /**
-     * @var string
-     */
-    const DIRECTION_INBOUND     = 'INBOUND';
-    const DIRECTION_OUTBOUND    = 'OUTBOUND';
 
     /**
      * @var string UUID

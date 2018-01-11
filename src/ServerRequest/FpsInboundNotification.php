@@ -1,9 +1,11 @@
 <?php
 
-namespace Consilience\Starling\Payments\Response;
+namespace Consilience\Starling\Payments\ServerRequest;
 
 /**
- * Details of a single payment that has been sent or received.
+ * Web hook payload for a notification received from the faster payment scheme.
+ * Notification received from the faster payments scheme, typically this is a
+ * change in the status of the payment such as an acknowledgement or rejection.
  */
 
 use Consilience\Starling\Payments\HydratableTrait;
@@ -15,9 +17,21 @@ use Consilience\Starling\Payments\Response\Models\CurrencyAndAmount;
 use Consilience\Starling\Payments\Response\Models\PaymentDetailsAccount;
 use Consilience\Starling\Payments\Response\Models\PaymentRejectionReason;
 
-class PaymentDetails implements ModelInterface
+class FpsInboundNotification implements ModelInterface
 {
     use HydratableTrait;
+
+    /**
+     * @var string the endpoint path the webhook will be delivered on.
+     */
+    protected $_endpoint = 'fps-inbound';
+
+    /**
+     * @var string UUID
+     * Unique identifier of the payment within the scheme.
+     * 42 character string, in which the last five characters are almost always spaces.
+     */
+    protected $fpid;
 
     /**
      * @var string UUID
@@ -54,12 +68,6 @@ class PaymentDetails implements ModelInterface
     protected $destinationAccount;
 
     /**
-     * @var string One of static::DIRECTION_*
-     * The direction of the payment.
-     */
-    protected $direction;
-
-    /**
      * @var CurrencyAndAmount
      */
     protected $settlementAmount;
@@ -69,6 +77,7 @@ class PaymentDetails implements ModelInterface
      */
     protected $instructedAmount;
 
+
     /**
      * @var string
      * Reference included with the payment.
@@ -76,22 +85,10 @@ class PaymentDetails implements ModelInterface
     protected $reference;
 
     /**
-     * @var string one of static::PAYMENT_STATUS_*
-     * Status of the payment request.
-     */
-    protected $status;
-
-    /**
-     * @var PaymentRejectionReason
-     * Reason the payment was rejected, only present when the status is ‘REJECTED’.
-     */
-    protected $rejectedReason;
-
-    /**
      * @var string date-time e.g. 2017-06-05T11:47:58.801Z
-     * Date and time that the request for payment was originally received.
+     * Date and time that the payment was originally received.
      */
-    protected $requestedAt;
+    protected $receivedAt;
 
     /**
      * @var PaymentReturnDetails
@@ -121,38 +118,6 @@ class PaymentDetails implements ModelInterface
      * Faster payment scheme settlement date.
      */
     protected $fpsSettlementDate;
-
-    /**
-     * @return bool true if this is an inbound payment.
-     */
-    public function isInbound()
-    {
-        return $this->direction === static::DIRECTION_INBOUND;
-    }
-
-    /**
-     * @return bool true if this is an outbound payment.
-     */
-    public function isOutbound()
-    {
-        return $this->direction === static::DIRECTION_OUTBOUND;
-    }
-
-    /**
-     * @return bool true if the payment was rejected.
-     */
-    public function isRejected()
-    {
-        return $this->status === static::PAYMENT_STATUS_REJECTED;
-    }
-
-    /**
-     * @return bool true if the payment was accepted.
-     */
-    public function isAccepted()
-    {
-        return $this->status === static::PAYMENT_STATUS_ACCEPTED;
-    }
 
     /**
      * Create a model and set the property.
@@ -195,31 +160,11 @@ class PaymentDetails implements ModelInterface
     }
 
     /**
-     * Create a model and set the property.
-     *
-     * @param array $data source data to hydrate the model
-     */
-    protected function setRejectedReason(array $data)
-    {
-        $this->rejectedReason = PaymentRejectionReason::fromArray($data);
-    }
-
-    /**
-     * Create a model and set the property.
-     *
-     * @param array $data source data to hydrate the model
-     */
-    protected function setReturnDetails(array $data)
-    {
-        $this->returnDetails = PaymentReturnDetails::fromArray($data);
-    }
-
-    /**
      * @return Carbon the requestedAt as a Carbon object, with timezone preserved.
      */
-    public function getRequestedAtCarbon()
+    public function getReceivedAtCarbon()
     {
-        return Carbon::parse($this->requestedAt);
+        return Carbon::parse($this->receivedAt);
     }
 
     /**

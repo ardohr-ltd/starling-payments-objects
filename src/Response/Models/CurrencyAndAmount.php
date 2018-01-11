@@ -7,10 +7,12 @@ namespace Consilience\Starling\Payments\Response\Models;
  */
 
 use Consilience\Starling\Payments\HydratableTrait;
+use Consilience\Starling\Payments\ModelInterface;
+
 use Money\Money;
 use Money\Currency;
 
-class CurrencyAndAmount implements \JsonSerializable
+class CurrencyAndAmount implements ModelInterface
 {
     use HydratableTrait;
 

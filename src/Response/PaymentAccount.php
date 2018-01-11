@@ -7,18 +7,14 @@ namespace Consilience\Starling\Payments\Response;
  */
 
 use Consilience\Starling\Payments\HydratableTrait;
+use Consilience\Starling\Payments\ModelInterface;
+
 use Carbon\Carbon;
 use Consilience\Starling\Payments\Response\Models\Balance;
 
-class PaymentAccount implements \JsonSerializable
+class PaymentAccount implements ModelInterface
 {
     use HydratableTrait;
-
-    /**
-     * @var string
-     */
-    const ACCOUNT_HOLDER_PAYMENT_BUSINESS = 'PAYMENT_BUSINESS';
-    const ACCOUNT_HOLDER_ = 'AGENCY';
 
     /**
      * @var string UUID

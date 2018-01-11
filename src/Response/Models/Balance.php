@@ -7,16 +7,11 @@ namespace Consilience\Starling\Payments\Response\Models;
  */
 
 use Consilience\Starling\Payments\HydratableTrait;
+use Consilience\Starling\Payments\ModelInterface;
 
-class Balance
+class Balance implements ModelInterface
 {
     use HydratableTrait;
-
-    /**
-     * @var string
-     */
-    const BALANCE_STATE_IN_CREDIT = 'IN_CREDIT';
-    const BALANCE_STATE_OVERDRAWN = 'OVERDRAWN';
 
     /**
      * @var CurrencyAndAmount

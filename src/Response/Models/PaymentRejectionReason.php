@@ -7,8 +7,9 @@ namespace Consilience\Starling\Payments\Response\Models;
  */
 
 use Consilience\Starling\Payments\HydratableTrait;
+use Consilience\Starling\Payments\ModelInterface;
 
-class PaymentRejectionReason implements \JsonSerializable
+class PaymentRejectionReason implements ModelInterface
 {
     use HydratableTrait;
 

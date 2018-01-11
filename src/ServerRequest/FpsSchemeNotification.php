@@ -9,25 +9,13 @@ namespace Consilience\Starling\Payments\ServerRequest;
  */
 
 use Consilience\Starling\Payments\HydratableTrait;
+use Consilience\Starling\Payments\ModelInterface;
+
 use Carbon\Carbon;
 
-class FpsSchemeNotification implements \JsonSerializable
+class FpsSchemeNotification implements ModelInterface
 {
     use HydratableTrait;
-
-    /**
-     * @var string
-     */
-    const FPS_CYCLE_001     = 'CYCLE_001';
-    const FPS_CYCLE_002     = 'CYCLE_002';
-    const FPS_CYCLE_003     = 'CYCLE_003';
-    const FPS_CYCLE_UNKNOWN = 'CYCLE_UNKNOWN';
-
-    /**
-     * @var string
-     */
-    const PAYMENT_STATE_ACCEPTED = 'ACCEPTED';
-    const PAYMENT_STATE_REJECTED = 'REJECTED';
 
     /**
      * @var string the endpoint path the webhook will be delivered on.

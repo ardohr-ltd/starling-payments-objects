@@ -8,19 +8,13 @@ namespace Consilience\Starling\Payments\Response;
  */
 
 use Consilience\Starling\Payments\HydratableTrait;
+use Consilience\Starling\Payments\ModelInterface;
+
 use Carbon\Carbon;
 
-class PaymentAccountAddress implements \JsonSerializable
+class PaymentAccountAddress implements ModelInterface
 {
     use HydratableTrait;
-
-    /**
-     * @var string
-     */
-    const STATUS_ACTIVE         = 'ACTIVE';
-    const STATUS_INSTRUCT_ONLY  = 'INSTRUCT_ONLY';
-    const STATUS_CLOSED         = 'CLOSED';
-    const STATUS_DECEASED       = 'DECEASED';
 
     /**
      * @var string UUID
@@ -66,7 +60,7 @@ class PaymentAccountAddress implements \JsonSerializable
     protected $accountName;
 
     /**
-     * @var string one of static::STATUS_*
+     * @var string one of static::ADDRESS_STATUS_*
      * Status of the payment request.
      */
     protected $status;
@@ -77,5 +71,13 @@ class PaymentAccountAddress implements \JsonSerializable
     public function getCreatedAtCarbon()
     {
         return Carbon::parse($this->createdAt);
+    }
+
+    /**
+     * @return bool true if the account address is active.
+     */
+    public function isActive()
+    {
+        return $this->status === static::ADDRESS_STATUS_ACTIVE;
     }
 }

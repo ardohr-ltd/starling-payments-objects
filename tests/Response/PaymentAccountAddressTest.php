@@ -49,5 +49,7 @@ class PaymentAccountAddressTest extends TestCase
             '2017-06-05T11:47:58+00:00',
             $paymentAccountAddress->createdAtCarbon->toRfc3339String()
         );
+
+        $this->assertTrue($paymentAccountAddress->isActive());
     }
 }
