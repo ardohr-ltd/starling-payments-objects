@@ -181,8 +181,12 @@ The following response messages and all lower-level models, are supported:
 * Response\CreatePaymentAccountAddressResponse
 * Response\ChangeStatusPaymentAccountAddressResponse
 * Response\BusinessInformation
+* ServerRequest\FpsSchemeNotification (no tests yet)
 
 TODO:
 
-* and the webhook server requests
+* ServerRequest\FpsInboundNotification
+* ServerRequest\FpsReversalNotification
+* ServerRequest\FpsRedirectionNotification
+* ServerRequest\AccountTransactionNotification
 
