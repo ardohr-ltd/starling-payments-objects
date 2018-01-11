@@ -9,6 +9,7 @@ namespace Consilience\Starling\Payments\ServerRequest;
  */
 
 use Consilience\Starling\Payments\HydratableTrait;
+use Carbon\Carbon;
 
 class FpsSchemeNotification implements \JsonSerializable
 {
@@ -23,9 +24,15 @@ class FpsSchemeNotification implements \JsonSerializable
     const FPS_CYCLE_UNKNOWN = 'CYCLE_UNKNOWN';
 
     /**
+     * @var string
+     */
+    const PAYMENT_STATE_ACCEPTED = 'ACCEPTED';
+    const PAYMENT_STATE_REJECTED = 'REJECTED';
+
+    /**
      * @var string the endpoint path the webhook will be delivered on.
      */
-    protected $endpoint = 'fps-scheme';
+    protected $_endpoint = 'fps-scheme';
 
     /**
      * @var string UUID
@@ -38,6 +45,12 @@ class FpsSchemeNotification implements \JsonSerializable
      * Unique identifier of the payment the notification relates to.
      */
     protected $paymentUid;
+
+    /**
+     * @var string once of static::PAYMENT_STATE_*
+     * Current state of the payment in the FPS scheme.
+     */
+    protected $paymentState;
 
     /**
      * @var string length 0 to 8
@@ -57,6 +70,13 @@ class FpsSchemeNotification implements \JsonSerializable
      * to (where known).
      */
     protected $fpid;
+
+    /**
+     * @var string UUID
+     * Unique identifier of the settlement cycle the payment has been assigned
+     * to (where known).
+     */
+    protected $settlementCycleUid;
 
     /**
      * @var string one of static::FPS_CYCLE_*

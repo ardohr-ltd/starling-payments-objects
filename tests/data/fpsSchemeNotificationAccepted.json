@@ -1,0 +1,12 @@
+{
+	"notificationUid":"43185647-246e-47f5-bdd2-8f7d9e68c8e0",
+	"paymentUid":"61ea82c1-cb90-4c1e-8713-3125dab8c38e",
+	"paymentState":"ACCEPTED",
+	"reasonCode":"0000",
+	"reasonDescription":"Accept",
+	"fpid":"K8M3P2MEE3D7N7JXD61020180105826040057     ",
+	"settlementCycleUid":"13124d5e-f847-4cd6-bf46-6511c9c850d5",
+	"settlementCycle":"CYCLE_003",
+	"settlementDate":"2018-01-05",
+	"timestamp":"2018-01-05T17:03:02.986Z"
+}
