@@ -181,6 +181,7 @@ The following response messages and all lower-level models, are supported:
 * Response\CreatePaymentAccountAddressResponse
 * Response\ChangeStatusPaymentAccountAddressResponse
 * Response\BusinessInformation
+* Response\SettlementCycle
 * ServerRequest\FpsSchemeNotification
 
 TODO:

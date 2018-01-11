@@ -26,7 +26,7 @@ class BusinessInformation implements \JsonSerializable
     protected $name;
 
     /**
-     * @var 	CurrencyAndAmount
+     * @var CurrencyAndAmount
      */
     protected $netSenderCap;
 

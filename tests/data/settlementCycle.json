@@ -1,0 +1,12 @@
+{
+  "settlementCycleUid": "d73ae6a9-adff-476a-82fa-dcf1266a9b75",
+  "startTime": "2017-06-10T07:00:00.000Z",
+  "endTime": "2017-06-10T12:59:59.999Z",
+  "netPayment": {
+    "currency": "GBP",
+    "minorUnits": 11223344
+  },
+  "netDirection": "OUTBOUND",
+  "inboundCount": 52,
+  "outboundCount": 1354
+}
