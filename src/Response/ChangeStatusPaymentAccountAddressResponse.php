@@ -48,7 +48,7 @@ class ChangeStatusPaymentAccountAddressResponse implements ModelInterface
     {
         $errorDetailCollection = new ErrorDetailCollection();
 
-        foreach($value as $errorDetailData) {
+        foreach ($value as $errorDetailData) {
             $errorDetailCollection->push(new ErrorDetail($errorDetailData));
         }
 

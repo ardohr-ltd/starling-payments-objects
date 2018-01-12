@@ -24,6 +24,7 @@ class FpsInboundNotification implements ModelInterface
     /**
      * @var string the endpoint path the webhook will be delivered on.
      */
+    // phpcs:ignore
     protected $_endpoint = 'fps-inbound';
 
     /**

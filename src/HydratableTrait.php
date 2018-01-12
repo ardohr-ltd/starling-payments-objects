@@ -11,6 +11,7 @@ trait HydratableTrait
     /**
      * @var bool true if any properties have been set.
      */
+    // phpcs:ignore
     protected $_hydratableIsSet = false;
 
     /**

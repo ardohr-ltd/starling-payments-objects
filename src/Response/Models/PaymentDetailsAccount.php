@@ -12,7 +12,6 @@ namespace Consilience\Starling\Payments\Response\Models;
 use Consilience\Starling\Payments\HydratableTrait;
 use Consilience\Starling\Payments\ModelInterface;
 
-
 class PaymentDetailsAccount implements ModelInterface
 {
     use HydratableTrait;
