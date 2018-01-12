@@ -65,4 +65,10 @@ interface ModelInterface extends \JsonSerializable
      */
     const BALANCE_STATE_IN_CREDIT = 'IN_CREDIT';
     const BALANCE_STATE_OVERDRAWN = 'OVERDRAWN';
+
+    /**
+     * @var string
+     */
+    const SOURCE_BACS   = 'BACS';
+    const SOURCE_CHAPS  = 'CHAPS';
 }

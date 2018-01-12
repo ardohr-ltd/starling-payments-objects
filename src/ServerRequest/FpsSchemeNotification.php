@@ -79,7 +79,7 @@ class FpsSchemeNotification implements ModelInterface
     protected $settlementDate;
 
     /**
-     * @var string date format YYYY-MM-DD
+     * @var string date-time format 2017-06-05T11:47:58.801Z
      * Timestamp of the notification from the scheme.
      */
     protected $timestamp;
