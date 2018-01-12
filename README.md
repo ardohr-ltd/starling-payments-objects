@@ -186,5 +186,5 @@ The following response messages and all lower-level models, are supported:
 * ServerRequest\FpsInboundNotification
 * ServerRequest\FpsRedirectionNotification
 * ServerRequest\FpsReversalNotification (no tests yet)
-* ServerRequest\AccountTransactionNotification
+* ServerRequest\AccountTransactionNotification (no tests yet)
 
