@@ -13,7 +13,7 @@ use Consilience\Starling\Payments\ModelInterface;
 use Carbon\Carbon;
 use Consilience\Starling\Payments\Response\Models\PaymentReturnDetails;
 use Consilience\Starling\Payments\Response\Models\CurrencyAndAmount;
-use Consilience\Starling\Payments\Response\Models\PaymentDetailsAccount;
+use Consilience\Starling\Payments\Response\Models\AccountNumberAndSortCode;
 use Consilience\Starling\Payments\Response\Models\PaymentRejectionReason;
 
 class FpsRedirectionNotification implements ModelInterface
@@ -39,12 +39,12 @@ class FpsRedirectionNotification implements ModelInterface
     protected $paymentUid;
 
     /**
-     * @var PaymentDetailsAccount
+     * @var AccountNumberAndSortCode
      */
     protected $originalAccount;
 
     /**
-     * @var PaymentDetailsAccount
+     * @var AccountNumberAndSortCode
      */
     protected $redirectedAccount;
 
@@ -55,7 +55,7 @@ class FpsRedirectionNotification implements ModelInterface
      */
     protected function setOriginalAccount(array $data)
     {
-        $this->originalAccount = PaymentDetailsAccount::fromArray($data);
+        $this->originalAccount = AccountNumberAndSortCode::fromArray($data);
     }
 
     /**
@@ -65,6 +65,6 @@ class FpsRedirectionNotification implements ModelInterface
      */
     protected function setRedirectedAccount(array $data)
     {
-        $this->redirectedAccount = PaymentDetailsAccount::fromArray($data);
+        $this->redirectedAccount = AccountNumberAndSortCode::fromArray($data);
     }
 }

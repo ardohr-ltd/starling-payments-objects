@@ -52,7 +52,7 @@ class FpsRedirectionNotificationTest extends TestCase
             $fpsRedirectionNotification->redirectedAccount->accountNumber
         );
         $this->assertSame(
-            '{"notificationUid":"efecec3b-69a5-4b8d-b188-b43f98668caf","paymentUid":"fb0e591d-c903-4298-a18d-d3a066855a40","originalAccount":{"sortCode":"203002","accountNumber":"00004588","bic":null,"iban":null,"accountName":null},"redirectedAccount":{"sortCode":"166051","accountNumber":"99991913","bic":null,"iban":null,"accountName":null}}',
+            '{"notificationUid":"efecec3b-69a5-4b8d-b188-b43f98668caf","paymentUid":"fb0e591d-c903-4298-a18d-d3a066855a40","originalAccount":{"accountNumber":"00004588","sortCode":"203002"},"redirectedAccount":{"accountNumber":"99991913","sortCode":"166051"}}',
             json_encode($fpsRedirectionNotification)
         );
     }
