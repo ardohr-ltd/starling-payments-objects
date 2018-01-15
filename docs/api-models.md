@@ -22,7 +22,7 @@ Those checked have been implemented.
 ## Requests
 
 * [ ] CreatePaymentAccountAddressRequest
-* [ ] CreatePaymentAccountRequest
+* [x] CreatePaymentAccountRequest
 * [ ] PaymentReturnRequest
 * [ ] PaymentOriginatingOverseasInstructionRequest
 * [ ] DomesticPaymentInstructionRequest
