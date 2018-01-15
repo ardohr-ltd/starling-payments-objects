@@ -3,7 +3,7 @@
 namespace Consilience\Starling\Payments\Request;
 
 /**
- * Retrieved payment business information.
+ * Request for a new payment account.
  */
 
 use Consilience\Starling\Payments\HydratableTrait;
@@ -21,7 +21,7 @@ class CreatePaymentAccountRequest implements ModelInterface
     /**
      * @var maximum length of the description property.
      */
-    const MAX_DESCRIPTION_LENGTH = 100;
+    const DESCRIPTION_MAX_LENGTH = 100;
 
     /**
      *
@@ -51,7 +51,7 @@ class CreatePaymentAccountRequest implements ModelInterface
      */
     protected function setDescription($value)
     {
-        $this->assertString($value, 0, static::MAX_DESCRIPTION_LENGTH);
+        $this->assertString($value, 0, static::DESCRIPTION_MAX_LENGTH);
 
         $this->description = $value;
     }

@@ -3,7 +3,7 @@
 namespace Consilience\Starling\Payments\Request;
 
 /**
- * Details of the payment service business accessing the Starling APIs.
+ *
  */
 
 use PHPUnit\Framework\TestCase;

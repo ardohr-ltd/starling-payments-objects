@@ -82,9 +82,10 @@ trait ValidationTrait
      * @value mixed the value being checked
      * @param int $minLegth
      * @param int $maxLegth null for no check
+     * @param string $pattern regular expression (preg) to validate against
      * @throws UnexpectedValueException
      */
-    public function assertString($value, $minLength = 0, $maxLength = null)
+    public function assertString($value, $minLength = 0, $maxLength = null, $pattern = null)
     {
         if (! is_string($value)) {
             throw new UnexpectedValueException(sprintf(
@@ -95,7 +96,7 @@ trait ValidationTrait
 
         if ($minLength !== null && strlen($value) < $minLength) {
             throw new UnexpectedValueException(sprintf(
-                'Minimum length of string is %d; %d givem',
+                'Minimum length of string is %d; actual length is %d',
                 $minLength,
                 strlen($value)
             ));
@@ -103,9 +104,17 @@ trait ValidationTrait
 
         if ($maxLength !== null && strlen($value) > $maxLength) {
             throw new UnexpectedValueException(sprintf(
-                'Maximum length of string is %d; %d givem',
+                'Maximum length of string is %d; actual length is %d',
                 $maxLength,
                 strlen($value)
+            ));
+        }
+
+        if ($pattern !== null && ! preg_match($pattern, $value)) {
+            throw new UnexpectedValueException(sprintf(
+                'String "%s" fails regular expression check "%s"',
+                $value,
+                $pattern
             ));
         }
     }
