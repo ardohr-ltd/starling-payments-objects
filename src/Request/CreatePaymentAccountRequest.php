@@ -7,6 +7,7 @@ namespace Consilience\Starling\Payments\Request;
  */
 
 use Consilience\Starling\Payments\HydratableTrait;
+use Consilience\Starling\Payments\ValidationTrait;
 use Consilience\Starling\Payments\ModelInterface;
 use UnexpectedValueException;
 
@@ -15,6 +16,7 @@ use Consilience\Starling\Payments\Response\Models\CurrencyAndAmount;
 class CreatePaymentAccountRequest implements ModelInterface
 {
     use HydratableTrait;
+    use ValidationTrait;
 
     /**
      * @var maximum length of the description property.
@@ -49,20 +51,7 @@ class CreatePaymentAccountRequest implements ModelInterface
      */
     protected function setDescription($value)
     {
-        if (! is_string($value)) {
-            throw new UnexpectedValueException(sprintf(
-                'Description must be a string; %s given',
-                gettype($value)
-            ));
-        }
-
-        if (strlen($value) > static::MAX_DESCRIPTION_LENGTH) {
-            throw new UnexpectedValueException(sprintf(
-                'Description maximum length is %d; %d givem',
-                static::MAX_DESCRIPTION_LENGTH,
-                strlen($value)
-            ));
-        }
+        $this->assertString($value, 0, static::MAX_DESCRIPTION_LENGTH);
 
         $this->description = $value;
     }
