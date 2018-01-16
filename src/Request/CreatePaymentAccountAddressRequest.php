@@ -74,7 +74,9 @@ class CreatePaymentAccountAddressRequest implements ModelInterface
     protected $accountNumber;
 
     /**
-     *
+     * @param string $accountName
+     * @param string $sortCode
+     * @param string $accountNumber optional, usually left blank (see docs)
      */
     public function __construct($accountName, $sortCode, $accountNumber = null)
     {

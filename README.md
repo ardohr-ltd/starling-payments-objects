@@ -5,8 +5,14 @@ This is a package for PHP 5.6 to stuff the response body messages
 from requests to the
 [Starling Payments API](https://developer.starlingbank.com/payments/docs#operations-tag-Web_Hook)
 
-This package is veruy much in development, and will intially cover just
+This package is in development, and has intially covered just
 the response messages I am particularly interested in.
+Objects to generate the request message bodies are being added now.
+The intention is to extend that to include the full PSR-7 message (body,
+headers, relative path). To support path generation, the contextual
+UUIDs (e.g. account ID when creating an account address) may need to be
+added, so the constructors will change.
+
 Additional objects can be submitted by Pull Request if they are something you
 would like to see.
 

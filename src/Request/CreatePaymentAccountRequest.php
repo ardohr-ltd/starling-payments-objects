@@ -24,7 +24,8 @@ class CreatePaymentAccountRequest implements ModelInterface
     const DESCRIPTION_MAX_LENGTH = 100;
 
     /**
-     *
+     * @param string $description
+     * @param string $accountHolder
      */
     public function __construct($description, $accountHolder)
     {

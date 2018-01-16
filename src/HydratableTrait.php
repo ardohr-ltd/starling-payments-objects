@@ -7,6 +7,7 @@ namespace Consilience\Starling\Payments;
  */
 
 use UnexpectedValueException;
+use Exception;
 
 trait HydratableTrait
 {
@@ -109,6 +110,26 @@ trait HydratableTrait
     public function __get($name)
     {
         return $this->getProperty($name);
+    }
+
+    /**
+     * Get the value of a property, using a getter if one exists.
+     *
+     * @param string $name the name of the property in lower camelCase
+     * @return mixed
+     */
+    public function hasProperty($name)
+    {
+        // We don't want to throw exceptions on just checking if a
+        // property exists.
+
+        try {
+            $value = $this->getProperty($name);
+        } catch (Exception $e) {
+            $value = null;
+        }
+
+        return $value !== null;
     }
 
     /**

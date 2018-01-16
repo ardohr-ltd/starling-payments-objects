@@ -21,8 +21,9 @@ Those checked have been implemented.
 
 ## Requests
 
-* [x] CreatePaymentAccountAddressRequest
 * [x] CreatePaymentAccountRequest
+* [x] CreatePaymentAccountAddressRequest
+* [ ] ChangeStatusPaymentAccountAddressRequest
 * [ ] PaymentReturnRequest
 * [ ] PaymentOriginatingOverseasInstructionRequest
 * [ ] DomesticPaymentInstructionRequest
