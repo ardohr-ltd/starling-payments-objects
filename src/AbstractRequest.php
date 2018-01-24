@@ -92,7 +92,7 @@ abstract class AbstractRequest implements ModelInterface
 
         // Some messages do not have bodies.
         $body = $this->jsonSerialize() !== null ? json_encode($this) : null;
-
+dump($body);
         return new \GuzzleHttp\Psr7\Request(
             $this->getProperty('httpMethod'),
             $this->getUri(),

@@ -10,36 +10,35 @@ use Consilience\Starling\Payments\Request\Model\Endpoint;
 use Consilience\Starling\Payments\AbstractRequest;
 use UnexpectedValueException;
 
-use Consilience\Starling\Payments\Request\Model\CreatePaymentAccountAddressRequest;
-
-class CreatePaymentAccountAddress extends AbstractRequest
+class UpdatePaymentAccountAddressStatus extends AbstractRequest
 {
     /**
      * @inherit
      */
-    protected $pathTemplate = 'account/{accountUid}/address/{addressUid}';
+    protected $pathTemplate = 'account/{accountUid}/address/{addressUid}/status';
 
     protected $httpMethod = 'PUT';
 
     protected $accountUid;
     protected $addressUid;
-    protected $createPaymentAccountAddressRequest;
+    protected $status;
 
     /**
      * @param string $paymentBusinessUid
      * @param string $accountUid the accound to create the address for
      * @param string $addressUid the new UID to assign to the address
+     * @param string $status
      */
     public function __construct(
         Endpoint $endpoint,
         $accountUid,
         $addressUid,
-        CreatePaymentAccountAddressRequest $createPaymentAccountAddressRequest
+        $status
     ) {
         $this->setEndpoint($endpoint);
         $this->setAccountUid($accountUid);
         $this->setAddressUid($addressUid);
-        $this->setCreatePaymentAccountAddressRequest($createPaymentAccountAddressRequest);
+        $this->setStatus($status);
     }
 
     /**
@@ -61,16 +60,21 @@ class CreatePaymentAccountAddress extends AbstractRequest
     /**
      * @param CreatePaymentAccountAddressRequest
      */
-    protected function setAddressUid(CreatePaymentAccountAddressRequest $value)
+    protected function setStatus($value)
     {
-        $this->createPaymentAccountAddressRequest = $value;
+        // One of the valid address ststuses.
+        $this->assertInConstantList('ADDRESS_STATUS_', $value);
+
+        $this->status = $value;
     }
 
     /**
-     * @return CreatePaymentAccountAddressRequest for serializing
+     * @return array for serializing
      */
     public function jsonSerialize()
     {
-        return $this->getProperty('createPaymentAccountAddressRequest');
+        return [
+            'status' => $this->getProperty('status')
+        ];
     }
 }
