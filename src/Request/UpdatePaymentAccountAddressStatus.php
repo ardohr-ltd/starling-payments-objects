@@ -58,7 +58,7 @@ class UpdatePaymentAccountAddressStatus extends AbstractRequest
     }
 
     /**
-     * @param CreatePaymentAccountAddressRequest
+     * @param string
      */
     protected function setStatus($value)
     {
