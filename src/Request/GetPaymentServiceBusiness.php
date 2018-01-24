@@ -17,7 +17,7 @@ class GetPaymentServiceBusiness extends AbstractRequest
      */
     protected $pathTemplate = '';
 
-    protected $method = 'GET';
+    protected $httpMethod = 'GET';
 
     /**
      * @param string $paymentBusinessUid

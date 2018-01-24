@@ -17,7 +17,7 @@ class GetSettlementCycleCurrent extends AbstractRequest
      */
     protected $pathTemplate = 'settlement/current';
 
-    protected $method = 'GET';
+    protected $httpMethod = 'GET';
 
     /**
      * @param string $paymentBusinessUid

@@ -17,7 +17,7 @@ class GetSettlementCycle extends AbstractRequest
      */
     protected $pathTemplate = 'settlement/cycle/{settlementCycleUid}';
 
-    protected $method = 'GET';
+    protected $httpMethod = 'GET';
 
     protected $settlementCycleUid;
 

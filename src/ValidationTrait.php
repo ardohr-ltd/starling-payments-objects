@@ -118,4 +118,27 @@ trait ValidationTrait
             ));
         }
     }
+
+    /**
+     * A page number is a positive integer, 1 or higher.
+     *
+     * @value mixed the value being checked
+     * @throws UnexpectedValueException
+     */
+    public function assertPageNumber($value)
+    {
+        if (filter_var($value, FILTER_VALIDATE_INT) === false) {
+            throw new UnexpectedValueException(sprintf(
+                'Page number must be an intege; "%s" is not',
+                (string)$value
+            ));
+        }
+
+        if (intval($value) < 1) {
+            throw new UnexpectedValueException(sprintf(
+                'Page number must be 1 or more; %d is not',
+                intval($value)
+            ));
+        }
+    }
 }

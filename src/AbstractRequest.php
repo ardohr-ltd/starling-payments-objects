@@ -46,6 +46,11 @@ abstract class AbstractRequest implements ModelInterface
     ];
 
     /**
+     * @var array a list of supported query parameters
+     */
+    protected $supportedQuery = [];
+
+    /**
      * Get the path to the service, to be appended to the root path.
      * Variable placeholders are substituted.
      *
@@ -81,19 +86,36 @@ abstract class AbstractRequest implements ModelInterface
      */
     public function getRequestMessage()
     {
-        // TODO: allow the query to be passed in, validated etc.
-        $uri = $this->getProperty('endpoint')->getUrl($this->getServicePath(), []);
-
         // Set the default headers.
         // The signing middleware will add more headers.
         $headers = $this->getProperty('httpHeaders');
 
+        // Some messages do not have bodies.
+        $body = $this->jsonSerialize() !== null ? json_encode($this) : null;
+
         return new \GuzzleHttp\Psr7\Request(
             $this->getProperty('httpMethod'),
-            $uri,
+            $this->getUri(),
             $headers,
-            json_encode($this)
+            $body
         );
+    }
+
+    public function getUri()
+    {
+        // Check for any query parameters that may be supported,
+        // and collect any together that are not set.
+
+        $query = [];
+        foreach ($this->supportedQuery as $queryName) {
+            $queryValue = $this->getProperty($queryName);
+
+            if ($queryValue !== null) {
+                $query[$queryName] = (string)$queryValue;
+            }
+        }
+
+        return $this->getProperty('endpoint')->getUrl($this->getServicePath(), $query);
     }
 
     /**
@@ -110,5 +132,13 @@ abstract class AbstractRequest implements ModelInterface
     protected function setHttpHeaders(array $value)
     {
         $this->httpHeaders = $value;
+    }
+
+    /**
+     * @return null an empty body by default
+     */
+    public function jsonSerialize()
+    {
+        return;
     }
 }

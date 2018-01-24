@@ -10,25 +10,27 @@ use Consilience\Starling\Payments\Request\Model\Endpoint;
 use Consilience\Starling\Payments\AbstractRequest;
 use UnexpectedValueException;
 
-class GetPaymentAccount extends AbstractRequest
+class GetPaymentAccountAddress extends AbstractRequest
 {
     /**
      * @inherit
      */
-    protected $pathTemplate = 'account/{accountUid}';
+    protected $pathTemplate = 'account/{accountUid}/address/{addressUid}';
 
     protected $httpMethod = 'GET';
 
     protected $accountUid;
+    protected $addressUid;
 
     /**
      * @param string $paymentBusinessUid
      * @param string $accountUid the accound to retrieve
      */
-    public function __construct(Endpoint $endpoint, $accountUid)
+    public function __construct(Endpoint $endpoint, $accountUid, $addressUid)
     {
         $this->setEndpoint($endpoint);
         $this->setAccountUid($accountUid);
+        $this->setAddressUid($addressUid);
     }
 
     /**
@@ -37,5 +39,13 @@ class GetPaymentAccount extends AbstractRequest
     protected function setAccountUid($value)
     {
         $this->accountUid = $value;
+    }
+
+    /**
+     * @param string UUID
+     */
+    protected function setAddressUid($value)
+    {
+        $this->addressUid = $value;
     }
 }

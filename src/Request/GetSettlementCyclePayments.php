@@ -17,17 +17,22 @@ class GetSettlementCyclePayments extends AbstractRequest
      */
     protected $pathTemplate = 'settlement/payments/{settlementCycleUid}';
 
-    protected $method = 'GET';
+    protected $httpMethod = 'GET';
+
+    protected $supportedQuery = ['page'];
 
     protected $settlementCycleUid;
+
+    protected $page;
 
     /**
      * @param string $paymentBusinessUid
      */
-    public function __construct(Endpoint $endpoint, $settlementCycleUid)
+    public function __construct(Endpoint $endpoint, $settlementCycleUid, $page = null)
     {
         $this->setEndpoint($endpoint);
         $this->setSettlementCycleUid($settlementCycleUid);
+        $this->setPage($page);
     }
 
     /**
@@ -36,5 +41,18 @@ class GetSettlementCyclePayments extends AbstractRequest
     protected function setSettlementCycleUid($value)
     {
         $this->settlementCycleUid = $value;
+    }
+
+    /**
+     * @param string UUID
+     */
+    protected function setPage($value)
+    {
+        // Must be a positive integer, 1 or higher, but is option (null allowed)
+        if ($value !== null) {
+            $this->assertPageNumber($value);
+        }
+
+        $this->page = $value;
     }
 }
