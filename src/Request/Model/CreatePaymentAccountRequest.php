@@ -24,16 +24,6 @@ class CreatePaymentAccountRequest implements ModelInterface
     const DESCRIPTION_MAX_LENGTH = 100;
 
     /**
-     * @param string $description
-     * @param string $accountHolder
-     */
-    public function __construct($description, $accountHolder)
-    {
-        $this->setDescription($description);
-        $this->setAccountHolder($accountHolder);
-    }
-
-    /**
      * @var string length 0 to 100
      * Description of the account, for internal reference.
      */
@@ -44,6 +34,16 @@ class CreatePaymentAccountRequest implements ModelInterface
      * Organisation name.
      */
     protected $accountHolder;
+
+    /**
+     * @param string $description
+     * @param string $accountHolder
+     */
+    public function __construct($description, $accountHolder)
+    {
+        $this->setDescription($description);
+        $this->setAccountHolder($accountHolder);
+    }
 
     /**
      * Description of the account, for internal reference.
