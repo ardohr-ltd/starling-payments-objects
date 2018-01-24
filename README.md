@@ -175,7 +175,7 @@ here as it happens.
 
 ## Supported Messages
 
-The following response messages and all lower-level models, are supported:
+The following response messages are supported:
 
 * Response\PaymentAccount
 * Response\CreatePaymentAccountResponse
@@ -188,6 +188,20 @@ The following response messages and all lower-level models, are supported:
 * Response\ChangeStatusPaymentAccountAddressResponse
 * Response\BusinessInformation
 * Response\SettlementCycle
+
+The response messages use the following lower-level models:
+
+* Response\Models\AccountNumberAndSortCode
+* Response\Models\CurrencyAndAmount
+* Response\Models\PaymentDetailsAccount
+* Response\Models\PaymentReturnDetails
+* Response\Models\Balance
+* Response\Models\ErrorDetail
+* Response\Models\PaymentRejectionReason
+
+* Request\CreatePaymentAccountRequest
+* Request\CreatePaymentAccountAddressRequest
+
 * ServerRequest\FpsSchemeNotification
 * ServerRequest\FpsInboundNotification
 * ServerRequest\FpsRedirectionNotification

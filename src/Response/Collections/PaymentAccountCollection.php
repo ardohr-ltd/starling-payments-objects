@@ -6,9 +6,9 @@ namespace Consilience\Starling\Payments\Response\Collections;
  *
  */
 
-use Consilience\Starling\Payments\Response\Models\ErrorDetail;
+use Consilience\Starling\Payments\Response\PaymentAccount;
 
-class ErrorDetailCollection extends AbstractCollection
+class PaymentAccountCollection extends AbstractCollection
 {
     /**
      * @param mixed $item
@@ -16,7 +16,7 @@ class ErrorDetailCollection extends AbstractCollection
      */
     protected function hasExpectedStrictType($item)
     {
-        return $item instanceof ErrorDetail;
+        return $item instanceof PaymentAccount;
     }
 
     /**
@@ -24,6 +24,6 @@ class ErrorDetailCollection extends AbstractCollection
      */
     protected function createInstance(array $data)
     {
-        return new ErrorDetail($data);
+        return new PaymentAccount($data);
     }
 }

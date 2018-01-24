@@ -46,12 +46,6 @@ class DomesticPaymentInstructionResponse implements ModelInterface
      */
     protected function setErrors(array $value)
     {
-        $errorDetailCollection = new ErrorDetailCollection();
-
-        foreach ($value as $errorDetailData) {
-            $errorDetailCollection->push(new ErrorDetail($errorDetailData));
-        }
-
-        $this->errors = $errorDetailCollection;
+        $this->errors = new ErrorDetailCollection($value);
     }
 }

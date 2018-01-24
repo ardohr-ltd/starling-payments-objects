@@ -44,8 +44,12 @@ abstract class AbstractCollection implements
      */
     public function push($item)
     {
-        // TODO: here if we have an array, then we might want to
+        // If we have an array, then we might want to
         // create an object of the appropriate type.
+
+        if (is_array($item)) {
+            $item = $this->createInstance($item);
+        }
 
         $this->assertStrictType($item);
 
@@ -63,6 +67,13 @@ abstract class AbstractCollection implements
 
         return $data;
     }
+
+
+    /**
+     * @param array $data Data to instantiate an element in the collection.
+     * @return object
+     */
+    abstract protected function createInstance(array $data);
 
     /**
      * @return bool
