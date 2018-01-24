@@ -1,6 +1,6 @@
 <?php
 
-namespace Consilience\Starling\Payments\Request;
+namespace Consilience\Starling\Payments\Request\Model;
 
 /**
  *

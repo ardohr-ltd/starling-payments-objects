@@ -36,7 +36,9 @@ class CreatePaymentAccount extends GetPaymentAccount
         $this->createPaymentAccountRequest = $value;
     }
 
-
+    /**
+     * @return CreatePaymentAccountRequest object for serializing
+     */
     public function jsonSerialize()
     {
         return $this->getProperty('createPaymentAccountRequest');
