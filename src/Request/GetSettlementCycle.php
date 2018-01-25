@@ -6,7 +6,7 @@ namespace Consilience\Starling\Payments\Request;
  * Request to gets the details of a settlement cycle by unique identifier.
  */
 
-use Consilience\Starling\Payments\Request\Model\Endpoint;
+use Consilience\Starling\Payments\Request\Models\Endpoint;
 use Consilience\Starling\Payments\AbstractRequest;
 use UnexpectedValueException;
 

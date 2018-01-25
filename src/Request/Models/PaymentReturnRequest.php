@@ -1,6 +1,6 @@
 <?php
 
-namespace Consilience\Starling\Payments\Request\Model;
+namespace Consilience\Starling\Payments\Request\Models;
 
 /**
  * Request for a new payment account.
@@ -30,18 +30,6 @@ class PaymentReturnRequest implements ModelInterface
         $this->setPaymentUid($paymentUid);
         $this->setReference($reference);
         $this->setReason($reason);
-    }
-
-    /**
-     * Description of the account, for internal reference.
-     *
-     * @param string max length 100
-     */
-    protected function setDescription($value)
-    {
-        $this->assertString($value, 0, static::DESCRIPTION_MAX_LENGTH);
-
-        $this->description = $value;
     }
 
     /**

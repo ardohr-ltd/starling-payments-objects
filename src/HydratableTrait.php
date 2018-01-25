@@ -23,9 +23,7 @@ trait HydratableTrait
      */
     public function __construct(array $data = [])
     {
-        foreach ($data as $name => $value) {
-            $this->setProperty($name, $value);
-        }
+        $this->setFromArray($data);
     }
 
     /**
@@ -73,6 +71,18 @@ trait HydratableTrait
     public static function fromArray(array $data)
     {
         return new static($data);
+    }
+
+    /**
+     * Set properties from array data.
+     *
+     * @param array $data
+     */
+    protected function setFromArray(array $data = [])
+    {
+        foreach ($data as $name => $value) {
+            $this->setProperty($name, $value);
+        }
     }
 
     /**

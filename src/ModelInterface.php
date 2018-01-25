@@ -63,6 +63,13 @@ interface ModelInterface extends \JsonSerializable
     /**
      * @var string
      */
+    const TYPE_DOMESTIC_SIP = 'SIP';
+    const TYPE_DOMESTIC_SOP = 'SOP';
+    const TYPE_DOMESTIC_FDP = 'FDP';
+
+    /**
+     * @var string
+     */
     const BALANCE_STATE_IN_CREDIT = 'IN_CREDIT';
     const BALANCE_STATE_OVERDRAWN = 'OVERDRAWN';
 

@@ -6,10 +6,10 @@ namespace Consilience\Starling\Payments\Request;
  * Create a new payment account.
  */
 
-use Consilience\Starling\Payments\Request\Model\Endpoint;
+use Consilience\Starling\Payments\Request\Models\Endpoint;
 use Consilience\Starling\Payments\AbstractRequest;
 use UnexpectedValueException;
-use Consilience\Starling\Payments\Request\Model\CreatePaymentAccountRequest;
+use Consilience\Starling\Payments\Request\Models\CreatePaymentAccountRequest;
 
 class CreatePaymentAccount extends GetPaymentAccount
 {

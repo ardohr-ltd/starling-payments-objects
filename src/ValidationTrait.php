@@ -9,6 +9,9 @@ namespace Consilience\Starling\Payments;
 use UnexpectedValueException;
 use ReflectionClass;
 
+use Money\Currencies\ISOCurrencies;
+use Money\Currency;
+
 trait ValidationTrait
 {
     /**
@@ -138,6 +141,41 @@ trait ValidationTrait
             throw new UnexpectedValueException(sprintf(
                 'Page number must be 1 or more; %d is not',
                 intval($value)
+            ));
+        }
+    }
+
+    /**
+     * Assert a money minor unit (integer).
+     *
+     * @value mixed the value being checked
+     * @throws UnexpectedValueException
+     */
+    public function assertMinorUnit($value)
+    {
+        if (filter_var($value, FILTER_VALIDATE_INT) === false) {
+            throw new UnexpectedValueException(sprintf(
+                'Money Minor Unit must be an intege; "%s" is not',
+                (string)$value
+            ));
+        }
+    }
+
+    /**
+     * Assert value is a three-digit ISO 4217 currency code.
+     *
+     * @value mixed the value being checked
+     * @throws UnexpectedValueException
+     */
+    public function assertCurrencyCode($value)
+    {
+        $iso = new ISOCurrencies();
+        $currency = new Currency($value);
+
+        if (! $iso->contains($currency)) {
+            throw new UnexpectedValueException(sprintf(
+                'The code "%s" is not a valid currency code',
+                (string)$value
             ));
         }
     }

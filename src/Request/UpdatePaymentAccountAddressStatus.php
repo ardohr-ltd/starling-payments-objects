@@ -6,7 +6,7 @@ namespace Consilience\Starling\Payments\Request;
  * Request to get a single payment account.
  */
 
-use Consilience\Starling\Payments\Request\Model\Endpoint;
+use Consilience\Starling\Payments\Request\Models\Endpoint;
 use Consilience\Starling\Payments\AbstractRequest;
 use UnexpectedValueException;
 
@@ -62,7 +62,7 @@ class UpdatePaymentAccountAddressStatus extends AbstractRequest
      */
     protected function setStatus($value)
     {
-        // One of the valid address ststuses.
+        // One of the valid address statuses.
         $this->assertInConstantList('ADDRESS_STATUS_', $value);
 
         $this->status = $value;

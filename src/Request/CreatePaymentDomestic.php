@@ -3,30 +3,30 @@
 namespace Consilience\Starling\Payments\Request;
 
 /**
- * Returns a previously received inbound payment to the sender
- * with a given reason. If the payment received originated overseas,
- * the payment will be returned to the UK based instructing agent.
+ * Instructs a new domestic (within the UK) payment for an account,
+ * via an address assigned to the account.
  */
 
 use Consilience\Starling\Payments\Request\Models\Endpoint;
 use Consilience\Starling\Payments\AbstractRequest;
 use UnexpectedValueException;
 
-use Consilience\Starling\Payments\Request\Models\PaymentReturnRequest;
+use Consilience\Starling\Payments\Request\Models\DomesticPaymentInstructionRequest;
 
-class CreatePaymentReturn extends AbstractRequest
+class CreatePaymentDomestic extends AbstractRequest
 {
     /**
      * @inherit
      */
-    protected $pathTemplate = 'account/{accountUid}/address/{addressUid}/payment/{paymentUid}/return';
+    protected $pathTemplate = 'account/{accountUid}/address/{addressUid}/payment/{paymentUid}/domestic';
 
     protected $httpMethod = 'PUT';
 
     protected $accountUid;
     protected $addressUid;
     protected $paymentUid;
-    protected $paymentReturnRequest;
+
+    protected $domesticPaymentInstructionRequest;
 
     /**
      * @param string $paymentBusinessUid
@@ -38,13 +38,14 @@ class CreatePaymentReturn extends AbstractRequest
         $accountUid,
         $addressUid,
         $paymentUid,
-        PaymentReturnRequest $paymentReturnRequest
+        DomesticPaymentInstructionRequest $domesticPaymentInstructionRequest
     ) {
         $this->setEndpoint($endpoint);
         $this->setAccountUid($accountUid);
         $this->setAddressUid($addressUid);
         $this->setPaymentUid($paymentUid);
-        $this->setPaymentReturnRequest($paymentReturnRequest);
+
+        $this->setDomesticPaymentInstructionRequest($domesticPaymentInstructionRequest);
     }
 
     /**
@@ -72,18 +73,18 @@ class CreatePaymentReturn extends AbstractRequest
     }
 
     /**
-     * @param PaymentReturnRequest
+     * @param DomesticPaymentInstructionRequest
      */
-    protected function setPaymentReturnRequest(PaymentReturnRequest $value)
+    protected function setDomesticPaymentInstructionRequest(DomesticPaymentInstructionRequest $value)
     {
-        $this->paymentReturnRequest = $value;
+        $this->domesticPaymentInstructionRequest = $value;
     }
 
     /**
-     * @return PaymentReturnRequest for serializing
+     * @return DomesticPaymentInstructionRequest for serializing
      */
     public function jsonSerialize()
     {
-        return $this->getProperty('paymentReturnRequest');
+        return $this->getProperty('domesticPaymentInstructionRequest');
     }
 }

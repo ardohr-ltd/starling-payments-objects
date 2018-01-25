@@ -1,6 +1,6 @@
 <?php
 
-namespace Consilience\Starling\Payments\Request\Model;
+namespace Consilience\Starling\Payments\Request\Models;
 
 /**
  * Defines the endpoint for the gateway.
@@ -11,15 +11,8 @@ use Consilience\Starling\Payments\ValidationTrait;
 use Consilience\Starling\Payments\ModelInterface;
 use UnexpectedValueException;
 
-use GuzzleHttp\Psr7\build_query;
-
-// TODO: implements a request interface of some sort.
-// TODO: supports delivering of a PSR-7 request.
-// TODO: paymentBusinessUid
-// TODO: build the path (auto-substritution would be nice).
-// TODO: handling additional GET parameters, maybe filtering and validating those that are supported
-// TODO: define method
-// TODO: how does using a PSR-7 message interact with the authorisation signing? Hopefully it doesn't.
+use function GuzzleHttp\Psr7\build_query;
+use GuzzleHttp\Psr7\Uri;
 
 class Endpoint implements ModelInterface
 {
@@ -69,6 +62,12 @@ class Endpoint implements ModelInterface
         $this->instance = $value;
     }
 
+    /**
+     * Return the sandbox or production hostname, depending on what instance
+     * has been selected for this object.
+     *
+     * @return string the hostname
+     */
     public function getHost()
     {
         $instanceName = 'host' . ucfirst($this->getProperty('instance'));
@@ -79,9 +78,7 @@ class Endpoint implements ModelInterface
      * Piece the parts of the URL template together and replace the
      * placeholder fields with values from the matching getters.
      *
-     * TOOD: return a PSR-8 URI object, built from the parts.
-     *
-     * @return string the full URL
+     * @return Uri PSR-7 Uri object
      */
     public function getUrl($servicePath = '', $query = [])
     {
@@ -107,15 +104,15 @@ class Endpoint implements ModelInterface
             $template
         );
 
-        $uri = new \GuzzleHttp\Psr7\Uri();
+        $uri = new Uri();
 
         $uri = $uri
-            ->withScheme('https')
+            ->withScheme($this->scheme)
             ->withPath($path)
             ->withHost($this->host);
 
         if (! empty($query)) {
-            $uri = $uri->withQuery(\GuzzleHttp\Psr7\build_query($query));
+            $uri = $uri->withQuery(build_query($query));
         }
 
         return $uri;

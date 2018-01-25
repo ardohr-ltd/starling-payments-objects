@@ -10,7 +10,7 @@ use Consilience\Starling\Payments\HydratableTrait;
 use Consilience\Starling\Payments\ValidationTrait;
 use Consilience\Starling\Payments\ModelInterface;
 
-use Consilience\Starling\Payments\Request\Model\Endpoint;
+use Consilience\Starling\Payments\Request\Models\Endpoint;
 
 abstract class AbstractRequest implements ModelInterface
 {
@@ -86,19 +86,41 @@ abstract class AbstractRequest implements ModelInterface
      */
     public function getRequestMessage()
     {
+        return new \GuzzleHttp\Psr7\Request(
+            $this->getMethod(),
+            $this->getUri(),
+            $this->getHeaders(),
+            $this->getBody()
+        );
+    }
+
+    /**
+     * @var string the HTTP method that will be used.
+     */
+    public function getMethod()
+    {
+        return $this->getProperty('httpMethod');
+    }
+
+    /**
+     * @var array the headers that will be send by default; others will be added when signing.
+     */
+    public function getHeaders()
+    {
         // Set the default headers.
         // The signing middleware will add more headers.
-        $headers = $this->getProperty('httpHeaders');
 
+        return $this->getProperty('httpHeaders');
+    }
+
+    /**
+     * @var string full message body.
+     */
+    public function getBody()
+    {
         // Some messages do not have bodies.
-        $body = $this->jsonSerialize() !== null ? json_encode($this) : null;
-dump($body);
-        return new \GuzzleHttp\Psr7\Request(
-            $this->getProperty('httpMethod'),
-            $this->getUri(),
-            $headers,
-            $body
-        );
+
+        return $this->jsonSerialize() !== null ? json_encode($this) : '';
     }
 
     public function getUri()

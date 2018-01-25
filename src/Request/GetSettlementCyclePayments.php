@@ -6,7 +6,7 @@ namespace Consilience\Starling\Payments\Request;
  * Request to get information about all the payments made within a settlement cycle.
  */
 
-use Consilience\Starling\Payments\Request\Model\Endpoint;
+use Consilience\Starling\Payments\Request\Models\Endpoint;
 use Consilience\Starling\Payments\AbstractRequest;
 use UnexpectedValueException;
 

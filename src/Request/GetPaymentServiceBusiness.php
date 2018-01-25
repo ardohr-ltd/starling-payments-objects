@@ -6,7 +6,7 @@ namespace Consilience\Starling\Payments\Request;
  * Request to get the Payment Service Business details.
  */
 
-use Consilience\Starling\Payments\Request\Model\Endpoint;
+use Consilience\Starling\Payments\Request\Models\Endpoint;
 use Consilience\Starling\Payments\AbstractRequest;
 use UnexpectedValueException;
 

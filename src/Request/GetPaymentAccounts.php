@@ -6,7 +6,7 @@ namespace Consilience\Starling\Payments\Request;
  * Request to get a list of payment accounts.
  */
 
-use Consilience\Starling\Payments\Request\Model\Endpoint;
+use Consilience\Starling\Payments\Request\Models\Endpoint;
 use Consilience\Starling\Payments\AbstractRequest;
 use UnexpectedValueException;
 
