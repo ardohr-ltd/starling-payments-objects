@@ -80,7 +80,7 @@ interface ModelInterface extends \JsonSerializable
     const SOURCE_CHAPS  = 'CHAPS';
 
     /**
-     * @var string Used to set a reason when eturning a payment.
+     * @var string Used to set a reason when returning a payment.
      */
     const PAYMENT_RETURN_REASON_ACCOUNT_UNKNOWN = 'ACCOUNT_UNKNOWN';
     const PAYMENT_RETURN_REASON_ACCOUNT_CLOSED = 'ACCOUNT_CLOSED';
@@ -96,4 +96,16 @@ interface ModelInterface extends \JsonSerializable
     const PAYMENT_RETURN_REASON_ACCOUNT_TRANSFERRED = 'ACCOUNT_TRANSFERRED';
     const PAYMENT_RETURN_REASON_REASON_NOT_SPECIFIED = 'REASON_NOT_SPECIFIED';
     const PAYMENT_RETURN_REASON_OTHER = 'OTHER';
+
+    /**
+     * API accepted date format example: 2017-06-05T11:47:58.801Z
+     * ISO 8601 or "Zulu time" when expressing UTC "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+     * It is possible the API accepts all ISO 8601 formats, including with time
+     * offsets, but that is not documented and has not been tested.
+     * Make sure the time has been converted to UTC before using this format, for
+     * correct interpretation.
+     *
+     * @var string The "Zulu" datetime format used, with microseconds.
+     */
+    const ZULU_FORMAT = 'Y-m-d\TH:i:s.u\Z';
 }

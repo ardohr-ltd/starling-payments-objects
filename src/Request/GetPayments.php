@@ -9,6 +9,7 @@ namespace Consilience\Starling\Payments\Request;
 use Consilience\Starling\Payments\Request\Models\Endpoint;
 use Consilience\Starling\Payments\AbstractRequest;
 use UnexpectedValueException;
+use Carbon\Carbon;
 
 class GetPayments extends AbstractRequest
 {
@@ -82,19 +83,33 @@ class GetPayments extends AbstractRequest
     }
 
     /**
-     * @param TBC
+     * API accepted date format example: 2017-06-05T11:47:58.801Z
+     *
+     * @param Carbon|string
      */
     protected function setFrom($value)
     {
-        $this->from = $value;
+        if (is_string($value)) {
+            $value = Carbon::parse($value, 'UCT');
+        }
+
+        if ($value instanceof Carbon) {
+            $this->from = $value->tz('UCT')->format(static::ZULU_FORMAT);
+        }
     }
 
     /**
-     * @param TBC
+     * @param Carbon|string
      */
     protected function setTo($value)
     {
-        $this->to = $value;
+        if (is_string($value)) {
+            $value = Carbon::parse($value, 'UTC');
+        }
+
+        if ($value instanceof Carbon) {
+            $this->to = $value->tz('UCT')->format(static::ZULU_FORMAT);
+        }
     }
 
     /**

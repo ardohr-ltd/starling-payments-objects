@@ -156,6 +156,19 @@ abstract class AbstractRequest implements ModelInterface
         $this->httpHeaders = $value;
     }
 
+    public function withProperty($name, $value)
+    {
+        $currentValue = $this->getProperty($name);
+
+        if ($currentValue === $value) {
+            return $this;
+        }
+
+        $clone = clone $this;
+        $clone->setProperty($name, $value);
+        return $clone;
+    }
+
     /**
      * @return null an empty body by default
      */

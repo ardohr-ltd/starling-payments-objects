@@ -109,7 +109,7 @@ trait HydratableTrait
         }
 
         throw new \Exception(sprintf(
-            'Property "%s" does not exist in clsss %s.',
+            'Property "%s" does not exist in class %s.',
             $name,
             __CLASS__
         ));

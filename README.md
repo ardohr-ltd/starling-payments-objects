@@ -218,6 +218,8 @@ $endpoint = new Endpoint($myPaymentBusinessUid, Endpoint::INSTANCE_SANDBOX);
 $message = new GetPaymentServiceBusiness($endpoint);
 
 // $client is created to accept and send PSR-7 requests.
+// Note also the client must use a signing provider suitable for
+// the Starling Payments API.
 $response = $client->send($message->getRequest());
 
 // Create the response object from the HTTP respinse:
