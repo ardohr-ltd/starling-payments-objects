@@ -8,6 +8,7 @@ namespace Consilience\Starling\Payments;
 
 use UnexpectedValueException;
 use Exception;
+use Psr\Http\Message\ResponseInterface;
 
 trait HydratableTrait
 {
@@ -170,5 +171,23 @@ trait HydratableTrait
         );
 
         return $properties;
+    }
+
+    /**
+     * Instantiate from a PSR-7 response.
+     */
+    public static function fromResponse(ResponseInterface $response)
+    {
+        // We can only deal with JSON response bodies.
+
+        if ($response->getHeaderLine('Content-Type') === 'application/json') {
+            $bodyData = json_decode((string)$response->getBody(), true);
+            return new static($bodyData);
+        }
+
+        // We didn't get a JSON response, so must dig deeper into the response
+        // to see if we can build an error detail.
+
+        // TODO
     }
 }

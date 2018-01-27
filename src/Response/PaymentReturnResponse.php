@@ -8,4 +8,5 @@ namespace Consilience\Starling\Payments\Response;
 
 class PaymentReturnResponse extends DomesticPaymentInstructionResponse
 {
+    // TODO: not yet implemented by Starling.
 }

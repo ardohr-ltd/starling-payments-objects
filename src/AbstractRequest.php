@@ -84,7 +84,7 @@ abstract class AbstractRequest implements ModelInterface
      *
      * @return Psr\Http\Message\RequestInterface
      */
-    public function getRequestMessage()
+    public function getRequest()
     {
         return new \GuzzleHttp\Psr7\Request(
             $this->getMethod(),

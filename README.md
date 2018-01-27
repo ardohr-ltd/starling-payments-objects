@@ -103,6 +103,10 @@ $paymentDetails = PaymentDetails::fromArray($data);
 // or
 
 $paymentDetails = new PaymentDetails($data);
+
+// or
+
+$paymentDetails = PaymentDetails::fromResponse($psr7response);
 ```
 
 Each property can then be referenced in a number of ways:
@@ -175,21 +179,81 @@ here as it happens.
 
 ## Supported Messages
 
-The following response messages are supported:
+All request messages have namespace `Consilience\Starling\Payments\Request`.
 
-* Response\PaymentAccount
-* Response\CreatePaymentAccountResponse
-* Response\DomesticPaymentInstructionResponse
-* Response\PaymentAccountAddress
-* Response\PaymentOriginatingOverseasInstructionResponse
-* Response\PaymentReturnResponse
-* Response\PaymentDetails
-* Response\CreatePaymentAccountAddressResponse
-* Response\ChangeStatusPaymentAccountAddressResponse
-* Response\BusinessInformation
-* Response\SettlementCycle
+All response messages have namespace `Consilience\Starling\Payments\Response`.
 
-The response messages use the following lower-level models:
+The following table lists the requests you can send,
+and the object to hold the response.
+
+Request | Response
+-- | --
+CreatePaymentAccount | CreatePaymentAccountResponse
+CreatePaymentAccountAddress | CreatePaymentAccountAddressResponse
+CreatePaymentDomestic | DomesticPaymentInstructionResponse
+CreatePaymentReturn | PaymentReturnResponse
+GetPayment | PaymentDetails
+GetPaymentAccount | PaymentAccount
+GetPaymentAccountAddress | PaymentAccountAddress
+GetPaymentAccountAddresses | PaymentAccountAddressCollection
+GetPaymentAccounts | PaymentAccountCollection
+GetPaymentServiceBusiness | BusinessInformation
+GetPayments | PaymentDetailsCollection
+GetSettlementCycle | SettlementCycle
+GetSettlementCycleCurrent | SettlementCycle
+GetSettlementCycleLast | SettlementCycle
+GetSettlementCyclePayments | PaymentDetailsCollection
+UpdatePaymentAccountAddressStatus | ChangeStatusPaymentAccountAddressResponse
+TBC | PaymentOriginatingOverseasInstructionResponse
+
+To create a response object, you can instantiate it with either the response
+body data, or the reponse PSR-7 message. For example:
+
+```php
+use Consilience\Starling\Payments\Request\Models\Endpoint;
+use Consilience\Starling\Payments\Request\GetPaymentServiceBusiness;
+use Consilience\Starling\Payments\Response\BusinessInformation;
+
+$endpoint = new Endpoint($myPaymentBusinessUid, Endpoint::INSTANCE_SANDBOX);
+$message = new GetPaymentServiceBusiness($endpoint);
+
+// $client is created to accept and send PSR-7 requests.
+$response = $client->send($message->getRequest());
+
+// Create the response object from the HTTP respinse:
+$responseObject = BusinessInformation::fromResponse($response);
+
+var_dump($responseObject);
+
+/*
+object(Consilience\Starling\Payments\Response\BusinessInformation)#235 (4) {
+  ["paymentBusinessUid":protected]=>
+  string(36) "4b77e5aa-21ea-4852-8219-2f95d454a2d1"
+  ["name":protected]=>
+  string(14) "Credec Limited"
+  ["netSenderCap":protected]=>
+  object(Consilience\Starling\Payments\Response\Models\CurrencyAndAmount)#232 (3) {
+    ["currency":protected]=>
+    string(3) "GBP"
+    ["minorUnits":protected]=>
+    int(100000)
+  }
+}
+*/
+```
+
+Building the request objects may include any of the following classes
+in `Consilience\Starling\Payments\Request\Models`:
+
+* CreatePaymentAccountAddressRequest
+* CreatePaymentAccountRequest
+* CurrencyAndAmount
+* DomesticInstructionAccount
+* DomesticPaymentInstructionRequest
+* Endpoint
+* PaymentReturnRequest
+
+The response messages may contain the following lower-level models:
 
 * Response\Models\AccountNumberAndSortCode
 * Response\Models\CurrencyAndAmount
@@ -199,8 +263,7 @@ The response messages use the following lower-level models:
 * Response\Models\ErrorDetail
 * Response\Models\PaymentRejectionReason
 
-* Request\CreatePaymentAccountRequest
-* Request\CreatePaymentAccountAddressRequest
+Webhooks are supported:
 
 * ServerRequest\FpsSchemeNotification
 * ServerRequest\FpsInboundNotification

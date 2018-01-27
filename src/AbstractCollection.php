@@ -1,10 +1,12 @@
 <?php
 
-namespace Consilience\Starling\Payments\Response\Collections;
+namespace Consilience\Starling\Payments;
 
 /**
  *
  */
+
+use Psr\Http\Message\ResponseInterface;
 
 abstract class AbstractCollection implements
     \JsonSerializable,
@@ -134,5 +136,18 @@ abstract class AbstractCollection implements
     public function offsetGet($offset)
     {
         return isset($this->items[$offset]) ? $this->items[$offset] : null;
+    }
+
+    /**
+     * Instantiate from a PSR-7 response.
+     */
+    public static function fromResponse(ResponseInterface $response)
+    {
+        // We can only deal with JSON response bodies.
+
+        if ($response->getHeaderLine('Content-Type') === 'application/json') {
+            $bodyData = json_decode((string)$response->getBody(), true);
+            return new static($bodyData);
+        }
     }
 }

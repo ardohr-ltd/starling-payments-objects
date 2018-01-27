@@ -1,12 +1,13 @@
 <?php
 
-namespace Consilience\Starling\Payments\Response\Collections;
+namespace Consilience\Starling\Payments\Response;
 
 /**
  *
  */
 
 use Consilience\Starling\Payments\Response\PaymentDetails;
+use Consilience\Starling\Payments\AbstractCollection;
 
 class PaymentDetailsCollection extends AbstractCollection
 {

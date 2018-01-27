@@ -6,6 +6,7 @@ namespace Consilience\Starling\Payments\Response\Collections;
  *
  */
 
+use Consilience\Starling\Payments\AbstractCollection;
 use Consilience\Starling\Payments\Response\Models\ErrorDetail;
 
 class ErrorDetailCollection extends AbstractCollection
