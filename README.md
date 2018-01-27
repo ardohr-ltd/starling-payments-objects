@@ -228,15 +228,15 @@ var_dump($responseObject);
 /*
 object(Consilience\Starling\Payments\Response\BusinessInformation)#235 (4) {
   ["paymentBusinessUid":protected]=>
-  string(36) "4b77e5aa-21ea-4852-8219-2f95d454a2d1"
+  string(36) "4b5de5aa-7752-21ea-8219-2f948454a2d1"
   ["name":protected]=>
-  string(14) "Credec Limited"
+  string(14) "My Business Name"
   ["netSenderCap":protected]=>
   object(Consilience\Starling\Payments\Response\Models\CurrencyAndAmount)#232 (3) {
     ["currency":protected]=>
     string(3) "GBP"
     ["minorUnits":protected]=>
-    int(100000)
+    int(10000)
   }
 }
 */
