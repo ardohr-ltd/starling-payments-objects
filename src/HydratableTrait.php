@@ -51,7 +51,7 @@ trait HydratableTrait
             $this->$name = $value;
         } else {
             throw new \Exception(sprintf(
-                'Data item "%s" does not have a matching property in clsss %s.',
+                'Data item "%s" does not have a matching property in class %s.',
                 $name,
                 __CLASS__
             ));

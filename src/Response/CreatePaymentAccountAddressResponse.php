@@ -7,14 +7,13 @@ namespace Consilience\Starling\Payments\Response;
  */
 
 use Consilience\Starling\Payments\HydratableTrait;
+use Consilience\Starling\Payments\HasErrorsTrait;
 use Consilience\Starling\Payments\ModelInterface;
-
-use Consilience\Starling\Payments\Response\Models\ErrorDetail;
-use Consilience\Starling\Payments\Response\Collections\ErrorDetailCollection;
 
 class CreatePaymentAccountAddressResponse implements ModelInterface
 {
     use HydratableTrait;
+    use HasErrorsTrait;
 
     /**
      * @var string UUID
@@ -33,37 +32,4 @@ class CreatePaymentAccountAddressResponse implements ModelInterface
      * UK sort code allocated to the address.
      */
     protected $sortCode;
-
-    /**
-     * @var bool
-     * True if the method completed successfully.
-     */
-    protected $success;
-
-    /**
-     * @var collection of ErrorDetail
-     */
-    protected $errors;
-
-    /**
-     * @return bool true if the payment account was created successfuly
-     */
-    public function isSuccess()
-    {
-        return (bool)($this->success);
-    }
-
-    /**
-     * The errors will be a collection.
-     */
-    protected function setErrors(array $value)
-    {
-        $errorDetailCollection = new ErrorDetailCollection();
-
-        foreach ($value as $errorDetailData) {
-            $errorDetailCollection->push(new ErrorDetail($errorDetailData));
-        }
-
-        $this->errors = $errorDetailCollection;
-    }
 }

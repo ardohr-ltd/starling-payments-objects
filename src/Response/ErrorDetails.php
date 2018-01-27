@@ -10,14 +10,8 @@ use Consilience\Starling\Payments\HydratableTrait;
 use Consilience\Starling\Payments\HasErrorsTrait;
 use Consilience\Starling\Payments\ModelInterface;
 
-class CreatePaymentAccountResponse implements ModelInterface
+class ErrorDetails implements ModelInterface
 {
     use HydratableTrait;
     use HasErrorsTrait;
-
-    /**
-     * @var string UUID
-     * Unique identifier of the payment account.
-     */
-    protected $paymentAccountUid;
 }
