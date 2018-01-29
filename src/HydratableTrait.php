@@ -19,6 +19,18 @@ trait HydratableTrait
     protected $_hydratableIsSet = false;
 
     /**
+     * @var bool true to throw an exception when accessing unrecognised properties.
+     */
+    // phpcs:ignore
+    protected $_exceptionOnInvalidProperty = false;
+
+    /**
+     * @var array somewhere to put properties we doe not support.
+     */
+    // phpcs:ignore
+    protected $_additionalProperties = [];
+
+    /**
      * Constructed with an array.
      * Each array element feeds into a property or setter method.
      */
@@ -51,16 +63,30 @@ trait HydratableTrait
         } elseif (property_exists($this, $name)) {
             $this->$name = $value;
         } else {
-            throw new \Exception(sprintf(
-                'Data item "%s" does not have a matching property in class %s.',
-                $name,
-                __CLASS__
-            ));
+            if ($this->_exceptionOnInvalidProperty) {
+                throw new \Exception(sprintf(
+                    'Data item "%s" does not have a matching property in class %s.',
+                    $name,
+                    __CLASS__
+                ));
+            }
+
+            $this->_additionalProperties[$name] = $value;
         }
 
         if (! $this->_hydratableIsSet && $value !== null) {
             $this->_hydratableIsSet = true;
         }
+    }
+
+    /**
+     * Clone $this with a new property set.
+     */
+    public function withProperty($name, $value)
+    {
+        $clone = clone $this;
+        $clone->setProperty($name, $value);
+        return $clone;
     }
 
     /**
@@ -108,11 +134,17 @@ trait HydratableTrait
             }
         }
 
-        throw new \Exception(sprintf(
-            'Property "%s" does not exist in class %s.',
-            $name,
-            __CLASS__
-        ));
+        if ($this->_exceptionOnInvalidProperty) {
+            throw new \Exception(sprintf(
+                'Property "%s" does not exist in class %s.',
+                $name,
+                __CLASS__
+            ));
+        }
+
+        if (array_key_exists($name, $this->_additionalProperties)) {
+            return $this->_additionalProperties[$name];
+        }
     }
 
     /**
