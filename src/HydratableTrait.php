@@ -148,6 +148,18 @@ trait HydratableTrait
     }
 
     /**
+     * Return any unsupported/unrecognised properties that have been pushed
+     * into the model. This can be used to monitor additions to the published
+     * Starling Payments API.
+     *
+     * @return array
+     */
+    public function getUnsupportedProperties()
+    {
+        return $this->_additionalProperties;
+    }
+
+    /**
      * Get the value of a property, using a getter if one exists.
      */
     public function __get($name)
