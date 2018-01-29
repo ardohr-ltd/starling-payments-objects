@@ -230,4 +230,38 @@ class PaymentDetails implements ModelInterface
         // The ! prefix forces the time to zero.
         return Carbon::createFromFormat('!Y-m-d', $this->fpsSettlementDate, 'UTC');
     }
+
+    /**
+     * Indicate whether this failed payment is retry-able.
+     */
+    public function isRetryable()
+    {
+        // Only relevant to outbound payments.
+
+        if ($this->direction !== static::DIRECTION_OUTBOUND) {
+            return false;
+        }
+
+        // Needs to have been rejected.
+
+        if ($this->status !== static::PAYMENT_STATUS_REJECTED) {
+            return false;
+        }
+
+        // There is no rejected reason, so we can't check the code.
+
+        if (empty($this->rejectedReason)) {
+            return false;
+        }
+
+        // Needs to be a retryable reason code.
+
+        $reasonCode = $this->rejectedReason->code;
+
+        if (! in_array((int)$reasonCode, static::RETRYABLE_REASON_CODES, true)) {
+            return false;
+        }
+
+        return true;
+    }
 }

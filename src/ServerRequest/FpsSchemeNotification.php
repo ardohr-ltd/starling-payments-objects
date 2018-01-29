@@ -54,7 +54,7 @@ class FpsSchemeNotification implements ModelInterface
     protected $reasonDescription;
 
     /**
-     * @var string length 0 to 42 e.g. YE78126Q54WK2J06M33020170720826608371
+     * @var string length 0 to 42 e.g. "YE78126Q54WK2J06M33020170720826608371     "
      * Unique identifier of the settlement cycle the payment has been assigned
      * to (where known).
      */
@@ -82,6 +82,7 @@ class FpsSchemeNotification implements ModelInterface
     /**
      * @var string date-time format 2017-06-05T11:47:58.801Z
      * Timestamp of the notification from the scheme.
+     * This will generally be some seconds after the original SIP request.
      */
     protected $timestamp;
 
@@ -101,5 +102,25 @@ class FpsSchemeNotification implements ModelInterface
     public function getTimestampCarbon()
     {
         return Carbon::parse($this->timestamp);
+    }
+
+    /**
+     * Indicate whether this failed payment is retry-able.
+     */
+    public function isRetryable()
+    {
+        // Needs to have been rejected.
+
+        if ($this->status !== static::PAYMENT_STATUS_REJECTED) {
+            return false;
+        }
+
+        // Needs to be a retryable reason code.
+
+        if (! in_array((int)$this->reasonCode, static::RETRYABLE_REASON_CODES, true)) {
+            return false;
+        }
+
+        return true;
     }
 }

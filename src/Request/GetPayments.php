@@ -124,4 +124,24 @@ class GetPayments extends AbstractRequest
 
         $this->page = $value;
     }
+
+    /**
+     * @return int the page number, defaulting to 1 if none were provided
+     */
+    public function getPageNumber()
+    {
+        return $this->getProperty('page') ?: 1;
+    }
+
+    /**
+     * Incrememnt the page number.
+     *
+     * @return $this with the page number one higher
+     */
+    public function withNextPage()
+    {
+        $clone = clone $this;
+        $clone->setProperty('page', $this->getPageNumber() + 1);
+        return $clone;
+    }
 }

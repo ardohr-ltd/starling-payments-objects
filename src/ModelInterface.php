@@ -108,4 +108,14 @@ interface ModelInterface extends \JsonSerializable
      * @var string The "Zulu" datetime format used, with microseconds.
      */
     const ZULU_FORMAT = 'Y-m-d\TH:i:s.u\Z';
+
+    /**
+     * @var integer the size of a page when fetching payments
+     */
+    const PAGE_SIZE = 100;
+
+    /**
+     * @var int List of response failure reason codes that are retryable.
+     */
+    const RETRYABLE_REASON_CODES = [9909, 9910, 9911, 9912, 9913];
 }
