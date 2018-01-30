@@ -6,16 +6,13 @@ namespace Consilience\Starling\Payments\ServerRequest;
  * Notification of a reversal by the scheme of a previously received inbound payment.
  */
 
-use Consilience\Starling\Payments\HydratableTrait;
-use Consilience\Starling\Payments\ModelInterface;
+use Consilience\Starling\Payments\AbstractServerRequest;
 
 use Carbon\Carbon;
 use Consilience\Starling\Payments\Response\Models\CurrencyAndAmount;
 
-class FpsReversalNotification implements ModelInterface
+class FpsReversalNotification extends AbstractServerRequest
 {
-    use HydratableTrait;
-
     /**
      * @var string the endpoint path the webhook will be delivered on.
      */

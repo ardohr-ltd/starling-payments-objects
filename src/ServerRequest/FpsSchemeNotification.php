@@ -8,15 +8,12 @@ namespace Consilience\Starling\Payments\ServerRequest;
  * change in the status of the payment such as an acknowledgement or rejection.
  */
 
-use Consilience\Starling\Payments\HydratableTrait;
-use Consilience\Starling\Payments\ModelInterface;
+use Consilience\Starling\Payments\AbstractServerRequest;
 
 use Carbon\Carbon;
 
-class FpsSchemeNotification implements ModelInterface
+class FpsSchemeNotification extends AbstractServerRequest
 {
-    use HydratableTrait;
-
     /**
      * @var string the endpoint path the webhook will be delivered on.
      */

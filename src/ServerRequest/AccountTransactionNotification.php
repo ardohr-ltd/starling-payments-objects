@@ -7,8 +7,7 @@ namespace Consilience\Starling\Payments\ServerRequest;
  * to an account, rather than through an address on a payment scheme.
  */
 
-use Consilience\Starling\Payments\HydratableTrait;
-use Consilience\Starling\Payments\ModelInterface;
+use Consilience\Starling\Payments\AbstractServerRequest;
 
 use Carbon\Carbon;
 use Consilience\Starling\Payments\Response\Models\PaymentReturnDetails;
@@ -16,10 +15,8 @@ use Consilience\Starling\Payments\Response\Models\CurrencyAndAmount;
 use Consilience\Starling\Payments\Response\Models\PaymentDetailsAccount;
 use Consilience\Starling\Payments\Response\Models\PaymentRejectionReason;
 
-class AccountTransactionNotification implements ModelInterface
+class AccountTransactionNotification extends AbstractServerRequest
 {
-    use HydratableTrait;
-
     /**
      * @var string the endpoint path the webhook will be delivered on.
      */
