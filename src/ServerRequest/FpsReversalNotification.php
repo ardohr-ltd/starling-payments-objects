@@ -17,13 +17,7 @@ class FpsReversalNotification extends AbstractServerRequest
      * @var string the endpoint path the webhook will be delivered on.
      */
     // phpcs:ignore
-    protected $_endpoint = 'fps-reversal';
-
-    /**
-     * @var string UUID
-     * Unique identifier of the notification.
-     */
-    protected $notificationUid;
+    protected $_webhookType = AbstractServerRequest::WEBHOOK_TYPE_FPS_REVERSAL;
 
     // Note the following are in reverse order compared to most other messages.
 

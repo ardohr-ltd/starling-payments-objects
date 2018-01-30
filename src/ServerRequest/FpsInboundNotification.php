@@ -22,7 +22,7 @@ class FpsInboundNotification extends AbstractServerRequest
      * @var string the endpoint path the webhook will be delivered on.
      */
     // phpcs:ignore
-    protected $_endpoint = 'fps-inbound';
+    protected $_webhookType = AbstractServerRequest::WEBHOOK_TYPE_FPS_INBOUND;
 
     /**
      * @var string UUID

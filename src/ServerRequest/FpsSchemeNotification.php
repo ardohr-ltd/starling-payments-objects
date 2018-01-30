@@ -18,13 +18,7 @@ class FpsSchemeNotification extends AbstractServerRequest
      * @var string the endpoint path the webhook will be delivered on.
      */
     // phpcs:ignore
-    protected $_endpoint = 'fps-scheme';
-
-    /**
-     * @var string UUID
-     * Unique identifier of the notification.
-     */
-    protected $notificationUid;
+    protected $_webhookType = AbstractServerRequest::WEBHOOK_TYPE_FPS_SCHEME;
 
     /**
      * @var string UUID

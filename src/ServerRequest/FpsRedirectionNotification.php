@@ -21,13 +21,7 @@ class FpsRedirectionNotification extends AbstractServerRequest
      * @var string the endpoint path the webhook will be delivered on.
      */
     // phpcs:ignore
-    protected $_endpoint = 'fps-redirection';
-
-    /**
-     * @var string UUID
-     * Unique identifier of the notification.
-     */
-    protected $notificationUid;
+    protected $_webhookType = AbstractServerRequest::WEBHOOK_TYPE_FPS_REDIRECTION;
 
     /**
      * @var string UUID

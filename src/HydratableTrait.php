@@ -8,6 +8,7 @@ namespace Consilience\Starling\Payments;
 
 use UnexpectedValueException;
 use Exception;
+use InvalidArgumentException;
 use Psr\Http\Message\ResponseInterface;
 
 trait HydratableTrait
@@ -64,7 +65,7 @@ trait HydratableTrait
             $this->$name = $value;
         } else {
             if ($this->_exceptionOnInvalidProperty) {
-                throw new \Exception(sprintf(
+                throw new InvalidArgumentException(sprintf(
                     'Data item "%s" does not have a matching property in class %s.',
                     $name,
                     __CLASS__
@@ -135,7 +136,7 @@ trait HydratableTrait
         }
 
         if ($this->_exceptionOnInvalidProperty) {
-            throw new \Exception(sprintf(
+            throw new InvalidArgumentException(sprintf(
                 'Property "%s" does not exist in class %s.',
                 $name,
                 __CLASS__
