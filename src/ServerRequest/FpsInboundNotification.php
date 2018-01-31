@@ -158,6 +158,16 @@ class FpsInboundNotification extends AbstractServerRequest
     }
 
     /**
+     * Create a model and set the property.
+     *
+     * @param array $data source data to hydrate the model
+     */
+    protected function setReturnDetails(array $data)
+    {
+        $this->returnDetails = PaymentReturnDetails::fromArray($data);
+    }
+
+    /**
      * @return Carbon the requestedAt as a Carbon object, with timezone preserved.
      */
     public function getReceivedAtCarbon()

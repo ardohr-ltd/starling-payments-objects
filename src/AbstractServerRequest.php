@@ -85,8 +85,6 @@ abstract class AbstractServerRequest implements ModelInterface
 
         $object = new $classFullName($data);
 
-        $object = $object->withProperty('rawData', $data);
-
         return $object;
     }
 

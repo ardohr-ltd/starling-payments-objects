@@ -32,6 +32,12 @@ trait HydratableTrait
     protected $_additionalProperties = [];
 
     /**
+     * @var array the original array used to instantiate this object.
+     */
+    // phpcs:ignore
+    protected $_rawData = [];
+
+    /**
      * Constructed with an array.
      * Each array element feeds into a property or setter method.
      */
@@ -98,7 +104,9 @@ trait HydratableTrait
      */
     public static function fromArray(array $data)
     {
-        return new static($data);
+        $instance = new static($data);
+        $instance = $instance->withProperty('rawData', $data);
+        return $instance;
     }
 
     /**
@@ -171,7 +179,7 @@ trait HydratableTrait
     /**
      * Get the value of a property, using a getter if one exists.
      *
-     * @param string $name the name of the property in lower camelCase
+     * @param string $name the name of the property in lowerCamelCase
      * @return mixed
      */
     public function hasProperty($name)
@@ -185,7 +193,7 @@ trait HydratableTrait
             $value = null;
         }
 
-        return $value !== null;
+        return $value !== null && $value !== [];
     }
 
     /**
@@ -234,5 +242,21 @@ trait HydratableTrait
         // to see if we can build an error detail.
 
         // TODO
+    }
+
+    /**
+     * @param array $data the original array used to instantiate
+     */
+    protected function setRawData(array $data)
+    {
+        $this->_rawData = $data;
+    }
+
+    /**
+     * @return array
+     */
+    protected function getRawData()
+    {
+        return $this->_rawData;
     }
 }
