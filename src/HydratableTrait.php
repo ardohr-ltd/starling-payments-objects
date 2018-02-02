@@ -119,6 +119,8 @@ trait HydratableTrait
         foreach ($data as $name => $value) {
             $this->setProperty($name, $value);
         }
+
+        $this->setProperty('rawData', $data);
     }
 
     /**

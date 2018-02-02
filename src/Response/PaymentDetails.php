@@ -264,4 +264,18 @@ class PaymentDetails implements ModelInterface
 
         return true;
     }
+
+    /**
+     * Get the extened status.
+     * If the payment is rejected, but for a retryable reason, then the
+     * pending-retry staus is returned
+     */
+    public function getStatusExtended()
+    {
+        if ($this->isRetryable()) {
+            return static::PAYMENT_STATUS_REJECTED_PENDING_RETRY;
+        }
+
+        return $this->status;
+    }
 }

@@ -10,6 +10,7 @@ use InvalidArgumentException;
 use Consilience\Starling\Payments\HydratableTrait;
 use Consilience\Starling\Payments\ModelInterface;
 use Consilience\Starling\Payments\Request\Models\Endpoint;
+use Psr\Http\Message\ServerRequestInterface;
 
 abstract class AbstractServerRequest implements ModelInterface
 {
@@ -66,7 +67,7 @@ abstract class AbstractServerRequest implements ModelInterface
      * @param string $webhookType one of static::WEBHOOK_TYPE_*
      * @param array $data the received webhook body data
      * @return AbstractServerRequest the appropriate class instantiated
-     * @throws ??? if the webhookType is not valid
+     * @throws InvalidArgumentException if the webhookType is not valid
      */
     public static function fromData($webhookType, array $data)
     {
@@ -86,6 +87,31 @@ abstract class AbstractServerRequest implements ModelInterface
         $object = new $classFullName($data);
 
         return $object;
+    }
+
+    /**
+     * Instantiate a webhook object from a PSR-7 Server Request.
+     * The assumption is made that the server request has been validated
+     * as a webhook and the signature has been verified. This is done by
+     * the signature subscriber package.
+     *
+     * @param ServerRequestInterface $serverRequest
+     * @return self an instance of a Consilience\Starling\Payments\ServerRequest class
+     * @throws \InvalidArgumentException
+     */
+    public static function fromServerRequest(ServerRequestInterface $serverRequest)
+    {
+        // The webhook type will be the last component in the path, e.g. 'fps-scheme'
+
+        $path = $serverRequest->getUri()->getPath();
+
+        $webhookType = last(explode('/', trim($path, '/')));
+
+        // Extract the content of the message.
+
+        $data = json_decode((string)$serverRequest->getBody(), true);
+
+        return static::fromData($webhookType, $data);
     }
 
     public function getWebhookType()

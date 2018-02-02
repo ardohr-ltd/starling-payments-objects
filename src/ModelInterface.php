@@ -49,6 +49,7 @@ interface ModelInterface extends \JsonSerializable
     const PAYMENT_STATUS_ACCEPTED   = 'ACCEPTED';
     const PAYMENT_STATUS_REJECTED   = 'REJECTED';
     const PAYMENT_STATUS_REVERSED   = 'REVERSED';
+    const PAYMENT_STATUS_REJECTED_PENDING_RETRY   = 'REJECTED_PENDING_RETRY';
 
     /**
      * @var string
