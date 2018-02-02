@@ -229,6 +229,14 @@ trait HydratableTrait
     }
 
     /**
+     * @return array
+     */
+    public function toArray()
+    {
+        return json_decode(json_encode($this), true);
+    }
+
+    /**
      * Instantiate from a PSR-7 response.
      */
     public static function fromResponse(ResponseInterface $response)
