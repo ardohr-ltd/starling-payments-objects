@@ -6,7 +6,6 @@ namespace Consilience\Starling\Payments\Response;
  *
  */
 
-use Consilience\Starling\Payments\AbstractCollection;
 use Consilience\Starling\Payments\Response\PaymentAccountAddress;
 
 class PaymentAccountAddressCollection extends AbstractCollection

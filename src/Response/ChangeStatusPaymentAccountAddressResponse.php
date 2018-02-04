@@ -6,15 +6,10 @@ namespace Consilience\Starling\Payments\Response;
  * Response to a request to change the status of a payment account address.
  */
 
-use Consilience\Starling\Payments\HydratableTrait;
-use Consilience\Starling\Payments\HasErrorsTrait;
-use Consilience\Starling\Payments\ModelInterface;
+use Consilience\Starling\Payments\AbstractResponse;
 
-class ChangeStatusPaymentAccountAddressResponse implements ModelInterface
+class ChangeStatusPaymentAccountAddressResponse extends AbstractResponse
 {
-    use HydratableTrait;
-    use HasErrorsTrait;
-
     /**
      * @var string UUID
      * Unique identifier of the payment account address.

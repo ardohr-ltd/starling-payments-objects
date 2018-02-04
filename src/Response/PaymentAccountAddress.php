@@ -7,15 +7,11 @@ namespace Consilience\Starling\Payments\Response;
  * and sort code from which payments can be sent and received.
  */
 
-use Consilience\Starling\Payments\HydratableTrait;
-use Consilience\Starling\Payments\ModelInterface;
-
+use Consilience\Starling\Payments\AbstractResponse;
 use Carbon\Carbon;
 
-class PaymentAccountAddress implements ModelInterface
+class PaymentAccountAddress extends AbstractResponse
 {
-    use HydratableTrait;
-
     /**
      * @var string UUID
      * Unique identifier of the company requesting or receiving the payment.

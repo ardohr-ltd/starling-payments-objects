@@ -6,15 +6,11 @@ namespace Consilience\Starling\Payments\Response;
  * Retrieved payment business information.
  */
 
-use Consilience\Starling\Payments\HydratableTrait;
-use Consilience\Starling\Payments\ModelInterface;
-
 use Consilience\Starling\Payments\Response\Models\CurrencyAndAmount;
+use Consilience\Starling\Payments\AbstractResponse;
 
-class BusinessInformation implements ModelInterface
+class BusinessInformation extends AbstractResponse
 {
-    use HydratableTrait;
-
     /**
      * @var string UUID
      * Unique identifier of the payment business.

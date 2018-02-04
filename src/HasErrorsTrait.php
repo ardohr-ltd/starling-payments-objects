@@ -29,7 +29,9 @@ trait HasErrorsTrait
      */
     public function isSuccess()
     {
-        return (bool)($this->success);
+        // Assume it is a success if not explicitlty told either way.
+
+        return $this->success === true || $this->success === null;
     }
 
     /**
@@ -38,5 +40,10 @@ trait HasErrorsTrait
     protected function setErrors(array $value)
     {
         $this->errors = new ErrorDetailCollection($value);
+    }
+
+    public function getErrorCount()
+    {
+        return $this->errors ? $this->errors->count() : 0;
     }
 }

@@ -6,19 +6,15 @@ namespace Consilience\Starling\Payments\Response;
  * Details of a single payment that has been sent or received.
  */
 
-use Consilience\Starling\Payments\HydratableTrait;
-use Consilience\Starling\Payments\ModelInterface;
-
 use Carbon\Carbon;
 use Consilience\Starling\Payments\Response\Models\PaymentReturnDetails;
 use Consilience\Starling\Payments\Response\Models\CurrencyAndAmount;
 use Consilience\Starling\Payments\Response\Models\PaymentDetailsAccount;
 use Consilience\Starling\Payments\Response\Models\PaymentRejectionReason;
+use Consilience\Starling\Payments\AbstractResponse;
 
-class PaymentDetails implements ModelInterface
+class PaymentDetails extends AbstractResponse
 {
-    use HydratableTrait;
-
     /**
      * @var string UUID
      * Unique identifier of the company requesting or receiving the payment.

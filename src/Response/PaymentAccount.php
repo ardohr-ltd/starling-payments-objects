@@ -6,16 +6,12 @@ namespace Consilience\Starling\Payments\Response;
  * Retrieved payment account details.
  */
 
-use Consilience\Starling\Payments\HydratableTrait;
-use Consilience\Starling\Payments\ModelInterface;
-
+use Consilience\Starling\Payments\AbstractResponse;
 use Carbon\Carbon;
 use Consilience\Starling\Payments\Response\Models\Balance;
 
-class PaymentAccount implements ModelInterface
+class PaymentAccount extends AbstractResponse
 {
-    use HydratableTrait;
-
     /**
      * @var string UUID
      * Unique identifier of the company requesting or receiving the payment.

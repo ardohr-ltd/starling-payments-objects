@@ -6,16 +6,12 @@ namespace Consilience\Starling\Payments\Response;
  * Settlement cycle over which payments made can be reconciled.
  */
 
-use Consilience\Starling\Payments\HydratableTrait;
-use Consilience\Starling\Payments\ModelInterface;
-
+use Consilience\Starling\Payments\AbstractResponse;
 use Consilience\Starling\Payments\Response\Models\CurrencyAndAmount;
 use Carbon\Carbon;
 
-class SettlementCycle implements ModelInterface
+class SettlementCycle extends AbstractResponse
 {
-    use HydratableTrait;
-
     /**
      * @var string UUID
      * Unique identifier of the settlement cycle.

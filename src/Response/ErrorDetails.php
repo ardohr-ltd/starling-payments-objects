@@ -6,12 +6,8 @@ namespace Consilience\Starling\Payments\Response;
  * Retrieved payment account details.
  */
 
-use Consilience\Starling\Payments\HydratableTrait;
-use Consilience\Starling\Payments\HasErrorsTrait;
-use Consilience\Starling\Payments\ModelInterface;
+use Consilience\Starling\Payments\AbstractResponse;
 
-class ErrorDetails implements ModelInterface
+class ErrorDetails extends AbstractResponse
 {
-    use HydratableTrait;
-    use HasErrorsTrait;
 }

@@ -259,13 +259,35 @@ trait HydratableTrait
 
         if ($response->getHeaderLine('Content-Type') === 'application/json') {
             $bodyData = json_decode((string)$response->getBody(), true);
-            return new static($bodyData);
+            $model = new static($bodyData ?: []);
+        } else {
+            // We didn't get a JSON response, so must dig deeper into the response
+            // to see if we can build an error detail.
         }
 
-        // We didn't get a JSON response, so must dig deeper into the response
-        // to see if we can build an error detail.
+        // Move any HTTP errors into the errors stack and reset the success flag.
 
-        // TODO
+        $statusCode = $response->getStatusCode();
+        $statusClass = (int) floor($statusCode / 100);
+        $reasonPhrase = $response->getReasonPhrase();
+
+        if ($statusClass !== 2) {
+            $model = $model->withProperty('success', false);
+
+            // Add an error message with the HTTP details.
+            // Only do this if there are not already erros delivered from the remote host.
+
+            if ($model->getErrorCount() === 0) {
+                $model = $model->withProperty(
+                    'errors',
+                    [
+                        ['message' => sprintf('%d: %s', $statusCode, $reasonPhrase)],
+                    ]
+                );
+            }
+        }
+
+        return $model;
     }
 
     /**
