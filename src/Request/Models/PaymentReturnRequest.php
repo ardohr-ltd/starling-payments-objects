@@ -39,6 +39,8 @@ class PaymentReturnRequest implements ModelInterface
      */
     protected function setPaymentUid($value)
     {
+        $this->assertUid($value);
+
         $this->paymentUid = $value;
     }
 
@@ -49,6 +51,8 @@ class PaymentReturnRequest implements ModelInterface
      */
     protected function setReference($value)
     {
+        $this->assertReference($value);
+
         $this->reference = $value;
     }
 

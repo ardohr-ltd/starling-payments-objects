@@ -119,4 +119,27 @@ interface ModelInterface extends \JsonSerializable
      * @var int List of response failure reason codes that are retryable.
      */
     const RETRYABLE_REASON_CODES = [9909, 9910, 9911, 9912, 9913];
+
+    /**
+     * @var minimum length of the sortCode property.
+     */
+    const SORT_CODE_MIN_LENGTH = 6;
+
+    /**
+     * @var maximum length of the sortCode property.
+     */
+    const SORT_CODE_MAX_LENGTH = 6;
+
+    /**
+     * @var minimum length of the accountNumber property.
+     */
+    const ACCOUNT_NUMBER_MIN_LENGTH = 8;
+
+    /**
+     * @var maximum length of the accountNumber property.
+     */
+    const ACCOUNT_NUMBER_MAX_LENGTH = 8;
+
+    const REFERENCE_MIN_LENGTH = 1;
+    const REFERENCE_MAX_LENGTH = 18;
 }

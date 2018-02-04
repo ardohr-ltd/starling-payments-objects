@@ -40,6 +40,8 @@ class GetSettlementCyclePayments extends AbstractRequest
      */
     protected function setSettlementCycleUid($value)
     {
+        $this->assertUid($value);
+
         $this->settlementCycleUid = $value;
     }
 

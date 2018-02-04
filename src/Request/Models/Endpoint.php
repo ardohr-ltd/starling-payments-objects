@@ -47,7 +47,7 @@ class Endpoint implements ModelInterface
      */
     protected function setPaymentBusinessUid($value)
     {
-        //$this->assertUid($value);
+        $this->assertUid($value);
 
         $this->paymentBusinessUid = $value;
     }

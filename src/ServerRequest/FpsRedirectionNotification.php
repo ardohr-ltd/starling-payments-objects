@@ -40,6 +40,24 @@ class FpsRedirectionNotification extends AbstractServerRequest
     protected $redirectedAccount;
 
     /**
+     * @inherit
+     */
+    protected $_fieldOrder = [
+        'notificationUid',
+        'paymentUid',
+        'originalAccount',
+        'redirectedAccount',
+    ];
+
+    public function isSet()
+    {
+        return $this->notificationUid !== null
+            || $this->paymentUid !== null
+            || $this->originalAccount !== null
+            || $this->redirectedAccount !== null;
+    }
+
+    /**
      * Create a model and set the property.
      *
      * @param array $data source data to hydrate the model

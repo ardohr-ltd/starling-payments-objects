@@ -179,4 +179,57 @@ trait ValidationTrait
             ));
         }
     }
+
+    /**
+     * Match a UUID, e.g. "07474ac3-ca1c-4407-929f-a980e5f25590"
+     */
+    public function assertUid($value)
+    {
+        return $this->assertString(
+            $value,
+            36,
+            36,
+            '/^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$/'
+        );
+    }
+
+    /**
+     * Domestic sort code.
+     */
+    public function assertSortCode($value)
+    {
+        return $this->assertString(
+            $value,
+            static::SORT_CODE_MIN_LENGTH,
+            static::SORT_CODE_MAX_LENGTH,
+            '/^\d{6}$/'
+        );
+    }
+
+    /**
+     * Domestic account number.
+     */
+    public function assertAccountNumber($value)
+    {
+        $this->assertString(
+            $value,
+            static::ACCOUNT_NUMBER_MIN_LENGTH,
+            static::ACCOUNT_NUMBER_MAX_LENGTH,
+            '/^\d{8}$/'
+        );
+    }
+
+    /**
+     * A payment reference.
+     * Pattern: [a-zA-Z0-9-/?:().+#=!%&*<>;{@ "']{1,18}
+     */
+    public function assertReference($value)
+    {
+        $this->assertString(
+            $value,
+            static::REFERENCE_MIN_LENGTH,
+            static::REFERENCE_MAX_LENGTH,
+            '/^[a-zA-Z0-9\/' . preg_quote('-?:().+#=!%&*<>;{@ "\'') . ']{1,18}$/'
+        );
+    }
 }

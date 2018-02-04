@@ -32,10 +32,12 @@ class GetPaymentAccountAddresses extends AbstractRequest
     }
 
     /**
-     * @param string UUID
+     * @param string UID
      */
     protected function setAccountUid($value)
     {
+        $this->assertUid($value);
+
         $this->accountUid = $value;
     }
 }

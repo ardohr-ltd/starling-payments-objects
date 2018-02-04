@@ -21,7 +21,7 @@ class AccountTransactionNotification extends AbstractServerRequest
      * @var string the endpoint path the webhook will be delivered on.
      */
     // phpcs:ignore
-    protected $_endpoint = 'account-transaction';
+    protected $_endpoint = AbstractServerRequest::WEBHOOK_TYPE_ACCOUNT_TRANSACTION;
 
     /**
      * @var string UUID

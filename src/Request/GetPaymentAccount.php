@@ -36,6 +36,8 @@ class GetPaymentAccount extends AbstractRequest
      */
     protected function setAccountUid($value)
     {
+        $this->assertUid($value);
+
         $this->accountUid = $value;
     }
 }

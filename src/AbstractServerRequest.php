@@ -29,7 +29,7 @@ abstract class AbstractServerRequest implements ModelInterface
     const WEBHOOK_TYPE_FPS_INBOUND           = 'fps-inbound';
 
     // Notification of a reversal by the scheme of a previously received inbound payment.
-    const WEBHOOK_SERVICE_FPS_REVERSAL          = 'fps-reversal';
+    const WEBHOOK_TYPE_FPS_REVERSAL          = 'fps-reversal';
 
     // Notification of the redirection of an outbound payment instruction.
     const WEBHOOK_TYPE_FPS_REDIRECTION       = 'fps-redirection';
@@ -37,6 +37,11 @@ abstract class AbstractServerRequest implements ModelInterface
     // Notification for a credit or deduction transaction applied directly to
     // an account, rather than through an address on a payment scheme.
     const WEBHOOK_TYPE_ACCOUNT_TRANSACTION   = 'account-transaction';
+
+    /**
+     * @var array order in which the fields will be serialised.
+     */
+    protected $_fieldOrder = [];
 
     /**
      * @var string the endpoint path the webhook will be delivered on.
@@ -56,7 +61,7 @@ abstract class AbstractServerRequest implements ModelInterface
     protected static $webhookTypeClasses = [
         self::WEBHOOK_TYPE_FPS_SCHEME => 'FpsSchemeNotification',
         self::WEBHOOK_TYPE_FPS_INBOUND => 'FpsInboundNotification',
-        self::WEBHOOK_SERVICE_FPS_REVERSAL => 'FpsReversalNotification',
+        self::WEBHOOK_TYPE_FPS_REVERSAL => 'FpsReversalNotification',
         self::WEBHOOK_TYPE_FPS_REDIRECTION => 'FpsRedirectionNotification',
         self::WEBHOOK_TYPE_ACCOUNT_TRANSACTION => 'AccountTransactionNotification',
     ];

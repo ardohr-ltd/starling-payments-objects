@@ -32,26 +32,6 @@ class CreatePaymentAccountAddressRequest implements ModelInterface
     const ACCOUNT_NAME_MAX_LENGTH = 40;
 
     /**
-     * @var minimum length of the sortCode property.
-     */
-    const SORT_CODE_MIN_LENGTH = 6;
-
-    /**
-     * @var maximum length of the sortCode property.
-     */
-    const SORT_CODE_MAX_LENGTH = 6;
-
-    /**
-     * @var minimum length of the accountNumber property.
-     */
-    const ACCOUNT_NUMBER_MIN_LENGTH = 8;
-
-    /**
-     * @var maximum length of the accountNumber property.
-     */
-    const ACCOUNT_NUMBER_MAX_LENGTH = 8;
-
-    /**
      * @var string length 0 to 40
      * Name of the account holder, this will be included in outbound payment instructions.
      */
@@ -113,12 +93,7 @@ class CreatePaymentAccountAddressRequest implements ModelInterface
      */
     protected function setSortCode($value)
     {
-        $this->assertString(
-            $value,
-            static::SORT_CODE_MIN_LENGTH,
-            static::SORT_CODE_MAX_LENGTH,
-            '/^\d{6}$/'
-        );
+        $this->assertSortCode($value);
 
         $this->sortCode = $value;
     }
@@ -131,12 +106,7 @@ class CreatePaymentAccountAddressRequest implements ModelInterface
      */
     protected function setAccountNumber($value)
     {
-        $this->assertString(
-            $value,
-            static::ACCOUNT_NUMBER_MIN_LENGTH,
-            static::ACCOUNT_NUMBER_MAX_LENGTH,
-            '/^\d{8}$/'
-        );
+        $this->assertAccountNumber($value);
 
         $this->accountNumber = $value;
     }

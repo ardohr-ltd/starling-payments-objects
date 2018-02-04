@@ -58,6 +58,8 @@ class DomesticInstructionAccount implements ModelInterface
      */
     protected function setSortCode($value)
     {
+        $this->assertSortCode($value);
+
         $this->sortCode = $value;
     }
 
@@ -66,6 +68,8 @@ class DomesticInstructionAccount implements ModelInterface
      */
     protected function setAccountNumber($value)
     {
+        $this->assertAccountNumber($value);
+
         $this->accountNumber = $value;
     }
 
@@ -74,6 +78,8 @@ class DomesticInstructionAccount implements ModelInterface
      */
     protected function setAccountName($value)
     {
+        // TODO: validate
+
         $this->accountName = $value;
     }
 }

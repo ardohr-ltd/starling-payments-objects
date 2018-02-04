@@ -19,6 +19,7 @@ class FpsRedirectionNotificationTest extends TestCase
         $fpsRedirectionNotification = new FpsRedirectionNotification();
 
         $this->assertTrue($fpsRedirectionNotification instanceof FpsRedirectionNotification);
+        $this->assertTrue($fpsRedirectionNotification->isEmpty());
     }
 
     /**

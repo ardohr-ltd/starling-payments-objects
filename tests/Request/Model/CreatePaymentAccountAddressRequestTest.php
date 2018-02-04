@@ -7,6 +7,7 @@ namespace Consilience\Starling\Payments\Request\Models;
  */
 
 use PHPUnit\Framework\TestCase;
+use \UnexpectedValueException;
 
 class CreatePaymentAccountAddressRequestTest extends TestCase
 {

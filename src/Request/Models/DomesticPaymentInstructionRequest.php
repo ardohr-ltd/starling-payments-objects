@@ -53,7 +53,7 @@ class DomesticPaymentInstructionRequest implements ModelInterface
      */
     protected function setReference($value)
     {
-        // TODO: validate as a reference.
+        $this->assertReference($value);
 
         $this->reference = $value;
     }

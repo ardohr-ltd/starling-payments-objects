@@ -44,6 +44,8 @@ class GetPayment extends AbstractRequest
      */
     protected function setAccountUid($value)
     {
+        $this->assertUid($value);
+
         $this->accountUid = $value;
     }
 
@@ -52,6 +54,8 @@ class GetPayment extends AbstractRequest
      */
     protected function setAddressUid($value)
     {
+        $this->assertUid($value);
+
         $this->addressUid = $value;
     }
 
@@ -60,6 +64,8 @@ class GetPayment extends AbstractRequest
      */
     protected function setPaymentUid($value)
     {
+        $this->assertUid($value);
+
         $this->paymentUid = $value;
     }
 }

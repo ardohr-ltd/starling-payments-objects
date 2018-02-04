@@ -46,6 +46,8 @@ class UpdatePaymentAccountAddressStatus extends AbstractRequest
      */
     protected function setAccountUid($value)
     {
+        $this->assertUid($value);
+
         $this->accountUid = $value;
     }
 
@@ -54,6 +56,8 @@ class UpdatePaymentAccountAddressStatus extends AbstractRequest
      */
     protected function setAddressUid($value)
     {
+        $this->assertUid($value);
+
         $this->addressUid = $value;
     }
 

@@ -46,12 +46,17 @@ trait HydratableTrait
         $this->setFromArray($data);
     }
 
+    public function isSet()
+    {
+        return $this->_hydratableIsSet;
+    }
+
     /**
      * @return bool true if the object has not been instantiated with any data
      */
     public function isEmpty()
     {
-        return ! $this->_hydratableIsSet;
+        return ! $this->isSet();
     }
 
     /**
@@ -80,6 +85,8 @@ trait HydratableTrait
 
             $this->_additionalProperties[$name] = $value;
         }
+
+        // If the value is not null, then the object is set; mark it as set.
 
         if (! $this->_hydratableIsSet && $value !== null) {
             $this->_hydratableIsSet = true;
@@ -215,14 +222,21 @@ trait HydratableTrait
 
         $properties = get_object_vars($this);
 
-        // Exclude any properties with a name that starts with an undersore.
+        // Put the fields into the correct order if necessary.
+
+        if (! empty($this->_fieldOrder)) {
+            $properties = array_merge(array_flip($this->_fieldOrder), $properties);
+        }
+
+        // Exclude any properties with a name that starts with an undersore
+        // or that has a null value.
 
         $properties = array_filter(
             $properties,
-            function ($key) {
-                return strpos($key, '_') !== 0;
+            function ($value, $key) {
+                return strpos($key, '_') !== 0 && $value !== null;
             },
-            ARRAY_FILTER_USE_KEY
+            ARRAY_FILTER_USE_BOTH
         );
 
         return $properties;

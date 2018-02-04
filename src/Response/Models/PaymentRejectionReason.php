@@ -24,4 +24,12 @@ class PaymentRejectionReason implements ModelInterface
      * Human-readable description of the rejection reason.
      */
     protected $description;
+
+    /**
+     * @return bool true if this object contains a value.
+     */
+    public function isSet()
+    {
+        return $this->code !== null || $this->description !== null;
+    }
 }
