@@ -274,4 +274,12 @@ class PaymentDetails extends AbstractResponse
 
         return $this->status;
     }
+
+    /**
+     * Other endpoints use the shorter `paymentUid`, so we provide this alias.
+     */
+    public function getAccountUid()
+    {
+        return $this->getProperty('paymentAccountUid');
+    }
 }
