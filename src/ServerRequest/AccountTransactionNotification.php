@@ -88,4 +88,12 @@ class AccountTransactionNotification extends AbstractServerRequest
     {
         return Carbon::parse($this->transactionTime);
     }
+
+    /**
+     * Other endpoints use the shorter `paymentUid`, so we provide this alias.
+     */
+    public function getAccountUid()
+    {
+        return $this->getProperty('paymentAccountUid');
+    }
 }

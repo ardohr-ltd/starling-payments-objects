@@ -15,4 +15,12 @@ class CreatePaymentAccountResponse extends AbstractResponse
      * Unique identifier of the payment account.
      */
     protected $paymentAccountUid;
+
+    /**
+     * Other endpoints use the shorter `paymentUid`, so we provide this alias.
+     */
+    public function getAccountUid()
+    {
+        return $this->getProperty('paymentAccountUid');
+    }
 }

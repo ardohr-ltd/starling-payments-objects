@@ -183,4 +183,12 @@ class FpsInboundNotification extends AbstractServerRequest
         // The ! prefix forces the time to zero.
         return Carbon::createFromFormat('!Y-m-d', $this->fpsSettlementDate, 'UTC');
     }
+
+    /**
+     * Other endpoints use the shorter `paymentUid`, so we provide this alias.
+     */
+    public function getAccountUid()
+    {
+        return $this->getProperty('paymentAccountUid');
+    }
 }
