@@ -7,6 +7,7 @@ namespace Consilience\Starling\Payments\Response;
  * and sort code from which payments can be sent and received.
  */
 
+use Consilience\Starling\Payments\Response\Models\AddressFasterPaymentsStatus;
 use Consilience\Starling\Payments\AbstractResponse;
 use Carbon\Carbon;
 
@@ -62,6 +63,11 @@ class PaymentAccountAddress extends AbstractResponse
     protected $status;
 
     /**
+     * @var AddressFasterPaymentsStatus
+     */
+    protected $fasterPaymentsStatus;
+
+    /**
      * @return Carbon the createdAt as a Carbon object, with timezone preserved.
      */
     public function getCreatedAtCarbon()
@@ -75,5 +81,14 @@ class PaymentAccountAddress extends AbstractResponse
     public function isActive()
     {
         return $this->status === static::ADDRESS_STATUS_ACTIVE;
+    }
+
+    /**
+     * @value array
+     */
+    protected function setFasterPaymentsStatus(array $value = [])
+    {
+        $this->fasterPaymentsStatus =
+            new AddressFasterPaymentsStatus($value);
     }
 }
