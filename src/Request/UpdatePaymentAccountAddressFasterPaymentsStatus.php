@@ -3,42 +3,43 @@
 namespace Consilience\Starling\Payments\Request;
 
 /**
- * Change an account address status.
+ * Change an account address faster pauments status.
  */
 
 use Consilience\Starling\Payments\Request\Models\Endpoint;
 use Consilience\Starling\Payments\AbstractRequest;
 use UnexpectedValueException;
+use Consilience\Starling\Payments\Request\Models\ChangeFasterPaymentsStatusPaymentAccountAddressRequest;
 
-class UpdatePaymentAccountAddressStatus extends AbstractRequest
+class UpdatePaymentAccountAddressPaymentsStatusStatus extends AbstractRequest
 {
     /**
      * @inherit
      */
-    protected $pathTemplate = 'account/{accountUid}/address/{addressUid}/status';
+    protected $pathTemplate = 'account/{accountUid}/address/{addressUid}/faster-payments-status';
 
     protected $httpMethod = 'PUT';
 
     protected $accountUid;
     protected $addressUid;
-    protected $status;
+    protected $changeFasterPaymentsStatusPaymentAccountAddressRequest;
 
     /**
      * @param string $paymentBusinessUid
      * @param string $accountUid the accound to create the address for
      * @param string $addressUid the new UID to assign to the address
-     * @param string $status
+     * @param ChangeFasterPaymentsStatusPaymentAccountAddressRequest $status
      */
     public function __construct(
         Endpoint $endpoint,
         $accountUid,
         $addressUid,
-        $status
+        ChangeFasterPaymentsStatusPaymentAccountAddressRequest $status
     ) {
         $this->setEndpoint($endpoint);
         $this->setAccountUid($accountUid);
         $this->setAddressUid($addressUid);
-        $this->setStatus($status);
+        $this->setChangeFasterPaymentsStatusPaymentAccountAddressRequest($status);
     }
 
     /**
@@ -62,13 +63,11 @@ class UpdatePaymentAccountAddressStatus extends AbstractRequest
     }
 
     /**
-     * @param string
+     * @param ChangeFasterPaymentsStatusPaymentAccountAddressRequest
      */
-    protected function setStatus($value)
-    {
-        // One of the valid address statuses.
-        $this->assertInConstantList('ADDRESS_STATUS_', $value);
-
+    protected function setChangeFasterPaymentsStatusPaymentAccountAddressRequest(
+        $value
+    ) {
         $this->status = $value;
     }
 
@@ -77,8 +76,8 @@ class UpdatePaymentAccountAddressStatus extends AbstractRequest
      */
     public function jsonSerialize()
     {
-        return [
-            'status' => $this->getProperty('status')
-        ];
+        return $this->getProperty(
+            'changeFasterPaymentsStatusPaymentAccountAddressRequest'
+        );
     }
 }

@@ -52,6 +52,9 @@ class CreatePaymentAccountRequest implements ModelInterface
      */
     protected function setDescription($value)
     {
+        // TODO: This length is measuerd as unicode characters, sent as UTF-8,
+        // and not bytes, so a unicode length check is needed.
+        // As for valid characters, anything goes, including smilies.
         $this->assertString($value, 0, static::DESCRIPTION_MAX_LENGTH);
 
         $this->description = $value;

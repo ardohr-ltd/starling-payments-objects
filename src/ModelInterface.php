@@ -37,6 +37,12 @@ interface ModelInterface extends \JsonSerializable
     const ADDRESS_STATUS_DECEASED       = 'DECEASED';
 
     /**
+     * @var string account address faster payment status
+     */
+    const ADDRESS_FPS_STATUS_ENABLED    = 'ENABLED';
+    const ADDRESS_FPS_STATUS_DISABLED   = 'DISABLED';
+
+    /**
      * @var string
      */
     const DIRECTION_INBOUND     = 'INBOUND';
