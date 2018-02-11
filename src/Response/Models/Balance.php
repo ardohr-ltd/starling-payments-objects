@@ -48,4 +48,16 @@ class Balance implements ModelInterface
     {
         return $this->balanceState === static::BALANCE_STATE_OVERDRAWN;
     }
+
+    /**
+     * @return Money\Money the balance as a signed Money object
+     *
+     * This will be the real value, being positive for a balance
+     * in credit and negative for am overdrawn balance.
+     */
+    public function toMoney()
+    {
+        return $this->currencyAndAmount->toMoney()->absolute()
+            ->multiply($this->isOverdrawn() ? -1 : 1);
+    }
 }

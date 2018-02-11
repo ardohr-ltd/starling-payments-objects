@@ -3,7 +3,10 @@
 namespace Consilience\Starling\Payments\Response\Models;
 
 /**
- *
+ * Currency and amount, in minor units.
+ * Note: the amount will normally be returned from the API as the absolute
+ * amount, always positive. Other properties or contexts will indicate what
+ * the amount means.
  */
 
 use Consilience\Starling\Payments\HydratableTrait;
@@ -31,7 +34,7 @@ class CurrencyAndAmount implements ModelInterface
     /**
      * Convert to a Money\Money object, for formatting, arrithmetic etc.
      *
-     * @return Money
+     * @return Money the absolute value, in most instances.
      */
     public function toMoney()
     {
