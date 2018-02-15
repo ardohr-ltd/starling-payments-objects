@@ -94,11 +94,11 @@ class GetPayments extends AbstractRequest
     protected function setFrom($value)
     {
         if (is_string($value)) {
-            $value = Carbon::parse($value, 'UCT');
+            $value = Carbon::parse($value, 'UTC');
         }
 
         if ($value instanceof Carbon) {
-            $this->from = $value->tz('UCT')->format(static::ZULU_FORMAT);
+            $this->from = $value->tz('UTC')->format(static::ZULU_FORMAT);
         }
     }
 
@@ -112,7 +112,7 @@ class GetPayments extends AbstractRequest
         }
 
         if ($value instanceof Carbon) {
-            $this->to = $value->tz('UCT')->format(static::ZULU_FORMAT);
+            $this->to = $value->tz('UTC')->format(static::ZULU_FORMAT);
         }
     }
 
