@@ -3,38 +3,38 @@
 namespace Consilience\Starling\Payments\Request;
 
 /**
- * Change an account address faster pauments status.
+ * Request to change the address bacs status.
  */
 
 use Consilience\Starling\Payments\Request\Models\Endpoint;
 use Consilience\Starling\Payments\AbstractRequest;
 use UnexpectedValueException;
-use Consilience\Starling\Payments\Request\Models\ChangeFasterPaymentsStatusPaymentAccountAddressRequest;
+use Consilience\Starling\Payments\Request\Models\ChangeBacsStatusPaymentAccountAddressRequest;
 
-class UpdatePaymentAccountAddressFasterPaymentsStatus extends AbstractRequest
+class UpdatePaymentAccountAddressBacsStatus extends AbstractRequest
 {
     /**
      * @inherit
      */
-    protected $pathTemplate = 'account/{accountUid}/address/{addressUid}/faster-payments-status';
+    protected $pathTemplate = 'account/{accountUid}/address/{addressUid}/bacs-payments-status';
 
     protected $httpMethod = 'PUT';
 
     protected $accountUid;
     protected $addressUid;
-    protected $changeFasterPaymentsStatusPaymentAccountAddressRequest;
+    protected $changeBacsStatusPaymentAccountAddressRequest;
 
     /**
      * @param string $paymentBusinessUid
      * @param string $accountUid the accound to create the address for
      * @param string $addressUid the new UID to assign to the address
-     * @param ChangeFasterPaymentsStatusPaymentAccountAddressRequest $status
+     * @param ChangeBacsStatusPaymentAccountAddressRequest $status
      */
     public function __construct(
         Endpoint $endpoint,
         $accountUid,
         $addressUid,
-        ChangeFasterPaymentsStatusPaymentAccountAddressRequest $status
+        ChangeBacsStatusPaymentAccountAddressRequest $status
     ) {
         $this->setEndpoint($endpoint);
         $this->setAccountUid($accountUid);
@@ -63,7 +63,7 @@ class UpdatePaymentAccountAddressFasterPaymentsStatus extends AbstractRequest
     }
 
     /**
-     * @param ChangeFasterPaymentsStatusPaymentAccountAddressRequest
+     * @param ChangeBacsStatusPaymentAccountAddressRequest
      */
     protected function setChangeFasterPaymentsStatusPaymentAccountAddressRequest(
         $value
@@ -77,7 +77,7 @@ class UpdatePaymentAccountAddressFasterPaymentsStatus extends AbstractRequest
     public function jsonSerialize()
     {
         return $this->getProperty(
-            'changeFasterPaymentsStatusPaymentAccountAddressRequest'
+            'changeBacsStatusPaymentAccountAddressRequest'
         );
     }
 }

@@ -8,6 +8,7 @@ namespace Consilience\Starling\Payments\Response;
  */
 
 use Consilience\Starling\Payments\Response\Models\AddressFasterPaymentsStatus;
+use Consilience\Starling\Payments\Response\Models\AddressBacsStatus;
 use Consilience\Starling\Payments\AbstractResponse;
 use Carbon\Carbon;
 
@@ -68,6 +69,11 @@ class PaymentAccountAddress extends AbstractResponse
     protected $fasterPaymentsStatus;
 
     /**
+     * @var AddressBacsStatus
+     */
+    protected $bacsStatus;
+
+    /**
      * @return Carbon the createdAt as a Carbon object, with timezone preserved.
      */
     public function getCreatedAtCarbon()
@@ -90,5 +96,14 @@ class PaymentAccountAddress extends AbstractResponse
     {
         $this->fasterPaymentsStatus =
             new AddressFasterPaymentsStatus($value);
+    }
+
+    /**
+     * @value array
+     */
+    protected function setBacsStatus(array $value = [])
+    {
+        $this->bacsStatus =
+            new AddressBacsStatus($value);
     }
 }

@@ -3,7 +3,7 @@
 namespace Consilience\Starling\Payments\Response\Models;
 
 /**
- *
+ * Details of the faster payments status for an account address.
  */
 
 use Consilience\Starling\Payments\HydratableTrait;
