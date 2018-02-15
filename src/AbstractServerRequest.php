@@ -20,6 +20,8 @@ abstract class AbstractServerRequest implements ModelInterface
      * @var string List of expected services (path extending the webhook base URL).
      */
 
+    // There are four FPS web hooks.
+
     // Notification received from the faster payments scheme, typically this is a change
     // in the status of the payment such as an acknowledgement or rejection.
     const WEBHOOK_TYPE_FPS_SCHEME            = 'fps-scheme';
@@ -34,9 +36,33 @@ abstract class AbstractServerRequest implements ModelInterface
     // Notification of the redirection of an outbound payment instruction.
     const WEBHOOK_TYPE_FPS_REDIRECTION       = 'fps-redirection';
 
+    // There is one generic web hook.
+
     // Notification for a credit or deduction transaction applied directly to
     // an account, rather than through an address on a payment scheme.
     const WEBHOOK_TYPE_ACCOUNT_TRANSACTION   = 'account-transaction';
+
+    // There are six BACS web hooks
+
+    // Notification that a direct debit mandate has been created.
+    const WEBHOOK_TYPE_BACS_MANDATE_CREATED     = 'bacs-mandate-created';
+
+    // Notification received that a direct debit mandate has been cancelled.
+    const WEBHOOK_TYPE_BACS_MANDATE_CANCELLED   = 'bacs-mandate-cancelled';
+
+    // Notification received from BACS that the originator of a direct debit mandate
+    // has changed.
+    const WEBHOOK_TYPE_BACS_MANDATE_ORIGINATOR  = 'bacs-mandate-originator-changed';
+
+    // Notification that a direct credit payment has been received.
+    const WEBHOOK_TYPE_BACS_CREDIT_RECEIVED     = 'direct-credit-received';
+
+    // Notification that a direct debit payment has been paid.
+    const WEBHOOK_TYPE_BACS_DEBIT_PAID          = 'direct-debit-paid';
+
+    // Notification received from Starling rejected a direct debit payment request
+    // due to lack of funds.
+    const WEBHOOK_TYPE_BACS_DEBIT_REJECTED      = 'direct-debit-rejected';
 
     /**
      * @var array order in which the fields will be serialised.
