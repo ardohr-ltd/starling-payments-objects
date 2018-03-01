@@ -86,6 +86,21 @@ abstract class AbstractRequest implements ModelInterface
      */
     public function getRequest()
     {
+        return $this->toRequest();
+    }
+
+    /**
+     * Get the PSR-7 request message.
+     * We are using the Guzzle PSR-7 implementation to do this, and you can
+     * still use any HTTP client you like with the result.
+     *
+     * Preferred over getRequest() for consistency to fromRequest() in the
+     * response models.
+     *
+     * @return Psr\Http\Message\RequestInterface
+     */
+    public function toRequest()
+    {
         return new \GuzzleHttp\Psr7\Request(
             $this->getMethod(),
             $this->getUri(),
