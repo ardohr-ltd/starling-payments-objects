@@ -51,5 +51,14 @@ class PaymentAccountAddressTest extends TestCase
         );
 
         $this->assertTrue($paymentAccountAddress->isActive());
+
+        $this->assertInstanceOf(
+            'Consilience\Starling\Payments\Response\Models\AddressFasterPaymentsStatus',
+            $paymentAccountAddress->fasterPaymentsStatus
+        );
+        $this->assertSame(
+            $paymentAccountAddress->fasterPaymentsStatus::ADDRESS_FPS_STATUS_ENABLED,
+            $paymentAccountAddress->fasterPaymentsStatus->outboundStatus
+        );
     }
 }

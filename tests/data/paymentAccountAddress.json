@@ -6,5 +6,9 @@
   "accountNumber": "11223344",
   "createdAt": "2017-06-05T11:47:58.801Z",
   "accountName": "Starling Bank Limited",
-  "status": "ACTIVE"
+  "status": "ACTIVE",
+  "fasterPaymentsStatus": {
+    "inboundStatus": "ENABLED",
+    "outboundStatus": "ENABLED"
+  }
 }

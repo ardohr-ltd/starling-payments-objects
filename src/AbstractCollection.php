@@ -37,6 +37,13 @@ abstract class AbstractCollection implements
         }
     }
 
+    protected function setFromArray(array $items = [])
+    {
+        foreach ($items as $value) {
+            $this->push($value);
+        }
+    }
+
     /**
      * @param array $item
      * @return self

@@ -169,6 +169,7 @@ trait HydratableTrait
      * Return any unsupported/unrecognised properties that have been pushed
      * into the model. This can be used to monitor additions to the published
      * Starling Payments API.
+     * These are properties not yet supported by this package.
      *
      * @return array
      */
