@@ -47,7 +47,7 @@ class BusinessInformationTest extends TestCase
     }
 
     /**
-     * Can instantiate from a single data record.
+     * Can instantiate from a PSR7 message.
      */
     public function testFromPSR7()
     {

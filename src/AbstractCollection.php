@@ -7,6 +7,8 @@ namespace Consilience\Starling\Payments;
  */
 
 use Psr\Http\Message\ResponseInterface;
+use Consilience\Starling\Payments\HydratableTrait;
+use Consilience\Starling\Payments\HasErrorsTrait;
 
 abstract class AbstractCollection implements
     \JsonSerializable,
@@ -14,6 +16,9 @@ abstract class AbstractCollection implements
     \IteratorAggregate,
     \ArrayAccess
 {
+    use HydratableTrait;
+    use HasErrorsTrait;
+
     protected $items = [];
 
     /**
@@ -30,6 +35,15 @@ abstract class AbstractCollection implements
         foreach ($items as $value) {
             $this->push($value);
         }
+    }
+
+    /**
+     * @param array $item
+     * @return self
+     */
+    public static function fromArray(array $items)
+    {
+        return new static($items);
     }
 
     /**
@@ -147,7 +161,33 @@ abstract class AbstractCollection implements
 
         if ($response->getHeaderLine('Content-Type') === 'application/json') {
             $bodyData = json_decode((string)$response->getBody(), true);
-            return new static($bodyData);
+            $collection = new static($bodyData);
+        } else {
+            $collection = new static();
         }
+
+        // Move any HTTP errors into the errors stack and reset the success flag.
+
+        $statusCode = $response->getStatusCode();
+        $statusClass = (int) floor($statusCode / 100);
+        $reasonPhrase = $response->getReasonPhrase();
+
+        if ($statusClass !== 2) {
+            $collection = $collection->withProperty('success', false);
+
+            // Add an error message with the HTTP details.
+            // Only do this if there are not already erros delivered from the remote host.
+
+            if ($collection->getErrorCount() === 0) {
+                $collection = $collection->withProperty(
+                    'errors',
+                    [
+                        ['message' => sprintf('%d: %s', $statusCode, $reasonPhrase)],
+                    ]
+                );
+            }
+        }
+
+        return $collection;
     }
 }
