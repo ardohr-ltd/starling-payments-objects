@@ -204,6 +204,8 @@ GetSettlementCycleCurrent | SettlementCycle
 GetSettlementCycleLast | SettlementCycle
 GetSettlementCyclePayments | PaymentDetailsCollection
 UpdatePaymentAccountAddressStatus | ChangeStatusPaymentAccountAddressResponse
+ActivateMandateRequest | ActivateMandateResponse
+CancelMandateRequest | CancelMandateResponse
 TBC | PaymentOriginatingOverseasInstructionResponse
 
 To create a response object, you can instantiate it with either the response
