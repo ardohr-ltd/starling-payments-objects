@@ -3,21 +3,21 @@
 namespace Consilience\Starling\Payments\Request;
 
 /**
- * Request to activate a mandate.
+ * Gets a specific direct debit mandate associated with the specified address.
  */
 
 use Consilience\Starling\Payments\Request\Models\Endpoint;
 use Consilience\Starling\Payments\AbstractRequest;
 use UnexpectedValueException;
 
-class ActivateMandateRequest extends AbstractRequest
+class GetDirectDebitMandate extends AbstractRequest
 {
     /**
      * @inherit
      */
-    protected $pathTemplate = 'account/{accountUid}/address/{addressUid}/mandate/{mandateUid}/activate';
+    protected $pathTemplate = 'account/{accountUid}/address/{addressUid}/mandate/{mandateUid}';
 
-    protected $httpMethod = 'PUT';
+    protected $httpMethod = 'GET';
 
     protected $accountUid;
     protected $addressUid;
@@ -25,23 +25,18 @@ class ActivateMandateRequest extends AbstractRequest
 
     /**
      * @param string $paymentBusinessUid
-     * @param string $accountUid the account UID
-     * @param string $addressUid the UID of the address
-     * @param string $addressUid the new UID to assign to the address
+     * @param string $accountUid the accound to retrieve
      */
-    public function __construct(
-        Endpoint $endpoint,
-        $accountUid,
-        $addressUid,
-        $mandateUid
-    ) {
+    public function __construct(Endpoint $endpoint, $accountUid, $addressUid, $mandateUid)
+    {
         $this->setEndpoint($endpoint);
         $this->setAccountUid($accountUid);
         $this->setAddressUid($addressUid);
+        $this->setMandateUid($mandateUid);
     }
 
     /**
-     * @param string UUID
+     * @param string UID
      */
     protected function setAccountUid($value)
     {
@@ -51,7 +46,7 @@ class ActivateMandateRequest extends AbstractRequest
     }
 
     /**
-     * @param string UUID
+     * @param string UID
      */
     protected function setAddressUid($value)
     {
@@ -61,7 +56,7 @@ class ActivateMandateRequest extends AbstractRequest
     }
 
     /**
-     * @param string UUID
+     * @param string UID
      */
     protected function setMandateUid($value)
     {

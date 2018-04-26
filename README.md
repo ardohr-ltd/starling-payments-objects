@@ -204,6 +204,8 @@ GetSettlementCycleCurrent | SettlementCycle
 GetSettlementCycleLast | SettlementCycle
 GetSettlementCyclePayments | PaymentDetailsCollection
 UpdatePaymentAccountAddressStatus | ChangeStatusPaymentAccountAddressResponse
+GetDirectDebitMandate | DirectDebitMandate
+GetDirectDebitMandates | DirectDebitMandateCollection
 ActivateMandateRequest | ActivateMandateResponse
 CancelMandateRequest | CancelMandateResponse
 TBC | PaymentOriginatingOverseasInstructionResponse
@@ -273,5 +275,7 @@ Webhooks are supported:
 * ServerRequest\FpsInboundNotification
 * ServerRequest\FpsRedirectionNotification
 * ServerRequest\FpsReversalNotification (no tests yet)
+
 * ServerRequest\AccountTransactionNotification (no tests yet)
 
+* TODO: six BACS web hooks

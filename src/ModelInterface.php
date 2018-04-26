@@ -107,7 +107,7 @@ interface ModelInterface extends \JsonSerializable
 
 
     /**
-     * @var mandate cancellation reasons
+     * @var Direct debit mandate cancellation reasons
      */
     const MANDATE_CANCELLATION_REASON_INSTRUCTION_CANCELLED =
         'INSTRUCTION_CANCELLED';
@@ -121,6 +121,12 @@ interface ModelInterface extends \JsonSerializable
     const MANDATE_CANCELLATION_REASON_NOTICE_DISPUTED = 'NOTICE_DISPUTED';
     const MANDATE_CANCELLATION_REASON_INSTRUCTION_AMENDED =
         'INSTRUCTION_AMENDED';
+
+    /**
+     * @var mandate Direct debit mandate status
+     */
+    const DIRECT_DEBIT_STATUS_ACTIVE = 'ACTIVE';
+    const DIRECT_DEBIT_STATUS_CANCELLED = 'CANCELLED';
 
     /**
      * API accepted date format example: 2017-06-05T11:47:58.801Z
