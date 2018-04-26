@@ -119,5 +119,10 @@ class BusinessInformationTest extends TestCase
             '404: Not Found',
             $businessInformation->getErrors()->first()->message
         );
+
+        $this->assertSame(
+            '404: Not Found',
+            $businessInformation->getErrors()->first()->getProperty('message')
+        );
     }
 }
