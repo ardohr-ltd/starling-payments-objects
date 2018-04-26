@@ -17,5 +17,4 @@ abstract class AbstractResponse implements ModelInterface
 {
     use HydratableTrait;
     use HasErrorsTrait;
-
 }

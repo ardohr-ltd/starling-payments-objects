@@ -46,4 +46,9 @@ trait HasErrorsTrait
     {
         return $this->errors ? $this->errors->count() : 0;
     }
+
+    public function getErrors()
+    {
+        return $this->errors;
+    }
 }

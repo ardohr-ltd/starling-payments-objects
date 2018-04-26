@@ -263,6 +263,7 @@ trait HydratableTrait
         } else {
             // We didn't get a JSON response, so must dig deeper into the response
             // to see if we can build an error detail.
+            $model = new static([]);
         }
 
         // Move any HTTP errors into the errors stack and reset the success flag.
