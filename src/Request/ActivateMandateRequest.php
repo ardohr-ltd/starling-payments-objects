@@ -3,43 +3,41 @@
 namespace Consilience\Starling\Payments\Request;
 
 /**
- * Request to create a payment account address.
+ * Request to activate a mandate.
  */
 
 use Consilience\Starling\Payments\Request\Models\Endpoint;
 use Consilience\Starling\Payments\AbstractRequest;
 use UnexpectedValueException;
 
-use Consilience\Starling\Payments\Request\Models\CreatePaymentAccountAddressRequest;
-
-class CreatePaymentAccountAddress extends AbstractRequest
+class ActivateMandateRequest extends AbstractRequest
 {
     /**
      * @inherit
      */
-    protected $pathTemplate = 'account/{accountUid}/address/{addressUid}';
+    protected $pathTemplate = 'account/{accountUid}/address/{addressUid}/mandate/{mandateUid}/activate';
 
     protected $httpMethod = 'PUT';
 
     protected $accountUid;
     protected $addressUid;
-    protected $createPaymentAccountAddressRequest;
+    protected $mandateUid;
 
     /**
      * @param string $paymentBusinessUid
-     * @param string $accountUid the account to create the address for
+     * @param string $accountUid the account UID
+     * @param string $addressUid the UID of the address
      * @param string $addressUid the new UID to assign to the address
      */
     public function __construct(
         Endpoint $endpoint,
         $accountUid,
         $addressUid,
-        CreatePaymentAccountAddressRequest $createPaymentAccountAddressRequest
+        $mandateUid
     ) {
         $this->setEndpoint($endpoint);
         $this->setAccountUid($accountUid);
         $this->setAddressUid($addressUid);
-        $this->setCreatePaymentAccountAddressRequest($createPaymentAccountAddressRequest);
     }
 
     /**
@@ -63,11 +61,13 @@ class CreatePaymentAccountAddress extends AbstractRequest
     }
 
     /**
-     * @param CreatePaymentAccountAddressRequest
+     * @param string UUID
      */
-    protected function setCreatePaymentAccountAddressRequest(CreatePaymentAccountAddressRequest $value)
+    protected function setMandateUid($value)
     {
-        $this->createPaymentAccountAddressRequest = $value;
+        $this->assertUid($value);
+
+        $this->mandateUid = $value;
     }
 
     /**
@@ -75,6 +75,6 @@ class CreatePaymentAccountAddress extends AbstractRequest
      */
     public function jsonSerialize()
     {
-        return $this->getProperty('createPaymentAccountAddressRequest');
+        return [];
     }
 }
