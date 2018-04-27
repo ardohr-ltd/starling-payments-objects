@@ -38,9 +38,30 @@ abstract class AbstractServerRequest implements ModelInterface
     // an account, rather than through an address on a payment scheme.
     const WEBHOOK_TYPE_ACCOUNT_TRANSACTION   = 'account-transaction';
 
+    // Details of a direct debit mandate which has been received for an address.
+    const WEBHOOK_TYPE_MANDATE_CREATED = 'bacs-mandate-created';
+
+    // Notification received that a direct debit mandate has been cancelled.
+    const WEBHOOK_TYPE_MANDATE_CANCELLED = 'bacs-mandate-cancelled';
+
+    // Notification received from BACS that the originator of a direct debit
+    // mandate has changed.
+    const WEBHOOK_TYPE_MANDATE_ORIGINATOR_CHANGED = 'bacs-mandate-originator-changed';
+
+    // Notification that a direct credit payment has been received.
+    const WEBHOOK_TYPE_MANDATE_DIRECT_CREDIT_RECEIVED = 'direct-credit-received';
+
+    // Notification that a direct debit payment has been paid.
+    const WEBHOOK_TYPE_MANDATE_DIRECT_CREDIT_PAID = 'direct-credit-paid';
+
+    // Notification received from Starling rejected a direct debit payment
+    // request due to lack of funds.
+    const WEBHOOK_TYPE_MANDATE_DIRECT_DEBIT_REJECTED = 'direct-debit-rejected';
+
     /**
      * @var array order in which the fields will be serialised.
      */
+    // phpcs:ignore
     protected $_fieldOrder = [];
 
     /**

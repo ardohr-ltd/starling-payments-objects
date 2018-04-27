@@ -94,7 +94,7 @@ class Endpoint implements ModelInterface
 
         $replacements = [];
 
-        foreach($fieldNames as $fieldName) {
+        foreach ($fieldNames as $fieldName) {
             $replacements['{' . $fieldName . '}'] = $this->getProperty($fieldName);
         }
 

@@ -278,4 +278,9 @@ Webhooks are supported:
 
 * ServerRequest\AccountTransactionNotification (no tests yet)
 
-* TODO: six BACS web hooks
+* ServerRequest\MandateCreatedNotification
+* ServerRequest\MandateCancelledNotification
+* ServerRequest\MandateOriginatorChangedNotification
+* ServerRequest\DirectCreditPaymentReceivedNotification
+* ServerRequest\DirectDebitPaymentPaidNotification
+* ServerRequest\DirectDebitPaymentRejectedNotification

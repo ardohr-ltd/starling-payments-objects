@@ -21,8 +21,11 @@ class CreatePaymentAccount extends GetPaymentAccount
      * @param string $paymentBusinessUid
      * @param string $accountUid the new UID to assign to this account
      */
-    public function __construct(Endpoint $endpoint, $accountUid, CreatePaymentAccountRequest $createPaymentAccountRequest)
-    {
+    public function __construct(
+        Endpoint $endpoint,
+        $accountUid,
+        CreatePaymentAccountRequest $createPaymentAccountRequest
+    ) {
         parent::__construct($endpoint, $accountUid);
 
         $this->setCreatePaymentAccountRequest($createPaymentAccountRequest);

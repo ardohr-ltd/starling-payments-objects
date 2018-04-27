@@ -42,6 +42,7 @@ class FpsRedirectionNotification extends AbstractServerRequest
     /**
      * @inherit
      */
+    // phpcs:ignore
     protected $_fieldOrder = [
         'notificationUid',
         'paymentUid',
