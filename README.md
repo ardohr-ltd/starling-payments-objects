@@ -1,4 +1,10 @@
 
+[![Build Status](https://travis-ci.org/consilience/starling-payments-objects.svg?branch=master)](https://travis-ci.org/consilience/starling-payments-objects)
+[![Latest Stable Version](https://poser.pugx.org/consilience/starling-payments-objects/v/stable)](https://packagist.org/packages/consilience/starling-payments-objects)
+[![Total Downloads](https://poser.pugx.org/consilience/starling-payments-objects/downloads)](https://packagist.org/packages/consilience/starling-payments-objects)
+[![Latest Unstable Version](https://poser.pugx.org/consilience/starling-payments-objects/v/unstable)](https://packagist.org/packages/consilience/starling-payments-objects)
+[![License](https://poser.pugx.org/consilience/starling-payments-objects/license)](https://packagist.org/packages/consilience/starling-payments-objects)
+
 ## Starling Bank Payments API Objects
 
 This is a package for PHP 5.6 to stuff the response body messages
