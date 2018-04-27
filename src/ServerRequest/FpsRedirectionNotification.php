@@ -50,7 +50,7 @@ class FpsRedirectionNotification extends AbstractServerRequest
         'redirectedAccount',
     ];
 
-    public function isSet()
+    public function hasValues()
     {
         return $this->notificationUid !== null
             || $this->paymentUid !== null

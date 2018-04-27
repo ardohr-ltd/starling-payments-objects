@@ -57,7 +57,7 @@ class PaymentAccountAddressTest extends TestCase
             $paymentAccountAddress->fasterPaymentsStatus
         );
         $this->assertSame(
-            $paymentAccountAddress->fasterPaymentsStatus::ADDRESS_FPS_STATUS_ENABLED,
+            $paymentAccountAddress::ADDRESS_FPS_STATUS_ENABLED,
             $paymentAccountAddress->fasterPaymentsStatus->outboundStatus
         );
     }

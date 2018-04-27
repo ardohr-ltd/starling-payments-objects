@@ -28,7 +28,7 @@ class PaymentRejectionReason implements ModelInterface
     /**
      * @return bool true if this object contains a value.
      */
-    public function isSet()
+    public function hasValues()
     {
         return $this->code !== null || $this->description !== null;
     }

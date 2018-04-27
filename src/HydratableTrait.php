@@ -46,7 +46,7 @@ trait HydratableTrait
         $this->setFromArray($data);
     }
 
-    public function isSet()
+    public function hasValues()
     {
         return $this->_hydratableIsSet;
     }
@@ -56,7 +56,7 @@ trait HydratableTrait
      */
     public function isEmpty()
     {
-        return ! $this->isSet();
+        return ! $this->hasValues();
     }
 
     /**
