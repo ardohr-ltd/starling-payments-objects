@@ -232,4 +232,20 @@ trait ValidationTrait
             '/^[a-zA-Z0-9\/' . preg_quote('-?:().+#=!%&*<>;{@ "\'') . ']{1,18}$/'
         );
     }
+
+    /**
+     * A payment reference.
+     * Pattern: [a-zA-Z0-9-/?:().+#=!%&*<>;{@ "']{0,140}
+     */
+    public function assertAdditionalRemittanceInformation($value)
+    {
+        if ($value !== null) {
+            $this->assertString(
+                $value,
+                static::REFERENCE_MIN_LENGTH,
+                static::REFERENCE_MAX_LENGTH,
+                '/^[a-zA-Z0-9\/' . preg_quote('-?:().+#=!%&*<>;{@ "\'') . ']{0,140}$/'
+            );
+        }
+    }
 }
