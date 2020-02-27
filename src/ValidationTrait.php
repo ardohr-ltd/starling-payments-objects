@@ -229,7 +229,30 @@ trait ValidationTrait
             $value,
             static::REFERENCE_MIN_LENGTH,
             static::REFERENCE_MAX_LENGTH,
-            '/^[a-zA-Z0-9\/' . preg_quote('-?:().+#=!%&*<>;{@ "\'') . ']{1,18}$/'
+            '/^[a-zA-Z0-9\/' . preg_quote('-?:().,+#=!%&*<>;{@ "\'') . ']'
+                . '{'.static::REFERENCE_MIN_LENGTH.','.static::REFERENCE_MAX_LENGTH.'}$/'
+        );
+    }
+
+    /**
+     * A payment additional remittance information.
+     *
+     * CHECKME: this looks wrong. The FPS scheme allows newline characters, so
+     * these must be taken into account. However, Starling seems to reject newlines
+     * when sending a payment, though can *receive* newlines in inbound domestic
+     * payments from other banks.
+     *
+     * Pattern: [a-zA-Z0-9-/?:().,+#=!%&*<>;{@ "']{0,140}
+     */
+    public function assertAdditionalRemittanceInformation($value)
+    {
+        $this->assertString(
+            $value,
+            static::ADDITIONAL_REMITTANCE_INFORMATION_MIN_LENGTH,
+            static::ADDITIONAL_REMITTANCE_INFORMATION_MAX_LENGTH,
+            '/^[a-zA-Z0-9\/' . preg_quote('-?:().,+#=!%&*<>;{@ "\'') . ']'
+                . '{'.static::ADDITIONAL_REMITTANCE_INFORMATION_MIN_LENGTH
+                . ','.static::ADDITIONAL_REMITTANCE_INFORMATION_MAX_LENGTH.'}$/'
         );
     }
 }

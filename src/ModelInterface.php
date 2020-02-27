@@ -172,4 +172,7 @@ interface ModelInterface extends \JsonSerializable
 
     const REFERENCE_MIN_LENGTH = 1;
     const REFERENCE_MAX_LENGTH = 18;
+
+    const ADDITIONAL_REMITTANCE_INFORMATION_MIN_LENGTH = 0;
+    const ADDITIONAL_REMITTANCE_INFORMATION_MAX_LENGTH = 140;
 }
