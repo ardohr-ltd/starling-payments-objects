@@ -75,12 +75,19 @@ class FpsInboundNotification extends AbstractServerRequest
      */
     protected $instructedAmount;
 
-
     /**
      * @var string
      * Reference included with the payment.
      */
     protected $reference;
+
+    /**
+     * @var string
+     * Additional remittance information included with the payment.
+     * Unstructured additional remittance information.
+     * Up to 140 characters of free text.
+     */
+    protected $additionalRemittanceInformation;
 
     /**
      * @var string date-time e.g. 2017-06-05T11:47:58.801Z

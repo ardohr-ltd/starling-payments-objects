@@ -18,6 +18,7 @@ class DomesticPaymentInstructionRequest implements ModelInterface
 
     protected $domesticInstructionAccount;
     protected $reference;
+    protected $additionalRemittanceInformation;
     protected $currencyAndAmount;
     protected $string;
 
@@ -56,6 +57,19 @@ class DomesticPaymentInstructionRequest implements ModelInterface
         $this->assertReference($value);
 
         $this->reference = $value;
+    }
+
+    /**
+     * The additional remittance information for the return transaction.
+     * The optional additionalRemittanceInformation for the return transaction.
+     *
+     * @param string
+     */
+    protected function setAdditionalRemittanceInformation($value)
+    {
+        $this->assertAdditionalRemittanceInformation($value);
+
+        $this->additionalRemittanceInformation = $value;
     }
 
     /**

@@ -67,9 +67,17 @@ class PaymentDetails extends AbstractResponse
 
     /**
      * @var string
-     * Reference included with the payment.
+     * Optional reference included with the payment.
      */
     protected $reference;
+
+    /**
+     * @var string
+     * Optional unstructured information.
+     * Unstructured additional remittance information.
+     * Up to 140 characters of free text.
+     */
+    protected $additionalRemittanceInformation;
 
     /**
      * @var string one of static::PAYMENT_STATUS_*
