@@ -61,6 +61,7 @@ class DomesticPaymentInstructionRequest implements ModelInterface
 
     /**
      * The additional remittance information for the return transaction.
+     * The optional additionalRemittanceInformation for the return transaction.
      *
      * @param string
      */

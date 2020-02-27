@@ -74,6 +74,8 @@ class PaymentDetails extends AbstractResponse
     /**
      * @var string
      * Optional unstructured information.
+     * Unstructured additional remittance information.
+     * Up to 140 characters of free text.
      */
     protected $additionalRemittanceInformation;
 
