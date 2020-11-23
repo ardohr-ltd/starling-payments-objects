@@ -140,6 +140,11 @@ abstract class AbstractServerRequest implements ModelInterface
         return static::fromData($webhookType, $data);
     }
 
+    /**
+     * The webhook type is also the last element on the webhook delivery path.
+     *
+     * @return string
+     */
     public function getWebhookType()
     {
         return $this->_webhookType;
