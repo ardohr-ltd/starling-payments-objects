@@ -71,6 +71,20 @@ class AccountTransactionNotification extends AbstractServerRequest
     protected $transactionTime;
 
     /**
+     * The sort code of the account from which the funds were sent
+     *
+     * @var string
+     */
+    protected $originSortCode;
+
+    /**
+     * The account number of the account from which the funds were sent
+     *
+     * @var string
+     */
+    protected $originAccountNumber;
+
+    /**
      * Create a model and set the property.
      *
      * @param array $data source data to hydrate the model
@@ -96,4 +110,9 @@ class AccountTransactionNotification extends AbstractServerRequest
     {
         return $this->getProperty('paymentAccountUid');
     }
+
+    // public function getCurrencyCode()
+    // {
+    //     return $this->getProperty('currencyAndAmount');
+    // }
 }
