@@ -125,6 +125,13 @@ class FpsInboundNotification extends AbstractServerRequest
     protected $fpsSettlementDate;
 
     /**
+     * New for API v3.0.1
+     * 
+     * @var string datetime e.g. "2021-01-12T17:00:00.000Z"
+     */
+    protected $deadlineForReturn;
+
+    /**
      * Create a model and set the property.
      *
      * @param array $data source data to hydrate the model
@@ -197,5 +204,13 @@ class FpsInboundNotification extends AbstractServerRequest
     public function getAccountUid()
     {
         return $this->getProperty('paymentAccountUid');
+    }
+
+    /**
+     * @return Carbon the deadlineForReturn as a Carbon object, with timezone preserved.
+     */
+    public function getDeadlineForReturnCarbon()
+    {
+        return Carbon::parse($this->deadlineForReturn);
     }
 }
