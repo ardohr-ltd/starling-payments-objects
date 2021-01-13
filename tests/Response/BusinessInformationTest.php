@@ -48,8 +48,10 @@ class BusinessInformationTest extends TestCase
 
     /**
      * Can instantiate from a PSR7 message.
+     * 
+     * @dataProvider providerFromPSR7
      */
-    public function testFromPSR7()
+    public function testFromPSR7($contentType)
     {
         $body = '{
             "paymentBusinessUid": "e2afe359-e73f-4fe1-858a-089e6811d13c",
@@ -62,7 +64,7 @@ class BusinessInformationTest extends TestCase
         $businessInformationResponse = new Psr7Response(
             200,
             [
-                'Content-Type' => 'application/json',
+                'Content-Type' => $contentType,
             ],
             // Squeeze out the white space.
             json_encode(json_decode($body))
@@ -86,6 +88,16 @@ class BusinessInformationTest extends TestCase
             'Money\Money',
             $businessInformation->netSenderCap->toMoney()
         );
+    }
+
+    public function providerFromPSR7()
+    {
+        return [
+            ['application/json'],
+            ['application/json;'],
+            ['application/json; utf-8'],
+            ['  application/json  ;  utf-8  '],
+        ];        
     }
 
     /**
