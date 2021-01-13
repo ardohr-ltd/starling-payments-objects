@@ -253,12 +253,17 @@ trait HydratableTrait
 
     /**
      * Instantiate from a PSR-7 response.
+     *
+     * @param ResponseInterface $response
+     * @return ModelInterface
      */
     public static function fromResponse(ResponseInterface $response)
     {
         // We can only deal with JSON response bodies.
 
-        if ($response->getHeaderLine('Content-Type') === 'application/json') {
+        [$contentType] = explode(';', $response->getHeaderLine('Content-Type'));
+
+        if (trim($contentType) === 'application/json') {
             $bodyData = json_decode((string)$response->getBody(), true);
             $model = new static($bodyData ?: []);
         } else {

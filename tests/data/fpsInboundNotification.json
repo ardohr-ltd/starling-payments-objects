@@ -24,6 +24,7 @@
 	},
 	"reference":"Test 456",
 	"receivedAt":"2017-12-05T10:41:34.000Z",
+	"deadlineForReturn": "2021-01-12T17:00:00.000Z",
 	"returnDetails":{},
 	"type":"SIP",
 	"settlementCycleUid":"c58c67d4-bac3-41af-8add-f3e62c2523b0",

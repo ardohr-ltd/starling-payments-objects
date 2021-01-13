@@ -4,6 +4,10 @@ namespace Consilience\Starling\Payments\Request;
 
 /**
  * Change an account address faster pauments status.
+ *
+ * Changes the faster payments status of the account,
+ * for instance marking the address as incoming or
+ * outgoing payments disabled.
  */
 
 use Consilience\Starling\Payments\Request\Models\Endpoint;
@@ -11,7 +15,7 @@ use Consilience\Starling\Payments\AbstractRequest;
 use UnexpectedValueException;
 use Consilience\Starling\Payments\Request\Models\ChangeFasterPaymentsStatusPaymentAccountAddressRequest;
 
-class UpdatePaymentAccountAddressPaymentsStatusStatus extends AbstractRequest
+class UpdatePaymentAccountAddressFasterPaymentsStatus extends AbstractRequest
 {
     /**
      * @inherit
