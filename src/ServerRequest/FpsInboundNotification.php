@@ -126,7 +126,7 @@ class FpsInboundNotification extends AbstractServerRequest
 
     /**
      * New for API v3.0.1
-     * 
+     *
      * @var string datetime e.g. "2021-01-12T17:00:00.000Z"
      */
     protected $deadlineForReturn;

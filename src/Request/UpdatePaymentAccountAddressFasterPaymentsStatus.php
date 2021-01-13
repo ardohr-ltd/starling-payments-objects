@@ -4,7 +4,7 @@ namespace Consilience\Starling\Payments\Request;
 
 /**
  * Change an account address faster pauments status.
- * 
+ *
  * Changes the faster payments status of the account,
  * for instance marking the address as incoming or
  * outgoing payments disabled.
