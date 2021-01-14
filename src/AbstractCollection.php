@@ -166,7 +166,9 @@ abstract class AbstractCollection implements
     {
         // We can only deal with JSON response bodies.
 
-        if ($response->getHeaderLine('Content-Type') === 'application/json') {
+        [$contentType] = explode(';', $response->getHeaderLine('Content-Type'));
+
+        if (trim($contentType) === 'application/json') {
             $bodyData = json_decode((string)$response->getBody(), true);
             $collection = new static($bodyData);
         } else {

@@ -1,0 +1,3840 @@
+[
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"93a446d6-0362-4e44-8b53-aa1b54a60757",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-13T07:00:27.732Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"3996a337-6bdd-40fc-9a72-18eae5e1ed46",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2021-01-13"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"b05bd34d-517e-4c15-9abb-758ca3bb7ae4",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":55944
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":55944
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-12T23:45:57.010Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"8943ed6c-1709-4027-a690-2af8c0d7bbd6",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2021-01-12"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"73b4bde6-418b-4dd9-ad1e-beb2e835f300",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-12T23:45:56.528Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"8943ed6c-1709-4027-a690-2af8c0d7bbd6",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2021-01-12"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"6aad9e36-b492-46cf-89e2-046ee4b5cf93",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-12T23:45:56.116Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"8943ed6c-1709-4027-a690-2af8c0d7bbd6",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2021-01-12"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"98cdb406-b3b6-48cd-a959-f6631c3103e4",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-12T23:45:55.728Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"8943ed6c-1709-4027-a690-2af8c0d7bbd6",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2021-01-12"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"9a6628da-3d02-422a-bf48-98da761efa55",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-12T23:45:55.342Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"8943ed6c-1709-4027-a690-2af8c0d7bbd6",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2021-01-12"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"6fd954d1-e63c-4454-9b40-c035b515cf29",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-12T23:45:54.910Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"8943ed6c-1709-4027-a690-2af8c0d7bbd6",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2021-01-12"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"23ce715c-9371-450d-86e7-29cfdfed88a0",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-12T23:45:54.528Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"8943ed6c-1709-4027-a690-2af8c0d7bbd6",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2021-01-12"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"8f723ea7-e50d-4f2b-aaed-3b2cf169e488",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:0bdf2c7e-474b-406c-8190-0c4fc3bc92e0:2534:1791 2of2",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-12T13:06:54.195Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"97de74e0-a48b-4a51-91cf-becb03c8abad",
+       "fpsSettlementCycleId":"CYCLE_002",
+       "fpsSettlementDate":"2021-01-12"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"8f723060-c7f1-4ce1-b8e5-ff993d30746a",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:0bdf2c7e-474b-406c-8190-0c4fc3bc92e0:2534:1790 1of2",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-12T13:06:53.788Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"97de74e0-a48b-4a51-91cf-becb03c8abad",
+       "fpsSettlementCycleId":"CYCLE_002",
+       "fpsSettlementDate":"2021-01-12"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"8f71c250-ada0-46de-b1b7-2fd5ad86c8c7",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:08ce1aca-c3cc-47ee-be30-400163d879ac:2530:1789 2of2",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-12T13:05:47.813Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"97de74e0-a48b-4a51-91cf-becb03c8abad",
+       "fpsSettlementCycleId":"CYCLE_002",
+       "fpsSettlementDate":"2021-01-12"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"8f71d356-0325-416b-a0a4-a57bbe476deb",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:08ce1aca-c3cc-47ee-be30-400163d879ac:2530:1788 1of2",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-12T13:05:47.428Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"97de74e0-a48b-4a51-91cf-becb03c8abad",
+       "fpsSettlementCycleId":"CYCLE_002",
+       "fpsSettlementDate":"2021-01-12"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"8f70b351-3559-4963-98fa-68b12ee01d23",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:99d7c9fa-a0f6-45bc-82f8-6bef147eeec3:2529:1787 2of2",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-12T13:04:34.723Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"97de74e0-a48b-4a51-91cf-becb03c8abad",
+       "fpsSettlementCycleId":"CYCLE_002",
+       "fpsSettlementDate":"2021-01-12"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"8f700812-c070-47c0-a969-ee42bfdd3323",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:99d7c9fa-a0f6-45bc-82f8-6bef147eeec3:2529:1786 1of2",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-12T13:04:34.136Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"97de74e0-a48b-4a51-91cf-becb03c8abad",
+       "fpsSettlementCycleId":"CYCLE_002",
+       "fpsSettlementDate":"2021-01-12"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"8f3ed004-0c54-4887-a7f5-e82aaf66505b",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":54321
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":54321
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:e80e1de9-b295-4eec-8cae-ba01401ea273:2511:1785 8of8",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-12T12:14:18.840Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"529ff95e-b81f-40d7-ab32-2620232956d4",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2021-01-12"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"8f3e1c22-ea04-4e8b-9347-8e64058be66e",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:e80e1de9-b295-4eec-8cae-ba01401ea273:2511:1784 7of8",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-12T12:14:18.522Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"529ff95e-b81f-40d7-ab32-2620232956d4",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2021-01-12"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"8f3e06e4-d798-4171-9be1-15d4b0cfbf5c",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:e80e1de9-b295-4eec-8cae-ba01401ea273:2511:1783 6of8",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-12T12:14:18.144Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"529ff95e-b81f-40d7-ab32-2620232956d4",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2021-01-12"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"8f3e4b68-6b66-4e86-a117-de39e0948ebe",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:e80e1de9-b295-4eec-8cae-ba01401ea273:2511:1782 5of8",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-12T12:14:17.774Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"529ff95e-b81f-40d7-ab32-2620232956d4",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2021-01-12"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"8f3e2eb9-1dc2-4916-b912-89295bf35fcb",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:e80e1de9-b295-4eec-8cae-ba01401ea273:2511:1781 4of8",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-12T12:14:17.365Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"529ff95e-b81f-40d7-ab32-2620232956d4",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2021-01-12"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"8f3e7c21-fc78-4944-9aa7-f6363b0690d7",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:e80e1de9-b295-4eec-8cae-ba01401ea273:2511:1780 3of8",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-12T12:14:16.878Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"529ff95e-b81f-40d7-ab32-2620232956d4",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2021-01-12"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"8f3e22c0-d58c-44c9-9655-011fe6937fab",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:e80e1de9-b295-4eec-8cae-ba01401ea273:2511:1779 2of8",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-12T12:14:16.427Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"529ff95e-b81f-40d7-ab32-2620232956d4",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2021-01-12"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"8f3ec438-1794-4557-ad91-3089ca8395d9",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:e80e1de9-b295-4eec-8cae-ba01401ea273:2511:1778 1of8",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-12T12:14:16.156Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"529ff95e-b81f-40d7-ab32-2620232956d4",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2021-01-12"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"8e047ed9-027a-4528-af59-62f8a0a876ef",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-12T07:00:19.625Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"529ff95e-b81f-40d7-ab32-2620232956d4",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2021-01-12"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"29d6fb4c-0e9e-4592-b727-c451ea69e761",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50123
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50123
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-11T23:45:32.384Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"20da473a-c678-4f4b-a197-c6c64803f16e",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2021-01-11"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"8b2acdaf-b2cf-4716-b4c0-39ceec0b8518",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":5944
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":5944
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:b3e7f1fb-8f70-4c6a-87f2-84c00103d8fc:2490:1773 7of7",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-11T18:50:32.982Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"20da473a-c678-4f4b-a197-c6c64803f16e",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2021-01-11"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"8b2ad862-383d-45ce-bea3-3ab0ea008a6b",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:b3e7f1fb-8f70-4c6a-87f2-84c00103d8fc:2490:1772 6of7",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-11T18:50:32.691Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"20da473a-c678-4f4b-a197-c6c64803f16e",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2021-01-11"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"8b2ae8f3-f53a-4eb5-a3ad-7e19f4439e13",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:b3e7f1fb-8f70-4c6a-87f2-84c00103d8fc:2490:1771 5of7",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-11T18:50:32.374Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"20da473a-c678-4f4b-a197-c6c64803f16e",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2021-01-11"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"8b2a422e-1384-4a1b-bcd0-fe2e210ed39c",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:b3e7f1fb-8f70-4c6a-87f2-84c00103d8fc:2490:1770 4of7",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-11T18:50:32.066Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"20da473a-c678-4f4b-a197-c6c64803f16e",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2021-01-11"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"8b2aa0e0-3008-415e-913a-5798f2d8fc7c",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:b3e7f1fb-8f70-4c6a-87f2-84c00103d8fc:2490:1769 3of7",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-11T18:50:31.768Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"20da473a-c678-4f4b-a197-c6c64803f16e",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2021-01-11"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"8b2a52bd-ae64-4f72-991e-bc6987a0b375",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:b3e7f1fb-8f70-4c6a-87f2-84c00103d8fc:2490:1768 2of7",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-11T18:50:31.359Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"20da473a-c678-4f4b-a197-c6c64803f16e",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2021-01-11"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"8b2a127d-a7ab-405a-8118-39e9ba17bb06",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:b3e7f1fb-8f70-4c6a-87f2-84c00103d8fc:2490:1767 1of7",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-11T18:50:30.764Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"20da473a-c678-4f4b-a197-c6c64803f16e",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2021-01-11"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"5474fa57-b8fe-44fc-b74d-ce3ce6237373",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-11T15:55:24.764Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"d0113665-679f-491a-b92a-9ce4134b06dc",
+       "fpsSettlementCycleId":"CYCLE_002",
+       "fpsSettlementDate":"2021-01-11"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"8a52c320-ee41-453b-9890-ac9efc67e969",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":123
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":123
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-11T15:14:10.943Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"d0113665-679f-491a-b92a-9ce4134b06dc",
+       "fpsSettlementCycleId":"CYCLE_002",
+       "fpsSettlementDate":"2021-01-11"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"886432cd-dad8-41a9-bd2a-5d5c1c98140f",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-11T07:00:34.646Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"c3f615a7-dcf7-4b4b-9825-641b3d34b45a",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2021-01-11"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"44195590-7caa-4876-a101-2880f79b375c",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-10T23:45:29.819Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"7a0d93bb-3044-4e3c-aee9-762bff839aaf",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2021-01-08"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"82c4ac9e-9e29-4da7-bed2-69bf05296ce7",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-10T07:00:29.878Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"7a0d93bb-3044-4e3c-aee9-762bff839aaf",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2021-01-08"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"ad7303d8-c09e-4167-bb76-15f6315286b6",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-09T23:45:36.368Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"7a0d93bb-3044-4e3c-aee9-762bff839aaf",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2021-01-08"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"7d246f08-ee49-46a5-92b2-1db36712ddad",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-09T07:00:16.257Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"7a0d93bb-3044-4e3c-aee9-762bff839aaf",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2021-01-08"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"f693d180-c8b5-4aa4-b104-830cce3da4a2",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-08T23:45:40.281Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"7a0d93bb-3044-4e3c-aee9-762bff839aaf",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2021-01-08"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"77840601-af6b-4331-b41b-e03b44673be9",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-08T07:00:16.846Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"25d59d18-f217-428c-90ba-8de48d64a94b",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2021-01-08"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"78706303-1d3a-421e-ac32-78e5888238d3",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-07T23:45:40.896Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"7f23d18d-fe1f-41d0-ba2d-43dce6eddfb7",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2021-01-07"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"71e42b2f-a3f6-4d93-99ce-dcb1d8d3bdc8",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-07T07:00:22.306Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"0d1041e2-ec0e-445a-9a89-a7d46801dd23",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2021-01-07"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"d1005414-f0d4-4120-bfba-4e95742d360c",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":51000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":51000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-06T23:45:47.484Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"20cb6cfb-a1ba-4318-a668-19a349e8300f",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2021-01-06"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"3669018c-94d0-4c53-b473-270ac888c46d",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-06T23:45:47.066Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"20cb6cfb-a1ba-4318-a668-19a349e8300f",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2021-01-06"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"6c4444ac-4830-47d3-956d-28823ca386eb",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-06T07:00:19.036Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"7835b2f4-1249-48c5-9a39-41ccbf03c78c",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2021-01-06"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"66a422bc-f3d7-4a70-823b-6dcb5ba11468",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-05T07:00:34.852Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"f7eb9a30-e373-4a2f-beba-e97a3d26567f",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2021-01-05"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"610467b3-9f15-4383-b649-e0f40ab88dee",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-04T07:00:30.204Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"1d5f38c7-a058-4715-8716-a26ba7f02136",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2021-01-04"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"5b64a840-a851-478f-879b-b29ef82371d0",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-03T07:00:26.404Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"24c11e3c-7d4f-43e5-a62e-eeff7f27a862",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-31"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"55c48cc7-b65a-4369-8c43-7ca5c49434d6",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-02T07:00:24.330Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"24c11e3c-7d4f-43e5-a62e-eeff7f27a862",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-31"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"5024e9f6-ef7a-4eb2-8d20-9ec0b6f7be12",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2021-01-01T07:00:34.122Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"24c11e3c-7d4f-43e5-a62e-eeff7f27a862",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-31"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"4a845b39-6551-45a4-811d-2aef42def9c2",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-31T07:00:24.218Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"253c96f1-e481-450a-8e45-68c0a54e4a46",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2020-12-31"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"44e470bf-4368-4e1d-ab2f-f009f5fab280",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-30T07:00:41.155Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"bd5c0da3-5d7d-4d89-9570-4035fa54723a",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2020-12-30"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"3f44a173-2902-41ef-a449-5e744cfb7ffd",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-29T07:00:15.093Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"9fbd8da0-adb7-45f9-bbec-b7880f74afe0",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2020-12-29"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"39a4d32e-cfce-48bb-a6a7-5c4634f371b9",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-28T07:00:30.757Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"d826f29b-9220-4588-a48f-e84bc7a9ac00",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-24"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"34048499-20a3-4867-b15e-5141c35c4c0f",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-27T07:00:21.574Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"d826f29b-9220-4588-a48f-e84bc7a9ac00",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-24"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"2e6486aa-5ee8-4f98-87ea-834d88bbe93a",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-26T07:00:22.948Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"d826f29b-9220-4588-a48f-e84bc7a9ac00",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-24"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"28c47980-7cfc-4250-b396-a7f37588ba1a",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-25T07:00:23.087Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"d826f29b-9220-4588-a48f-e84bc7a9ac00",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-24"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"232490d6-2fe1-4351-9953-3e6b37190cfa",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-24T07:00:50.299Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"f906cfdf-7722-4213-a314-8b18b0e4246a",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2020-12-24"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"1d84c808-fbcc-4685-836b-d4bde0c4f386",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-23T07:00:16.691Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"4d9b2762-ed79-4c36-b989-9d86a3ec70cf",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2020-12-23"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"17e473f3-2c91-4c81-860c-6afe1fe09939",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-22T07:00:15.429Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"f110bb22-2821-4b53-8cd8-0536d4cddc96",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2020-12-22"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"124461ee-b020-4c3e-95a7-dd2b752ce4a0",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-21T07:00:19.970Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"da8a09a6-8794-4706-8d13-388796caf40c",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2020-12-21"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"0ca45467-dd11-4957-a899-b4f0060f37b1",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-20T07:00:25.006Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"db89ede4-a9a3-4adf-998a-4d0f6d562cd9",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"9f33d523-7f38-4951-9323-83ec681841af",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":52500
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":52500
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-19T23:45:52.465Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"db89ede4-a9a3-4adf-998a-4d0f6d562cd9",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"2041dbb0-5470-4985-803c-8dcc7484923d",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-19T23:45:52.085Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"db89ede4-a9a3-4adf-998a-4d0f6d562cd9",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"29ccc811-4079-4475-85a2-2e1ff4c34d53",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-19T23:45:51.779Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"db89ede4-a9a3-4adf-998a-4d0f6d562cd9",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"42b6b725-c3a4-46ad-aed3-2bf30111e74e",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-19T23:45:51.495Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"db89ede4-a9a3-4adf-998a-4d0f6d562cd9",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"36ce68dd-82ba-44c0-bc20-cacda33c4c68",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-19T23:45:51.194Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"db89ede4-a9a3-4adf-998a-4d0f6d562cd9",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"778b1bb3-7a19-44a5-8b1c-4da3fe3750f3",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-19T23:45:50.896Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"db89ede4-a9a3-4adf-998a-4d0f6d562cd9",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"7519818c-c539-4671-9bd5-c34559e9b855",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-19T23:45:50.562Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"db89ede4-a9a3-4adf-998a-4d0f6d562cd9",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"750de83e-4414-4e80-8db0-1f37da27c7b7",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-19T23:45:50.280Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"db89ede4-a9a3-4adf-998a-4d0f6d562cd9",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"9889d2e3-ab53-41f2-88cb-886bc74381d6",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-19T23:45:49.879Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"db89ede4-a9a3-4adf-998a-4d0f6d562cd9",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"0092f889-0896-4f0a-b9d7-562167a156ae",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-19T23:45:49.583Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"db89ede4-a9a3-4adf-998a-4d0f6d562cd9",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"220234cf-d922-4749-ae1d-46d96654535c",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-19T23:45:49.199Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"db89ede4-a9a3-4adf-998a-4d0f6d562cd9",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"2579a1fa-a86d-4bb5-9b8c-0d550a9eea9b",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-19T23:45:48.882Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"db89ede4-a9a3-4adf-998a-4d0f6d562cd9",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"f16c5883-7f23-4f3d-9195-6710c984e996",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-19T23:45:48.583Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"db89ede4-a9a3-4adf-998a-4d0f6d562cd9",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"f73d1936-9212-4542-a51b-45cec7532df4",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-19T23:45:48.252Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"db89ede4-a9a3-4adf-998a-4d0f6d562cd9",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"ae449cea-ec5b-4006-8192-04b6c0a36f87",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-19T23:45:47.964Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"db89ede4-a9a3-4adf-998a-4d0f6d562cd9",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"0704db47-ae14-42c9-bb20-831ecb8f13db",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-19T07:00:23.080Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"db89ede4-a9a3-4adf-998a-4d0f6d562cd9",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"05d65df3-1b54-401f-921a-4258de040fd1",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":1000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":1000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:518b913c-8902-4332-855c-e96c314b3015:2369:1667 1of1",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-19T01:58:37.915Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"db89ede4-a9a3-4adf-998a-4d0f6d562cd9",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"d7ad3cfc-f6de-4c08-8c4a-b75e31705a92",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-18T23:45:45.991Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"db89ede4-a9a3-4adf-998a-4d0f6d562cd9",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"0217eb84-98c4-4e7d-88cd-cf9695cf9ede",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:24f5b87f-e89f-4704-9784-1eda062b0fa3:2323:1567 9of95",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-18T09:59:31.926Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"3ee8be36-fd61-46b3-8842-3f3d640ea9ef",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"021796a5-fe0f-440e-9559-34c684f01702",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:24f5b87f-e89f-4704-9784-1eda062b0fa3:2323:1566 8of95",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-18T09:59:31.645Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"3ee8be36-fd61-46b3-8842-3f3d640ea9ef",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"021762ca-5530-480d-86f7-840c27d20632",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:24f5b87f-e89f-4704-9784-1eda062b0fa3:2323:1565 7of95",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-18T09:59:31.357Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"3ee8be36-fd61-46b3-8842-3f3d640ea9ef",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"021755c9-7880-446b-9f9f-e0c32ea72eee",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:24f5b87f-e89f-4704-9784-1eda062b0fa3:2323:1564 6of95",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-18T09:59:30.976Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"3ee8be36-fd61-46b3-8842-3f3d640ea9ef",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"0217aae7-387c-40f2-a354-3aad65f812c8",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:24f5b87f-e89f-4704-9784-1eda062b0fa3:2323:1563 5of95",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-18T09:59:30.717Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"3ee8be36-fd61-46b3-8842-3f3d640ea9ef",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"021791d2-5bfb-49ca-86f7-39020f229f64",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:24f5b87f-e89f-4704-9784-1eda062b0fa3:2323:1562 4of95",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-18T09:59:30.420Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"3ee8be36-fd61-46b3-8842-3f3d640ea9ef",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"0217a023-0602-4b91-ab03-e7075bda93fd",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:24f5b87f-e89f-4704-9784-1eda062b0fa3:2323:1561 3of95",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-18T09:59:30.024Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"3ee8be36-fd61-46b3-8842-3f3d640ea9ef",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"02179b13-c1f6-47ac-8fea-f89ef7da773e",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:24f5b87f-e89f-4704-9784-1eda062b0fa3:2323:1560 2of95",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-18T09:59:29.675Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"3ee8be36-fd61-46b3-8842-3f3d640ea9ef",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"0217ae20-6cd0-440c-8931-7b73b5426ad5",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:24f5b87f-e89f-4704-9784-1eda062b0fa3:2323:1559 1of95",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-18T09:59:29.229Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"3ee8be36-fd61-46b3-8842-3f3d640ea9ef",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"021297f1-e822-4c63-8ab4-489d88a0bbb7",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:24f5b87f-e89f-4704-9784-1eda062b0fa3:2323:1458 5of100",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-18T09:54:10.643Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"3ee8be36-fd61-46b3-8842-3f3d640ea9ef",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"0212e10a-1478-4c59-bd03-d4d9374ce2a4",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:24f5b87f-e89f-4704-9784-1eda062b0fa3:2323:1457 4of100",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-18T09:54:10.177Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"3ee8be36-fd61-46b3-8842-3f3d640ea9ef",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"0212d3cb-b3e7-49d3-8d80-1d6bfdf964f8",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:24f5b87f-e89f-4704-9784-1eda062b0fa3:2323:1456 3of100",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-18T09:54:09.779Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"3ee8be36-fd61-46b3-8842-3f3d640ea9ef",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"0212d0ba-a037-4243-b7a0-b6c4172a5a3a",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:24f5b87f-e89f-4704-9784-1eda062b0fa3:2323:1455 2of100",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-18T09:54:09.211Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"3ee8be36-fd61-46b3-8842-3f3d640ea9ef",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"02121818-5004-4b7b-97e1-c038e8f2669f",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":100000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:24f5b87f-e89f-4704-9784-1eda062b0fa3:2323:1454 1of100",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-18T09:54:08.891Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"3ee8be36-fd61-46b3-8842-3f3d640ea9ef",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"016497f6-e8c2-4c34-8454-9024c225e75e",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"TEST REF"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-18T07:00:28.762Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"3ee8be36-fd61-46b3-8842-3f3d640ea9ef",
+       "fpsSettlementCycleId":"CYCLE_001",
+       "fpsSettlementDate":"2020-12-18"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"ffdeb143-c97f-45ab-ad88-5d2ef1de7932",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":2500
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":2500
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:f749112d-eb84-46ed-8b6e-3485dffb883e:2318:1353 1of1",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-18T00:30:45.121Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"1804c506-f29d-427e-a4b7-c1354241ef0d",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-17"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"40fb6f4a-9b91-433f-bcb8-3ad6ec05469e",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":52000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":52000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-17T23:45:43.717Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"1804c506-f29d-427e-a4b7-c1354241ef0d",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-17"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"ff94f50a-04e3-4289-82bc-db712e879d2a",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "direction":"INBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":2000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":2000
+       },
+       "reference":"TEST REF",
+       "additionalRemittanceInformation":"FAV:c0303d5e-f343-4b54-b44f-8923d78b7d76:2312:1348 1of1",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-17T23:16:48.878Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"1804c506-f29d-427e-a4b7-c1354241ef0d",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-17"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"c2d51a01-306a-4de2-90bb-a637d7b3e331",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"17060849",
+          "accountName":"GENERIC ORIGIN ACCOUNT"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":50000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-17T23:01:36.546Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"1804c506-f29d-427e-a4b7-c1354241ef0d",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-17"
+    },
+    {
+       "paymentBusinessUid":"4b77e5aa-21ea-4852-8219-2f95d454a2d1",
+       "paymentAccountUid":"e51a3199-1db9-42fb-b79d-e31b96cc37b9",
+       "addressUid":"0993ff0a-7931-427a-927d-fe01209ece22",
+       "paymentUid":"8da421e0-7d82-47bb-9501-cf26edbaa291",
+       "sourceAccount":{
+          "sortCode":"040404",
+          "accountNumber":"06753425",
+          "accountName":"Sandpit TEST REF test foobar"
+       },
+       "destinationAccount":{
+          "sortCode":"040404",
+          "accountNumber":"89212788",
+          "accountName":"CHAPS Routing"
+       },
+       "direction":"OUTBOUND",
+       "settlementAmount":{
+          "currency":"GBP",
+          "minorUnits":1000
+       },
+       "instructedAmount":{
+          "currency":"GBP",
+          "minorUnits":1000
+       },
+       "reference":"TEST REF",
+       "status":"ACCEPTED",
+       "rejectedReason":{
+          
+       },
+       "requestedAt":"2020-12-17T22:58:40.558Z",
+       "returnDetails":{
+          
+       },
+       "type":"SIP",
+       "settlementCycleUid":"1804c506-f29d-427e-a4b7-c1354241ef0d",
+       "fpsSettlementCycleId":"CYCLE_003",
+       "fpsSettlementDate":"2020-12-17"
+    }
+ ]
