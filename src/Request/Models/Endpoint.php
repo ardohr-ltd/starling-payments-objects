@@ -9,9 +9,7 @@ namespace Consilience\Starling\Payments\Request\Models;
 use Consilience\Starling\Payments\HydratableTrait;
 use Consilience\Starling\Payments\ValidationTrait;
 use Consilience\Starling\Payments\ModelInterface;
-use UnexpectedValueException;
-
-use function GuzzleHttp\Psr7\build_query;
+use GuzzleHttp\Psr7\Query;
 use GuzzleHttp\Psr7\Uri;
 
 class Endpoint implements ModelInterface
@@ -98,11 +96,15 @@ class Endpoint implements ModelInterface
             $replacements['{' . $fieldName . '}'] = $this->getProperty($fieldName);
         }
 
-        $path = str_replace(
-            array_keys($replacements),
-            array_values($replacements),
-            $template
-        );
+        // A URL with an authority must start with a slash.
+
+        $path = '/' . ltrim(
+            str_replace(
+                array_keys($replacements),
+                array_values($replacements),
+                $template
+            ),
+        '/');
 
         $uri = new Uri();
 
@@ -112,7 +114,7 @@ class Endpoint implements ModelInterface
             ->withHost($this->host);
 
         if (! empty($query)) {
-            $uri = $uri->withQuery(build_query($query));
+            $uri = $uri->withQuery(Query::build($query));
         }
 
         return $uri;

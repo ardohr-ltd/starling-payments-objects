@@ -61,6 +61,7 @@ class BusinessInformationTest extends TestCase
                 "minorUnits": 12345
             }
         }';
+        
         $businessInformationResponse = new Psr7Response(
             200,
             [
