@@ -7,7 +7,6 @@ namespace Consilience\Starling\Payments\Request;
  */
 
 use Consilience\Starling\Payments\Request\Models\Endpoint;
-use UnexpectedValueException;
 
 class CancelMandateRequest extends ActivateMandateRequest
 {
@@ -55,7 +54,7 @@ class CancelMandateRequest extends ActivateMandateRequest
     /**
      * @return CreatePaymentAccountAddressRequest for serializing
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         $reason = $this->getProperty('mandateStatusCancellationReason');
 

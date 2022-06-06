@@ -79,7 +79,7 @@ abstract class AbstractCollection implements
         $this->items[] = $item;
     }
 
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         $data = [];
 

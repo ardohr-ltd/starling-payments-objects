@@ -41,7 +41,7 @@ class PaymentReturnResponseTest extends TestCase
         $paymentReturnResponseData = $this->readDataFile('paymentReturnResponse.json');
 
         $paymentReturnResponse = PaymentReturnResponse::fromArray(
-            $paymentReturnResponseData
+            $paymentReturnResponseData,
         );
 
         $this->assertTrue($paymentReturnResponse instanceof PaymentReturnResponse);
@@ -50,7 +50,7 @@ class PaymentReturnResponseTest extends TestCase
         $this->assertSame(1, $paymentReturnResponse->errors->count());
         $this->assertSame(
             'Something about the validation error',
-            $paymentReturnResponse->errors->first()->message
+            $paymentReturnResponse->errors->first()->message,
         );
     }
 }
