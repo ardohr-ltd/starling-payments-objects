@@ -8,7 +8,6 @@ namespace Consilience\Starling\Payments\Request;
 
 use Consilience\Starling\Payments\Request\Models\Endpoint;
 use Consilience\Starling\Payments\AbstractRequest;
-use UnexpectedValueException;
 
 class UpdatePaymentAccountAddressStatus extends AbstractRequest
 {
@@ -75,7 +74,7 @@ class UpdatePaymentAccountAddressStatus extends AbstractRequest
     /**
      * @return array for serializing
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return [
             'status' => $this->getProperty('status')

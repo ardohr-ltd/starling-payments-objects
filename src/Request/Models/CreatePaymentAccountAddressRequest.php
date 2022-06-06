@@ -12,9 +12,6 @@ namespace Consilience\Starling\Payments\Request\Models;
 use Consilience\Starling\Payments\HydratableTrait;
 use Consilience\Starling\Payments\ValidationTrait;
 use Consilience\Starling\Payments\ModelInterface;
-use UnexpectedValueException;
-
-use Consilience\Starling\Payments\Response\Models\CurrencyAndAmount;
 
 class CreatePaymentAccountAddressRequest implements ModelInterface
 {
@@ -114,7 +111,7 @@ class CreatePaymentAccountAddressRequest implements ModelInterface
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         $data = [
             'accountName' => $this->accountName,

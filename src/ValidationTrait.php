@@ -19,7 +19,7 @@ trait ValidationTrait
      * @param null $prefix
      * @return array
      */
-    public function constantList($prefix = null)
+    public function constantList(?string $prefix = null): array
     {
         $reflection = new ReflectionClass(get_called_class());
         $constants = $reflection->getConstants();
@@ -32,6 +32,7 @@ trait ValidationTrait
                     $result[$key] = $value;
                 }
             }
+
             return $result;
         } else {
             return $constants;
@@ -41,13 +42,13 @@ trait ValidationTrait
     /**
      * Get a class constant value based on suffix and prefix.
      * Returns null if not found.
-     * TODO: map camelCase suffic to UPPER_SNAKE_CASE
+     * TODO: map camelCase suffix to UPPER_SNAKE_CASE
      *
      * @param $prefix
      * @param $suffix
      * @return mixed|null
      */
-    public function constantValue($prefix, $suffix)
+    public function constantValue(string $prefix, string $suffix): mixed
     {
         $name = strtoupper($prefix . '_' . $suffix);
 
@@ -61,20 +62,20 @@ trait ValidationTrait
     /**
      * Asserts a value is in the list of constants provides by the prefix.
      */
-    public function assertInConstantList($prefix, $value)
+    public function assertInConstantList(?string $prefix, string $value)
     {
-        if (! is_string($value)) {
-            throw new UnexpectedValueException(sprintf(
-                'Value must be a string; %s given',
-                gettype($value)
-            ));
-        }
+        // if (! is_string($value)) {
+        //     throw new UnexpectedValueException(sprintf(
+        //         'Value must be a string; %s given',
+        //         gettype($value)
+        //     ));
+        // }
 
         if (! in_array($value, $this->constantList($prefix))) {
             throw new UnexpectedValueException(sprintf(
                 'Value "%s" not defined as constant "%s*"',
                 $value,
-                $prefix
+                $prefix,
             ));
         }
     }
@@ -83,12 +84,12 @@ trait ValidationTrait
      * Assert a value is a string, optionally within a length array.
      *
      * @value mixed the value being checked
-     * @param int $minLegth
-     * @param int $maxLegth null for no check
+     * @param int $minLength
+     * @param int $maxLength null for no check
      * @param string $pattern regular expression (preg) to validate against
      * @throws UnexpectedValueException
      */
-    public function assertString($value, $minLength = 0, $maxLength = null, $pattern = null)
+    public function assertString($value, int $minLength = 0, $maxLength = null, $pattern = null)
     {
         if (! is_string($value)) {
             throw new UnexpectedValueException(sprintf(

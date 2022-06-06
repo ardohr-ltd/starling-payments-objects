@@ -9,7 +9,6 @@ namespace Consilience\Starling\Payments;
 use Consilience\Starling\Payments\HydratableTrait;
 use Consilience\Starling\Payments\ValidationTrait;
 use Consilience\Starling\Payments\ModelInterface;
-
 use Consilience\Starling\Payments\Request\Models\Endpoint;
 
 abstract class AbstractRequest implements ModelInterface
@@ -172,8 +171,8 @@ abstract class AbstractRequest implements ModelInterface
     /**
      * @return null an empty body by default
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
-        return;
+        return null;
     }
 }

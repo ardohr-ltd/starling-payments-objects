@@ -28,5 +28,10 @@ class DomesticPaymentInstructionRequestTest extends TestCase
             $currencyAndAmount,
             'SIP'
         );
+
+        $this->assertSame(
+            '000000',
+            $model->getProperty('domesticInstructionAccount')->getProperty('sortCode'),
+        );
     }
 }

@@ -60,11 +60,11 @@ class CreatePaymentAccountAddressRequestTest extends TestCase
 
     /**
      * Fail on string limit exceeded.
-     *
-     * @expectedException UnexpectedValueException
      */
     public function testStringTooLong()
     {
+        $this->expectException(UnexpectedValueException::class);
+
         $maxAccountName = str_repeat('Z', 41);
 
         $createPaymentAccountAddressRequest = new createPaymentAccountAddressRequest(
@@ -75,11 +75,11 @@ class CreatePaymentAccountAddressRequestTest extends TestCase
 
     /**
      * Fail on wrong data type.
-     *
-     * @expectedException UnexpectedValueException
      */
     public function testStringNotString()
     {
+        $this->expectException(UnexpectedValueException::class);
+
         $createPaymentAccountAddressRequest = new createPaymentAccountAddressRequest(
             123,
             '555555'
@@ -88,11 +88,11 @@ class CreatePaymentAccountAddressRequestTest extends TestCase
 
     /**
      * Fail on wrong enum valuee.
-     *
-     * @expectedException UnexpectedValueException
      */
     public function testInvalidAccountNameFormat()
     {
+        $this->expectException(UnexpectedValueException::class);
+
         $createPaymentAccountAddressRequest = new createPaymentAccountAddressRequest(
             'Invalid Name[]',
             '000000'
@@ -101,11 +101,11 @@ class CreatePaymentAccountAddressRequestTest extends TestCase
 
     /**
      * Fail on wrong enum valuee.
-     *
-     * @expectedException UnexpectedValueException
      */
     public function testInvalidSortCodeFormat()
     {
+        $this->expectException(UnexpectedValueException::class);
+
         $createPaymentAccountAddressRequest = new createPaymentAccountAddressRequest(
             'Valid Name',
             'ZZZZZZ'

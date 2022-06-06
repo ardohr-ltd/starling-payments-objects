@@ -6,6 +6,7 @@ namespace Consilience\Starling\Payments\Request\Models;
  *
  */
 
+use UnexpectedValueException;
 use PHPUnit\Framework\TestCase;
 
 class CreatePaymentAccountRequestTest extends TestCase
@@ -46,11 +47,11 @@ class CreatePaymentAccountRequestTest extends TestCase
 
     /**
      * Fail on string limit exceeded.
-     *
-     * @expectedException UnexpectedValueException
      */
     public function testStringTooLong()
     {
+        $this->expectException(UnexpectedValueException::class);
+
         $maxDescription = str_repeat('x', 101);
 
         $createPaymentAccountRequest = new CreatePaymentAccountRequest(
@@ -61,11 +62,11 @@ class CreatePaymentAccountRequestTest extends TestCase
 
     /**
      * Fail on wrong data type.
-     *
-     * @expectedException UnexpectedValueException
      */
     public function testStringNotString()
     {
+        $this->expectException(UnexpectedValueException::class);
+
         $createPaymentAccountRequest = new CreatePaymentAccountRequest(
             123,
             'PAYMENT_BUSINESS'
@@ -74,11 +75,11 @@ class CreatePaymentAccountRequestTest extends TestCase
 
     /**
      * Fail on wrong enum valuee.
-     *
-     * @expectedException UnexpectedValueException
      */
     public function testInvalidEnum()
     {
+        $this->expectException(UnexpectedValueException::class);
+
         $createPaymentAccountRequest = new CreatePaymentAccountRequest(
             'Valid Description',
             'INVALID_ENUM_VALUE'
