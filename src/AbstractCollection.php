@@ -6,9 +6,13 @@ namespace Consilience\Starling\Payments;
  *
  */
 
+use Traversable;
+use ArrayIterator;
+use InvalidArgumentException;
 use Psr\Http\Message\ResponseInterface;
-use Consilience\Starling\Payments\HydratableTrait;
 use Consilience\Starling\Payments\HasErrorsTrait;
+use Prophecy\Doubler\ClassPatch\TraversablePatch;
+use Consilience\Starling\Payments\HydratableTrait;
 
 abstract class AbstractCollection implements
     \JsonSerializable,
@@ -56,7 +60,7 @@ abstract class AbstractCollection implements
     /**
      * @return int
      */
-    public function count()
+    public function count(): int
     {
         return count($this->items);
     }
@@ -101,28 +105,28 @@ abstract class AbstractCollection implements
     /**
      * @return bool
      */
-    public function isEmpty()
+    public function isEmpty(): bool
     {
         return $this->count() == 0;
     }
 
     /**
-     * @return \ArrayIterator
+     * @return Traversable
      */
-    public function getIterator()
+    public function getIterator(): Traversable
     {
-        return new \ArrayIterator($this->items);
+        return new ArrayIterator($this->items);
     }
 
     /**
      * @param mixed $item
-     * @throws \InvalidArgumentException
+     * @throws InvalidArgumentException
      * @return void
      */
     protected function assertStrictType($item)
     {
         if (! $this->hasExpectedStrictType($item)) {
-            throw new \InvalidArgumentException('Item is not currect type or is empty.');
+            throw new InvalidArgumentException('Item is not currect type or is empty.');
         }
     }
 
@@ -135,7 +139,7 @@ abstract class AbstractCollection implements
     // ArrayAccess methods
     //
 
-    public function offsetSet($offset, $value)
+    public function offsetSet(mixed $offset, mixed $value): void
     {
         if (is_null($offset)) {
             $this->items[] = $value;
@@ -144,17 +148,17 @@ abstract class AbstractCollection implements
         }
     }
 
-    public function offsetExists($offset)
+    public function offsetExists(mixed $offset): bool
     {
         return isset($this->items[$offset]);
     }
 
-    public function offsetUnset($offset)
+    public function offsetUnset(mixed $offset): void
     {
         unset($this->items[$offset]);
     }
 
-    public function offsetGet($offset)
+    public function offsetGet(mixed $offset): mixed
     {
         return isset($this->items[$offset]) ? $this->items[$offset] : null;
     }
