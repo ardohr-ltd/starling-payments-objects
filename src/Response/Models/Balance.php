@@ -6,8 +6,9 @@ namespace Consilience\Starling\Payments\Response\Models;
  *
  */
 
-use Consilience\Starling\Payments\HydratableTrait;
+use Money\Money;
 use Consilience\Starling\Payments\ModelInterface;
+use Consilience\Starling\Payments\HydratableTrait;
 
 class Balance implements ModelInterface
 {
@@ -50,7 +51,7 @@ class Balance implements ModelInterface
     }
 
     /**
-     * @return Money\Money the balance as a signed Money object
+     * @return Money the balance as a signed Money object
      *
      * This will be the real value, being positive for a balance
      * in credit and negative for am overdrawn balance.
