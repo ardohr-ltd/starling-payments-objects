@@ -6,10 +6,10 @@ namespace Consilience\Starling\Payments;
  * Support for generating a PSR-7 request message.
  */
 
+use Psr\Http\Message\RequestInterface;
+use Consilience\Starling\Payments\ModelInterface;
 use Consilience\Starling\Payments\HydratableTrait;
 use Consilience\Starling\Payments\ValidationTrait;
-use Consilience\Starling\Payments\ModelInterface;
-
 use Consilience\Starling\Payments\Request\Models\Endpoint;
 
 abstract class AbstractRequest implements ModelInterface
@@ -82,7 +82,7 @@ abstract class AbstractRequest implements ModelInterface
      * We are using the Guzzle PSR-7 implementation to do this, and you can
      * still use any HTTP client you like with the result.
      *
-     * @return Psr\Http\Message\RequestInterface
+     * @return RequestInterface
      */
     public function getRequest()
     {
@@ -172,8 +172,8 @@ abstract class AbstractRequest implements ModelInterface
     /**
      * @return null an empty body by default
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
-        return;
+        return null;
     }
 }

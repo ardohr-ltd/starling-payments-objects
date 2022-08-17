@@ -8,8 +8,6 @@ namespace Consilience\Starling\Payments\Request;
 
 use Consilience\Starling\Payments\Request\Models\Endpoint;
 use Consilience\Starling\Payments\AbstractRequest;
-use UnexpectedValueException;
-
 use Consilience\Starling\Payments\Request\Models\CreatePaymentAccountAddressRequest;
 
 class CreatePaymentAccountAddress extends AbstractRequest
@@ -73,7 +71,7 @@ class CreatePaymentAccountAddress extends AbstractRequest
     /**
      * @return CreatePaymentAccountAddressRequest for serializing
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return $this->getProperty('createPaymentAccountAddressRequest');
     }

@@ -6,7 +6,6 @@ namespace Consilience\Starling\Payments;
  *
  */
 
-use UnexpectedValueException;
 use Exception;
 use InvalidArgumentException;
 use Psr\Http\Message\ResponseInterface;
@@ -217,7 +216,7 @@ trait HydratableTrait
      *
      * @return mixed
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         // Start with all properties.
 

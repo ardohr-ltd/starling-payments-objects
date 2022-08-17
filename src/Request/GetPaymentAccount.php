@@ -23,7 +23,7 @@ class GetPaymentAccount extends AbstractRequest
 
     /**
      * @param string $paymentBusinessUid
-     * @param string $accountUid the accound to retrieve
+     * @param string $accountUid the account to retrieve
      */
     public function __construct(Endpoint $endpoint, $accountUid)
     {

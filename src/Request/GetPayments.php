@@ -138,9 +138,9 @@ class GetPayments extends AbstractRequest
     }
 
     /**
-     * Incrememnt the page number.
+     * Increment the page number.
      *
-     * @return $this with the page number one higher
+     * @return self with the page number one higher
      */
     public function withNextPage()
     {

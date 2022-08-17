@@ -9,8 +9,6 @@ namespace Consilience\Starling\Payments\Request;
 
 use Consilience\Starling\Payments\Request\Models\Endpoint;
 use Consilience\Starling\Payments\AbstractRequest;
-use UnexpectedValueException;
-
 use Consilience\Starling\Payments\Request\Models\DomesticPaymentInstructionRequest;
 
 class CreatePaymentDomestic extends AbstractRequest
@@ -30,7 +28,7 @@ class CreatePaymentDomestic extends AbstractRequest
 
     /**
      * @param string $paymentBusinessUid
-     * @param string $accountUid the accound to retrieve
+     * @param string $accountUid the account to retrieve
      * @param string $paymentUid new UID for the return transaction
      */
     public function __construct(
@@ -89,7 +87,7 @@ class CreatePaymentDomestic extends AbstractRequest
     /**
      * @return DomesticPaymentInstructionRequest for serializing
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return $this->getProperty('domesticPaymentInstructionRequest');
     }

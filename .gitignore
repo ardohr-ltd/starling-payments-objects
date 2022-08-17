@@ -3,4 +3,5 @@
 coverage
 phpunit.xml
 composer.lock
-vendor/
+/vendor
+/.phpunit.result.cache
