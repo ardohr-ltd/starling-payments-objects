@@ -28,7 +28,7 @@ class CreatePaymentDomestic extends AbstractRequest
 
     /**
      * @param string $paymentBusinessUid
-     * @param string $accountUid the accound to retrieve
+     * @param string $accountUid the account to retrieve
      * @param string $paymentUid new UID for the return transaction
      */
     public function __construct(

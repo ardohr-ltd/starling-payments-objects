@@ -7,6 +7,7 @@ namespace Consilience\Starling\Payments\Request;
  */
 
 use Consilience\Starling\Payments\Request\Models\Endpoint;
+use Consilience\Starling\Payments\Request\Models\CreatePaymentAccountAddressRequest;
 
 class CancelMandateRequest extends ActivateMandateRequest
 {
@@ -52,7 +53,7 @@ class CancelMandateRequest extends ActivateMandateRequest
     }
 
     /**
-     * @return CreatePaymentAccountAddressRequest for serializing
+     * @return array for serializing
      */
     public function jsonSerialize(): mixed
     {
